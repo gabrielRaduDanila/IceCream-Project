@@ -26,7 +26,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   flex: 0 0 100%;
   background-color: var(--pink-bg);
   border-bottom: solid 1px black;
@@ -86,15 +85,21 @@ font-size: 16px;
 line-height: 21px;
 color: #d41443;
 background-color: var(--white-color);
+border: 1px transparent;
 justify-content: center;
 align-items: center;
 display: none;
 }
 
-.buy-button-arrow{
-  width: 5px;
-  height: 10px;
+.buy-button:hover,
+.buy-button:focus{
+cursor: pointer;
 }
+
+// .buy-button-arrow{
+//   width: 5px;
+//   height: 10px;
+// }
 
 // .menu-toggle{
 
@@ -103,9 +108,7 @@ display: none;
 
 @media (min-width: 768px) {
   .buy-button{
-    
     display: flex;
-
   }
 
 }

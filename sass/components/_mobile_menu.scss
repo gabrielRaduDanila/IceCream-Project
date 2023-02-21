@@ -13,11 +13,16 @@
     border-radius: 50%;
     outline: none;
   }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    color: var(--highlight-color);
+
+  .menu-toggle svg{
+    background-color: transparent;
+    fill: var(--red-title-text);
   }
+  
+  // .menu-toggle:hover,
+  // .menu-toggle:focus {
+  //   color: var(--highlight-color);
+  // }
   
   .menu-container {
     position: fixed;
