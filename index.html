@@ -7,13 +7,15 @@
     <title>IceCream</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css" />
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -84,7 +86,8 @@
     <section class="advantages">advantages</section>
 
     <section class="gallery">gallery</section>
-<hr>
+    <!-- start testimonals section -->
+    <hr />
     <section class="customer-reviews section">
       <div class="customer-reviews__image">
         <img
@@ -93,10 +96,15 @@
             ./images/customer-reviews/testimonials1-180w-min.png 180w
           "
           src="./images/customer-reviews/testimonials1-90w-min.png"
-          alt="first testmionial person image" />
+          alt="first testmionial person image"
+        />
       </div>
       <div class="customer-reviews__text-container">
-        <p>
+        <svg class="quotation-mark" width="54px" height="40px">
+          <use href="./images/icons.svg#icon-quotation-svg"></use>
+        </svg>
+
+        <p class="underline-text">
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
           ipsum primis in nibh vel risus.
@@ -107,18 +115,19 @@
         <div class="red-dot"></div>
         <div class="red-dot"></div>
       </div>
-      <p>Emily, Los Angeles</p>
+      <p class="reviewer-name">Emily, Los Angeles</p>
       <div class="customer-reviews-btns">
-        <button class="review-btn home-review-btn">
-          <svg class="modal-form__icon" width="12px" height="12px">
-            <use href="./images/icons.svg#icon-house-svg"></use>
-          </svg>
-        </button>
-        <button class="review-btn home-review-btn"></button>
-        <button class="review-btn home-review-btn"></button>
+        <button class="review-btn btn-selected"></button>
+        <svg class="review-btn__selected" width="12px" height="12px">
+          <use href="./images/icons.svg#icon-house-svg"></use>
+        </svg>
+        <button class="review-btn"></button>
+        <button class="review-btn"></button>
       </div>
     </section>
-<hr>
+    <hr />
+    <!-- end testimonals section -->
+
     <section class="contacts">Contacts</section>
     <ul>
       <li>
@@ -163,7 +172,8 @@
                 <a
                   href="https://github.com/"
                   target="_blank"
-                  class="social-box__link">
+                  class="social-box__link"
+                >
                   <svg class="social-box__icon" width="32px" height="32px">
                     <use href="/sprite.c55b0485.svg#icon-github"></use>
                   </svg>
@@ -173,7 +183,8 @@
                 <a
                   href="https://telegram.org/"
                   target="_blank"
-                  class="social-box__link">
+                  class="social-box__link"
+                >
                   <svg class="social-box__icon" width="32px" height="32px">
                     <use href="/sprite.c55b0485.svg#icon-telegram"></use>
                   </svg>
@@ -183,7 +194,8 @@
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
-                  class="social-box__link">
+                  class="social-box__link"
+                >
                   <svg class="social-box__icon" width="32px" height="32px">
                     <use href="/sprite.c55b0485.svg#icon-facebook"></use>
                   </svg>
