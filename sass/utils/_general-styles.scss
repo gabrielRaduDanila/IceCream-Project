@@ -12,7 +12,14 @@
     line-height: 1.5;
 }
 
-svg {
-    fill: black;
-    background-color: white;
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+padding: 30px 20px;
 }
