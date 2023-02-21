@@ -25,3 +25,19 @@
 
 }
 
+@mixin setWidth($nrItems) {
+    $nrGap: $nrItems - 1;
+    $totalGap: $nrGap * 30;
+    flex-basis: calc((100% - #{$totalGap}px) / #{$nrItems});
+}
+
+@mixin bordered($color) {
+    border: 1px solid $color;
+}
+
+@mixin displayFlex($flexDirection) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $flexDirection;
+}

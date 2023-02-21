@@ -28,7 +28,7 @@
       <ul>
         <li>
           <h3>ice cream</h3>
-          <span>...</span> 
+          <span>...</span>
           <!-- aici nu sunt 3 puncte, trebuie sa faci un div cu 3 div-uri in el si fiecare div este un punct -->
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -49,11 +49,43 @@
 
     <section class="gallery">gallery</section>
 
-    <section class="customer-reviews">Customer Reviews</section>
+    <section class="customer-reviews section">
+      <div class="customer-reviews__image">
+        <img
+          srcset="
+            ./images/customer-reviews/testimonials1-90w-min.png   90w,
+            ./images/customer-reviews/testimonials1-180w-min.png 180w
+          "
+          src="./images/customer-reviews/testimonials1-90w-min.png"
+          alt="first testmionial person image"
+        />
+      </div>
+      <div class="customer-reviews__text-container">
+        <p>
+          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+          ipsum primis in nibh vel risus.
+        </p>
+      </div>
+      <div class="red-dots-container">
+        <div class="red-dot"></div>
+        <div class="red-dot"></div>
+        <div class="red-dot"></div>
+      </div>
+      <p>Emily, Los Angeles</p>
+      <div class="customer-reviews-btns">
+        <button class="review-btn home-review-btn">
+          <svg class="modal-form__icon" width="12px" height="12px">
+            <use href="./images/icons.svg#icon-house-svg"></use>
+          </svg>
+        </button>
+        <button class="review-btn home-review-btn"></button>
+        <button class="review-btn home-review-btn"></button>
+      </div>
+    </section>
 
     <section class="contacts">Contacts</section>
-    
-    <footer class="footer">footer</footer>
 
+    <footer class="footer">footer</footer>
   </body>
 </html>

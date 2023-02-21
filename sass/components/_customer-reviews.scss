@@ -1,0 +1,11 @@
+.customer-reviews {
+    @include displayFlex(column);
+}
+
+.customer-reviews__image {
+        
+    img {
+        width: 85px;
+        height: 85px;
+    }
+}
