@@ -28,8 +28,13 @@
       <ul>
         <li>
           <h3>ice cream</h3>
-          <span>...</span>
-          <!-- aici nu sunt 3 puncte, trebuie sa faci un div cu 3 div-uri in el si fiecare div este un punct -->
+
+          <div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+          </div>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
@@ -43,7 +48,7 @@
       </ul>
     </section>
 
-    <section id="how-it-is-made">how-it-is-made</section>
+    <section class="about"></section>
 
     <section class="advantages">advantages</section>
 
@@ -85,7 +90,93 @@
     </section>
 
     <section class="contacts">Contacts</section>
+    <ul>
+      <li>
+        <h4>CAFE</h4>
+        <span>...</span>
+        <p>
+          <button></button>
+        </p>
+      </li>
+      <li>
+        <h4>CAFE</h4>
+        <span>...</span>
+        <p>
+          <button></button>
+        </p>
+      </li>
+      <li>
+        <h4>CAFE</h4>
+        <span>...</span>
+        <p>
+          <button></button>
+        </p>
+      </li>
+    </ul>
 
-    <footer class="footer">footer</footer>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__text-box">
+          <div class="footer__title footer__title--one">
+            <span class="footer__title--ice-cream">homemade ice cream</span>
+            <span class="footer__title--made">made</span>
+          </div>
+          <div class="footer__title footer__title--two">
+            <div class="footer__title--word"></div>
+            <div class="footer__title--word"></div>
+          </div>
+        </div>
+        <div class="contacts-box">
+          <div class="social-box">
+            <ul class="social-box__links">
+              <li class="social-box__list">
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="social-box__link"
+                >
+                  <svg class="social-box__icon" width="32px" height="32px">
+                    <use href="/sprite.c55b0485.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-box__list">
+                <a
+                  href="https://telegram.org/"
+                  target="_blank"
+                  class="social-box__link"
+                >
+                  <svg class="social-box__icon" width="32px" height="32px">
+                    <use href="/sprite.c55b0485.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-box__list">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="social-box__link"
+                >
+                  <svg class="social-box__icon" width="32px" height="32px">
+                    <use href="/sprite.c55b0485.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-box">
+            <span class="contact-box__text"> Feel free to contact </span>
+            <a href="tel:+610383766284" class="contact-box__phone">
+              +61 (0) 383 766 284
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-box">
+        <p class="copyright-box__text">
+          © 2021 - IceCream. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
