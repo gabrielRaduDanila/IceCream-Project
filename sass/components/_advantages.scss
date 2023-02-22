@@ -1,0 +1,35 @@
+.advantages {
+  display: flex;
+  justify-content: center;
+  background-color: var(--light-pink-bg);
+  &__inner {
+    margin: 0 auto;
+    flex-basis: 480px;
+  }
+}
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  &__item {
+    position: relative;
+  }
+  &__item--first::before {
+    background-image: url("../../images/advantages/firstitem.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__title {
+    color: var(--red-title-text);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
