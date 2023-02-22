@@ -20,7 +20,49 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="hero-header"></header>
+    <header class="hero-header">
+      <div class="hero-header-container">
+        <div class="hero-header-nav">
+          <div class="page-header_logo-container">
+            <a class="header-holder__link" href="/index.html">
+              <svg class="icon-header-logo">
+                <use href="./images/icons.svg#icon-header-logo"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="navigation-menu__list">
+            <li class="navigation-menu__list--item">Home</li>
+            <li class="navigation-menu__list--item">About us</li>
+            <li class="navigation-menu__list--item">How it's made?</li>
+            <li class="navigation-menu__list--item">Our products</li>
+            <li class="navigation-menu__list--item">Contact</li>
+          </ul>
+          <button class="menu-toggle">Menu</button>
+          <button class="buy-button">Buy now ></button>
+        </div>
+        <div class="hero-header-hero-section">
+          <div>
+            <h1 class="hero-section--title">ice cream made with passion</h1>
+            <button>Products</button>
+            <button>How it's made?</button>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+          </div>
+          <div class="hero-section--counter">
+            <ul class="counter__list">
+              <li class="counter__list--item">
+                <p>16<span class="counter__list--type">cafes</span></p>
+              </li>
+              <li class="counter__list--item">
+                <p>23<span class="counter__list--type">food trucks</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <section id="products" class="section">
       <p class="products__subtitle">100% natural</p>
@@ -104,12 +146,13 @@
        
         <div class="container-text"> <div class="svg-container"> <svg class="quotation-mark" width="54px" height="40px">
           <use href="./images/icons.svg#icon-quotation-svg"></use>
-        </svg></div>
-        <p class="underline-text">         
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+        </svg>
+
+        <p class="underline-text">
+        <span>  Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-          ipsum primis in nibh vel risus.
-        </p></div>
+          ipsum primis in nibh vel risus.</span>
+        </p>
       </div>
 
       <div class="red-dots-container">
