@@ -1,5 +1,24 @@
-.page-header {
+.hero-header {
     background-color: var(--pink-bg);
-    border-bottom: solid 1px black;
+    border: solid 1px black;
   }
-  
+
+.hero-header-container{
+  display: flex;
+}
+
+.hero-header-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .navigation-menu__list{
+    display: flex;
+    flex-direction: row;
+    color: var(--white-color);
+    font-size: 16px;
+    gap: 5px;
+  // display: none;
+  }
+
