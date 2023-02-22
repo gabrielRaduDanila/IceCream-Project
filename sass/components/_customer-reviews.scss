@@ -25,26 +25,28 @@
         background-image: repeating-linear-gradient(to top,
                 var(--quotation-svg-color),
                 var(--quotation-svg-color) 1px,
-                var(--testimonial-card-bg) 1px,
-                var(--testimonial-card-bg) 31px);
-       
+                var(--testimonial-card-bg) 0px,
+                var(--testimonial-card-bg) 32px);
+        text-indent: 55px;
     }
 }
 
 .container-text {
-    // position: relative ;
-
+    position: relative;
+    display: inline-block;
 }
 
-.svg-container{
-    // position: absolute;
+.svg-container {
+    position: absolute;
+    top: -15px;
+    left: 10px;
 }
 
 .quotation-mark {
-    
+
     fill: var(--quotation-svg-color);
     // display: none;
-    
+
 }
 
 .red-dots-container {
