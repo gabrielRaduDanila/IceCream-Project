@@ -2,7 +2,7 @@
   display: none;
 }
 .section-contacts__list {
-  display: flex;
+  @include displayFlex(column);
   gap: 20px;
 }
 .section-contacts__item {
