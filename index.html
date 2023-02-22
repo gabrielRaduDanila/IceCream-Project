@@ -20,6 +20,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <div class="modal is-hidden" data-modal>
+      <div class="inner-modal">
+        <button class="close-modal" data-modal-close>
+          <img src="./images/close-btn.svg" alt="close button" />
+          <use href="./images/icons.svg#close-btn.svg"></use>
+        </button>
+      </div>
+    </div>
     <header class="hero-header">
       <div class="hero-header-container">
         <div class="hero-header-nav">
@@ -42,7 +50,7 @@
               <use href="./images/icons.svg#icon-Burger"></use>
             </svg>
           </button>
-          <button class="buy-button">
+          <button class="buy-button" data-modal-open>
             Buy now
             <svg class="button-bio-eco--svg">
               <use href="./images/icons.svg#icon-greater-than-head"></use>
@@ -52,8 +60,8 @@
         <div class="hero-header-hero-section">
           <div>
             <h1 class="hero-section--title">ice cream made with passion</h1>
-            <button>Products</button>
-            <button>How it's made?</button>
+            <button class="products-button">Products</button>
+            <button class="how-is-made-button">How it's made?</button>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
@@ -420,5 +428,6 @@
         </p>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
