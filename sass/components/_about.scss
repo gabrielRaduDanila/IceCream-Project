@@ -1,7 +1,43 @@
 .about {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  flex-basis: 320px;
-  background-color: papayawhip;
+  background-color: var(--light-pink-bg);
+  background-image: url("../../images/about/milk320.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 70% 80%;
+
+  border: 2px solid red;
+  &__inner {
+    border: 2px solid green;
+    flex-basis: 480px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  &__label {
+    color: var(--pink-text);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+  }
+  &__title {
+    color: var(--red-title-text);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__image {
+    display: block;
+    width: 100%;
+  }
+  &__button {
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+  }
 }

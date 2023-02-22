@@ -3,9 +3,101 @@
 }
 
 .customer-reviews__image {
-        
+
     img {
         width: 85px;
         height: 85px;
+    }
+}
+
+.customer-reviews__text-container {
+    background-color: var(--testimonial-card-bg);
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding: 43px 50px 17px 50px;
+
+    .underline-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 31px;
+        color: var(--black-color);
+        text-align: center;
+        background-image: repeating-linear-gradient(to top,
+                var(--quotation-svg-color),
+                var(--quotation-svg-color) 1px,
+                var(--testimonial-card-bg) 0px,
+                var(--testimonial-card-bg) 32px);
+        text-indent: 55px;
+    }
+}
+
+.container-text {
+    position: relative;
+    display: inline-block;
+}
+
+.svg-container {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}
+
+.quotation-mark {
+
+    fill: var(--quotation-svg-color);
+    // display: none;
+
+}
+
+.red-dots-container {
+    display: inline-flex;
+    gap: 10px;
+    margin-bottom: 16px;
+
+    .red-dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--red-dot-color);
+    }
+}
+
+.reviewer-name {
+    font-weight: 500;
+    line-height: 1.85;
+    color: var(--black-color);
+}
+
+.customer-reviews-btns {
+    margin-top: 16px;
+    display: flex;
+    gap: 18px;
+}
+
+.review-btn {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: var(--testimonials-btn-color);
+    @include displayFlex(row);
+    border-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-selected {
+    background-color: transparent;
+    position: relative;
+}
+
+.review-btn__selected {
+    position: absolute;
+    fill: var(--red-svg-home);
+
+    &:hover {
+        cursor: pointer;
     }
 }
