@@ -20,27 +20,102 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="hero-header"></header>
-
-    <section id="products">
-      <p>100% natural</p>
-      <h2>products</h2>
-      <ul>
-        <li>
-          <h3>ice cream</h3>
-
-          <div>
-            <div>.</div>
-            <div>.</div>
-            <div>.</div>
+    <header class="hero-header">
+      <div class="hero-header-container">
+        <div class="hero-header-nav">
+          <div class="page-header_logo-container">
+            <a class="header-holder__link" href="/index.html">
+              <svg class="icon-header-logo">
+                <use href="./images/icons.svg#icon-header-logo"></use>
+              </svg>
+            </a>
           </div>
+          <ul class="navigation-menu__list">
+            <li class="navigation-menu__list--item">Home</li>
+            <li class="navigation-menu__list--item">About us</li>
+            <li class="navigation-menu__list--item">How it's made?</li>
+            <li class="navigation-menu__list--item">Our products</li>
+            <li class="navigation-menu__list--item">Contact</li>
+          </ul>
+          <button class="menu-toggle">Menu</button>
+          <button class="buy-button">Buy now ></button>
+        </div>
+        <div class="hero-header-hero-section">
+          <div>
+            <h1 class="hero-section--title">ice cream made with passion</h1>
+            <button>Products</button>
+            <button>How it's made?</button>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+          </div>
+          <div class="hero-section--counter">
+            <ul class="counter__list">
+              <li class="counter__list--item">
+                <p>16<span class="counter__list--type">cafes</span></p>
+              </li>
+              <li class="counter__list--item">
+                <p>23<span class="counter__list--type">food trucks</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
+    <section id="products" class="section">
+      <p class="products__subtitle">100% natural</p>
+      <h2 class="products__title">products</h2>
+      <ul class="product">
+        <li class="product__item">
+          <h3 class="product__produse">ice cream</h3>
+          <div class="point">
+            <div class="point__item">.</div>
+            <div class="point__item">.</div>
+            <div class="point__item">.</div>
+          </div>
+          <p class="product__information">
+            Some are always looking for a new flavor while others stick to
+            vanilla and chocolate.
           </p>
-          <button>
-            <svg>
+          <button class="button-arow">
+            <svg class="svg-arow">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="product__item">
+          <h3 class="product__produse">ice coffee</h3>
+          <div class="point">
+            <div class="point__item">.</div>
+            <div class="point__item">.</div>
+            <div class="point__item">.</div>
+          </div>
+          <p class="product__information">
+            Vienna Ice Coffee ... for cold days! You found out? The creamiest
+            and most delicious coffee with milk from Austria - Vienna Ice Coffee
+            - you can also find it in Romania.
+          </p>
+          <button class="button-arow">
+            <svg class="svg-arow">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="product__item">
+          <h3 class="product__produse">milkshakes</h3>
+          <div class="point">
+            <div class="point__item">.</div>
+            <div class="point__item">.</div>
+            <div class="point__item">.</div>
+          </div>
+          <p class="product__information">
+            A sweet drink obtained by mixing milk, caramel sauce, chocolate
+            syrup
+          </p>
+          <button class="button-arow">
+            <svg class="svg-arow">
               <use href="./images/icons.svg#icon-arrow-right"></use>
             </svg>
           </button>
@@ -53,7 +128,8 @@
     <section class="advantages">advantages</section>
 
     <section class="gallery">gallery</section>
-
+    <!-- start testimonals section -->
+    <hr />
     <section class="customer-reviews section">
       <div class="customer-reviews__image">
         <img
@@ -66,28 +142,36 @@
         />
       </div>
       <div class="customer-reviews__text-container">
-        <p>
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-          ipsum primis in nibh vel risus.
+        <svg class="quotation-mark" width="54px" height="40px">
+          <use href="./images/icons.svg#icon-quotation-svg"></use>
+        </svg>
+
+        <p class="underline-text">
+          <span>
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.</span
+          >
         </p>
       </div>
+
       <div class="red-dots-container">
         <div class="red-dot"></div>
         <div class="red-dot"></div>
         <div class="red-dot"></div>
       </div>
-      <p>Emily, Los Angeles</p>
+      <p class="reviewer-name">Emily, Los Angeles</p>
       <div class="customer-reviews-btns">
-        <button class="review-btn home-review-btn">
-          <svg class="modal-form__icon" width="12px" height="12px">
-            <use href="./images/icons.svg#icon-house-svg"></use>
-          </svg>
-        </button>
-        <button class="review-btn home-review-btn"></button>
-        <button class="review-btn home-review-btn"></button>
+        <button class="review-btn btn-selected"></button>
+        <svg class="review-btn__selected" width="12px" height="12px">
+          <use href="./images/icons.svg#icon-house-svg"></use>
+        </svg>
+        <button class="review-btn"></button>
+        <button class="review-btn"></button>
       </div>
     </section>
+    <hr />
+    <!-- end testimonals section -->
 
     <section class="contacts">Contacts</section>
     <ul>
