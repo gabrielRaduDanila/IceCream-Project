@@ -5,6 +5,11 @@
 
 .hero-header-container{
   display: flex;
+  flex-direction: column;
+}
+
+.hero-header-hero-section{
+  display: flex;
 }
 
 .hero-header-nav{
