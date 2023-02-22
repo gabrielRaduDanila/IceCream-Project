@@ -15,39 +15,38 @@
     margin-top: 32px;
     margin-bottom: 16px;
     padding: 43px 50px 17px 50px;
-}
 
-.underline-text {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.5;
-    color: var(--black-color);
-    text-align: center;
-    display: inline-block; 
-    position: relative;
-    span {
-        background-image: repeating-linear-gradient(#E1E1E1, #E1E1E1);
-        background-size:100% 1px;
-        background-repeat: no-repeat;
-        background-position: left bottom;
+    .underline-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 31px;
+        color: var(--black-color);
+        text-align: center;
+        background-image: repeating-linear-gradient(to top,
+                var(--quotation-svg-color),
+                var(--quotation-svg-color) 1px,
+                var(--testimonial-card-bg) 0px,
+                var(--testimonial-card-bg) 32px);
+        text-indent: 55px;
     }
 }
 
-// .underline-text::before {
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     bottom: 0;
-//     width: 100%;
-//     height: 2px;
-   
-//     background-repeat: repeat-y;
+.container-text {
+    position: relative;
+    display: inline-block;
+}
 
-// }
+.svg-container {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}
 
 .quotation-mark {
-    position: absolute;
+
     fill: var(--quotation-svg-color);
+    // display: none;
+
 }
 
 .red-dots-container {
@@ -83,7 +82,8 @@
     background-color: var(--testimonials-btn-color);
     @include displayFlex(row);
     border-color: transparent;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
 }
@@ -96,7 +96,8 @@
 .review-btn__selected {
     position: absolute;
     fill: var(--red-svg-home);
+
     &:hover {
-            cursor: pointer;
-        }
+        cursor: pointer;
+    }
 }
