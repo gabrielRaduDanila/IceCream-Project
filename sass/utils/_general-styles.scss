@@ -1,15 +1,15 @@
 *,
 ::after,
 ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--text-color);
-    letter-spacing: 0.04em;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-color);
+  letter-spacing: 0.04em;
+  line-height: 1.5;
 }
 
 ul {
@@ -21,9 +21,11 @@ a {
 }
 
 .section {
-padding: 30px 20px;
+  padding: 30px 20px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .hidden-items {
-    display: none;
+  display: none;
 }

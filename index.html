@@ -18,6 +18,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <div class="modal is-hidden" data-modal>
+      <div class="inner-modal">
+        <button class="close-modal" data-modal-close>
+          <img src="./images/close-btn.svg" alt="close button" />
+          <use href="./images/icons.svg#close-btn.svg"></use>
+        </button>
+      </div>
+    </div>
     <header class="hero-header">
       <div class="hero-header-container">
         <div class="hero-header-nav">
@@ -35,18 +43,34 @@
             <li class="navigation-menu__list--item">Our products</li>
             <li class="navigation-menu__list--item">Contact</li>
           </ul>
-          <button class="menu-toggle">Menu</button>
-          <button class="buy-button">Buy now ></button>
+          <button class="menu-toggle">
+            <svg class="menu-toggle--svg">
+              <use href="./images/icons.svg#icon-Burger"></use>
+            </svg>
+          </button>
+          <button class="buy-button" data-modal-open>
+            Buy now
+            <svg class="button-bio-eco--svg">
+              <use href="./images/icons.svg#icon-greater-than-head"></use>
+            </svg>
+          </button>
         </div>
         <div class="hero-header-hero-section">
           <div>
             <h1 class="hero-section--title">ice cream made with passion</h1>
-            <button>Products</button>
-            <button>How it's made?</button>
+            <button class="products-button">Products</button>
+            <button class="how-is-made-button">How it's made?</button>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
+            <button class="button-bio-eco">
+              <a href="">
+                <svg class="button-bio-eco--svg">
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </button>
           </div>
           <div class="hero-section--counter">
             <ul class="counter__list">
@@ -123,9 +147,66 @@
       </div>
     </section>
 
-    <section class="about"></section>
+    <section class="about">
+      <div class="about__inner">
+        <p class="about__label">tradition and love</p>
+        <h2 class="about__title">how it's made?</h2>
+        <img
+          class="about__image"
+          srcset="
+            ./images/about/cow501.png   501w,
+            ./images/about/cow1002.png 1002w
+          "
+          src="./images/about/cow501.png"
+          alt="bioeco" />
+        <div class="about__content">
+          <p class="about__text-abstract">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+            erat at justo fringilla.
+          </p>
+          <p class="about__text">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt.
+          </p>
+          <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
+          <button class="about__button" type="button">
+            Read more
+            <svg class="about__icon" width="4.43" height="8">
+              <use href="./images/icons.svg#icon-greater-than-sign"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
 
-    <section class="advantages">advantages</section>
+    <section class="advantages">
+      <div class="advatages__inner">
+        <h2 class="hidden-items">Advantages</h2>
+        <ul class="advantages-list">
+          <li class="advantages-list__item advantages-list__item--first">
+            <h3 class="advantages-list__title">721</h3>
+            <p class="advantages-list__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+          <li class="advantages-list__item advantages-list__item--second">
+            <h3 class="advantages-list__title">16kg</h3>
+            <p class="advantages-list__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+          <li class="advantages-list__item advantages-list__item--third">
+            <h3 class="advantages-list__title">84</h3>
+            <p class="advantages-list__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <section class="gallery">gallery</section>
     <!-- start testimonals section -->
@@ -140,18 +221,20 @@
           src="./images/customer-reviews/testimonials1-90w-min.png"
           alt="first testmionial person image" />
       </div>
-      <div class="customer-reviews__text-container">
-        <svg class="quotation-mark" width="54px" height="40px">
-          <use href="./images/icons.svg#icon-quotation-svg"></use>
-        </svg>
 
-        <p class="underline-text">
-          <span>
+      <div class="customer-reviews__text-container">
+        <div class="container-text">
+          <div class="svg-container">
+            <svg class="quotation-mark" width="54px" height="40px">
+              <use href="./images/icons.svg#icon-quotation-svg"></use>
+            </svg>
+          </div>
+          <p class="underline-text">
             Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
             Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-            ipsum primis in nibh vel risus.</span
-          >
-        </p>
+            ipsum primis in nibh vel risus.
+          </p>
+        </div>
       </div>
 
       <div class="red-dots-container">
@@ -172,44 +255,124 @@
     <hr />
     <!-- end testimonals section -->
 
-    <section class="contacts">Contacts</section>
-    <ul>
-      <li>
-        <h4>CAFE</h4>
-        <span>...</span>
-        <p>
-          <button></button>
-        </p>
-      </li>
-      <li>
-        <h4>CAFE</h4>
-        <span>...</span>
-        <p>
-          <button></button>
-        </p>
-      </li>
-      <li>
-        <h4>CAFE</h4>
-        <span>...</span>
-        <p>
-          <button></button>
-        </p>
-      </li>
-    </ul>
+    <section class="section-contacts">
+      <div class="container">
+        <h2 class="is-hidden section-contacts__title">Contact</h2>
+        <ul class="section-contacts__list">
+          <li class="section-contacts__item">
+            <div>
+              <p class="section-contacts__store one">CAFE</p>
+              <h3 class="section-contacts__subtitle">Chicago</h3>
+              <p class="section-contacts__text">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+            </div>
+            <div class="section-contacts__schedule">
+              <h3 class="section-contacts__subtitle">Monday - Friday</h3>
+              <p class="section-contacts__time">06:00 AM - 10:00 PM</p>
+              <h3 class="section-contacts__subtitle">Saturday - Sunday</h3>
+              <p class="section-contacts__time">08:00 AM - 16:00 PM</p>
+            </div>
+            <div>
+              <a href="tel:+61038766284" class="section-contacts__contact"
+                >+61(0) 383 766 284</a
+              >
+              <a
+                href="mailto:noreply@envato.com"
+                class="section-contacts__contact"
+                >noreply@envato.com</a
+              >
+            </div>
+          </li>
+          <li class="section-contacts__item">
+            <div>
+              <p class="section-contacts__store two">FOODTRUCK</p>
+              <h3 class="section-contacts__subtitle">Los Angeles</h3>
+              <p class="section-contacts__text">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+            </div>
+            <div class="section-contacts__schedule">
+              <h3 class="section-contacts__subtitle">Monday - Friday</h3>
+              <p class="section-contacts__time">06:00 AM - 10:00 PM</p>
+              <h3 class="section-contacts__subtitle">Saturday - Sunday</h3>
+              <p class="section-contacts__time">08:00 AM - 16:00 PM</p>
+            </div>
+            <div>
+              <a href="tel:+61038766284" class="section-contacts__contact"
+                >+61(0) 383 766 284</a
+              >
+              <a
+                href="mailto:noreply@envato.com"
+                class="section-contacts__contact"
+                >noreply@envato.com</a
+              >
+            </div>
+          </li>
+          <li class="section-contacts__item">
+            <div>
+              <p class="section-contacts__store one">CAFE</p>
+              <h3 class="section-contacts__subtitle">New York</h3>
+              <p class="section-contacts__text">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+            </div>
+            <div class="section-contacts__schedule">
+              <h3 class="section-contacts__subtitle">Monday - Friday</h3>
+              <p class="section-contacts__time">06:00 AM - 10:00 PM</p>
+              <h3 class="section-contacts__subtitle">Saturday - Sunday</h3>
+              <p class="section-contacts__time">08:00 AM - 16:00 PM</p>
+            </div>
+            <div>
+              <a href="tel:+61038766284" class="section-contacts__contact"
+                >+61(0) 383 766 284</a
+              >
+              <a
+                href="mailto:noreply@envato.com"
+                class="section-contacts__contact"
+                >noreply@envato.com</a
+              >
+            </div>
+          </li>
+        </ul>
+        <ul class="section-contact__btn-list">
+          <li>
+            <button class="section-contact__btn one" data-modal-open-s="">
+              Our Locations
+              <svg class="btn-icon one">
+                <use href="#"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="section-contact__btn two" data-modal-open-s-fr="">
+              Franchise
+              <svg class="btn-icon two">
+                <use href="#"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__text-box">
-          <div class="footer__title footer__title--one">
-            <span class="footer__title--ice-cream">homemade ice cream</span>
-            <span class="footer__title--made">made</span>
+        <div class="footer__text">
+          <div class="footer__title-first">
+            <span class="footer__title-ice-cream">homemade ice cream</span>
+            <span class="footer__title-made">made</span>
           </div>
-          <div class="footer__title footer__title--two">
-            <div class="footer__title--word"></div>
-            <div class="footer__title--word"></div>
+          <div class="footer__title-second">
+            <div class="footer__title-with">
+              <span class="footer__title-letter">with</span>
+            </div>
+            <div class="footer__title-passion">
+              <span class="footer__title-letter">passion</span>
+            </div>
           </div>
         </div>
-        <div class="contacts-box">
+        <div class="contacts-icon">
           <div class="social-box">
             <ul class="social-box__links">
               <li class="social-box__list">
@@ -244,9 +407,9 @@
               </li>
             </ul>
           </div>
-          <div class="contact-box">
-            <span class="contact-box__text"> Feel free to contact </span>
-            <a href="tel:+610383766284" class="contact-box__phone">
+          <div class="contact">
+            <span class="contact__text"> Feel free to contact </span>
+            <a href="tel:+610383766284" class="contact__phone">
               +61 (0) 383 766 284
             </a>
           </div>
@@ -254,9 +417,10 @@
       </div>
       <div class="copyright-box">
         <p class="copyright-box__text">
-          © 2021 - IceCream. All Rights Reserved.
+          &copy 2021 - IceCream. All Rights Reserved.
         </p>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
