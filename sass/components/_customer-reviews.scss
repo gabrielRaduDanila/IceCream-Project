@@ -16,37 +16,35 @@
     margin-bottom: 16px;
     padding: 43px 50px 17px 50px;
 
-    .underline-text {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 31px;
-        color: var(--black-color);
-        text-align: center;
-        background-image: repeating-linear-gradient(to top,
-                var(--quotation-svg-color),
-                var(--quotation-svg-color) 1px,
-                var(--testimonial-card-bg) 0px,
-                var(--testimonial-card-bg) 32px);
-        text-indent: 55px;
+
+}
+
+.underline-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 31px;
+    color: var(--black-color);
+    text-align: center;
+    background-image: repeating-linear-gradient(to top,
+            var(--quotation-svg-color),
+            var(--quotation-svg-color) 1px,
+            transparent 1px,
+            transparent 32px);
+    text-indent: 10px;
+    position: relative;
+    z-index: 4;
+    
+    &::before {
+        content: url("../images/customer-reviews/quotes.svg");
+        position: absolute;
+        z-index: -1;
+        top: -15px;
+            left: -10px;
     }
 }
 
-.container-text {
-    position: relative;
-    display: inline-block;
-}
-
-.svg-container {
-    position: absolute;
-    top: -15px;
-    left: 10px;
-}
-
 .quotation-mark {
-
     fill: var(--quotation-svg-color);
-    // display: none;
-
 }
 
 .red-dots-container {
