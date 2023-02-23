@@ -1,6 +1,6 @@
 .gallery {
     padding-top: 60px;
-    background-image: linear-gradient(to bottom, var(--light-pink-bg) 0%, var(--light-pink-bg) 40%, var(--product-section-bg) 40%, var(--product-section-bg) 100%);
+    background-image: linear-gradient(to bottom, var(--light-pink-bg) 0%, var(--light-pink-bg) 45%, var(--product-section-bg) 45%, var(--product-section-bg) 100%);
 }
 
 .gallery-container {
@@ -47,5 +47,25 @@
 }
 
 @media screen and (min-width: 768px) {
-    
+    .gallery-container {
+        gap: 6px;
+
+        div {
+            gap: 6px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .gallery {
+        padding: 120px 94px 30px 94px;
+    }
+
+    .gallery-container {
+        gap: 8px;
+
+        div {
+            gap: 8px;
+        }
+    }
 }
