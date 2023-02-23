@@ -20,7 +20,7 @@
     font-family: Titan One;
     font-weight: 400;
     text-transform: uppercase;
-    margin-top: 40px;
+    padding-top: 40px;
   }
   &__title-second {
     color: var(--red-title-text);
@@ -59,6 +59,7 @@
     justify-content: flex-end;
     list-style-type: none;
     gap: 28px;
+    margin-top: 40px;
   }
   &__icon {
     display: block;
