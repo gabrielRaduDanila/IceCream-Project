@@ -52,14 +52,17 @@
           </button>
           <button class="buy-button" data-modal-open>
             Buy now
-            <svg class="button-bio-eco--svg">
+            <svg class="buy-button--svg">
               <use href="./images/icons.svg#icon-greater-than-head"></use>
             </svg>
           </button>
         </div>
         <div class="hero-header-hero-section">
           <div>
-            <h1 class="hero-section--title">ice cream made with passion</h1>
+            <h1 class="hero-section--title">
+              ice cream made with
+              <span class="hero-section--title_span">passion</span>
+            </h1>
             <button class="products-button">Products</button>
             <button class="how-is-made-button">How it's made?</button>
             <p>
@@ -201,6 +204,7 @@
       </div>
     </section>
 
+
     <section class="advantages">
       <div class="advatages__inner">
         <h2 class="hidden-items">Advantages</h2>
@@ -226,6 +230,126 @@
         </ul>
       </div>
     </section>
+
+      <!-- start gallery section -->
+      <section class="gallery">
+        <div class="gallery-container">
+          <div>
+            <img
+              srcset="
+                ./images/gallery/gallery-1-50w.png   50w,
+                ./images/gallery/gallery-1-140w.png 140w,
+                ./images/gallery/gallery-1-280w.png 280w
+              "
+              src="./images/gallery/gallery-1-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+          </div>
+          <div>
+            <img
+              srcset="
+                ./images/gallery/gallery-2-50w.png   50w,
+                ./images/gallery/gallery-2-140w.png 140w,
+                ./images/gallery/gallery-2-280w.png 280w
+              "
+              src="./images/gallery/gallery-2-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+            <img
+              srcset="
+                ./images/gallery/gallery-3-50w.png   50w,
+                ./images/gallery/gallery-3-140w.png 140w,
+                ./images/gallery/gallery-3-280w.png 280w
+              "
+              src="./images/gallery/gallery-3-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+          </div>
+          <div class="double-div">
+            <img
+              srcset="
+                ./images/gallery/gallery-4-90w.png   90w,
+                ./images/gallery/gallery-4-290w.png 290w,
+                ./images/gallery/gallery-4-580w.png 580w
+              "
+              src="./images/gallery/gallery-4-90w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+            <img
+              srcset="
+                ./images/gallery/gallery-5-50w.png   50w,
+                ./images/gallery/gallery-5-140w.png 140w,
+                ./images/gallery/gallery-5-280w.png 280w
+              "
+              src="./images/gallery/gallery-5-50w.png"
+              alt="an gallery image"
+              class="gallery-image-double_size"
+            />
+          </div>
+          <div>
+            <img
+              srcset="
+                ./images/gallery/gallery-6-50w.png   50w,
+                ./images/gallery/gallery-6-140w.png 140w,
+                ./images/gallery/gallery-6-280w.png 280w
+              "
+              src="./images/gallery/gallery-6-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+            <img
+              srcset="
+                ./images/gallery/gallery-7-50w.png   50w,
+                ./images/gallery/gallery-7-140w.png 140w,
+                ./images/gallery/gallery-7-280w.png 280w
+              "
+              src="./images/gallery/gallery-7-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+          </div>
+          <div>
+            <img
+              srcset="
+                ./images/gallery/gallery-8-50w.png   50w,
+                ./images/gallery/gallery-8-140w.png 140w,
+                ./images/gallery/gallery-8-280w.png 280w
+              "
+              src="./images/gallery/gallery-8-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+            <img
+              srcset="
+                ./images/gallery/gallery-9-50w.png   50w,
+                ./images/gallery/gallery-9-140w.png 140w,
+                ./images/gallery/gallery-9-280w.png 280w
+              "
+              src="./images/gallery/gallery-9-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+          </div>
+          <div>
+            <img
+              srcset="
+                ./images/gallery/gallery-10-50w.png   50w,
+                ./images/gallery/gallery-10-140w.png 140w,
+                ./images/gallery/gallery-10-280w.png 280w
+              "
+              src="./images/gallery/gallery-10-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- end gallery section -->
+
 
     <section class="gallery">gallery</section>
     <!-- start testimonals section -->
@@ -384,15 +508,13 @@
             <span class="footer__title-made">made</span>
           </div>
           <div class="footer__title-second">
-            <div class="footer__title-with">
-              <span class="footer__title-letter">with</span>
-            </div>
-            <div class="footer__title-passion">
+            <div class="footer__title-with-passion">
+              <span class="footer__title-letter footer__spase">with</span>
               <span class="footer__title-letter">passion</span>
             </div>
           </div>
         </div>
-        <div class="contacts-icon">
+        <div>
           <div class="social-box">
             <ul class="social-box__links">
               <li class="social-box__list">
@@ -401,8 +523,10 @@
                   target="_blank"
                   class="social-box__link"
                 >
+
                   <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-telegram"></use>
+
                   </svg>
                 </a>
               </li>
@@ -412,8 +536,10 @@
                   target="_blank"
                   class="social-box__link"
                 >
+
                   <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-gitHub"></use>
+
                   </svg>
                 </a>
               </li>
@@ -423,16 +549,18 @@
                   target="_blank"
                   class="social-box__link"
                 >
+
                   <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
+
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="contact">
-            <span class="contact__text"> Feel free to contact </span>
-            <a href="tel:+610383766284" class="contact__phone">
+          <div class="contact-box">
+            <span> Feel free to contact </span>
+            <a href="tel:+610383766284" class="contact-box__phone">
               +61 (0) 383 766 284
             </a>
           </div>
@@ -440,7 +568,7 @@
       </div>
       <div class="copyright-box">
         <p class="copyright-box__text">
-          &copy 2021 - IceCream. All Rights Reserved.
+          © 2021 - IceCream. All Rights Reserved.
         </p>
       </div>
     </footer>
