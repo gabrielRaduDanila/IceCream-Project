@@ -16,7 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -224,15 +223,13 @@
             <span class="footer__title-made">made</span>
           </div>
           <div class="footer__title-second">
-            <div class="footer__title-with">
-              <span class="footer__title-letter">with</span>
-            </div>
-            <div class="footer__title-passion">
+            <div class="footer__title-with-passion">
+              <span class="footer__title-letter footer__spase">with</span>
               <span class="footer__title-letter">passion</span>
             </div>
           </div>
         </div>
-        <div class="contacts-icon">
+        <div>
           <div class="social-box">
             <ul class="social-box__links">
               <li class="social-box__list">
@@ -241,19 +238,24 @@
                   target="_blank"
                   class="social-box__link"
                 >
-                  <svg width="32" height="32" class="social-box__icon">
-                    <use href="./images/icons.svg#icon-telegram"></use>
+                  <svg class="social-box__icon" width="32px" height="32px">
+                    <use
+                      href="./images/icon-social-media.svg#icon-github"
+                    ></use>
                   </svg>
                 </a>
               </li>
+
               <li class="social-box__list">
                 <a
                   href="https://telegram.org/"
                   target="_blank"
                   class="social-box__link"
                 >
-                  <svg width="32" height="32" class="social-box__icon">
-                    <use href="./images/icons.svg#icon-gitHub"></use>
+                  <svg class="social-box__icon" width="32px" height="32px">
+                    <use
+                      href="./images/icon-social-media.svg#icon-telegram"
+                    ></use>
                   </svg>
                 </a>
               </li>
@@ -263,16 +265,18 @@
                   target="_blank"
                   class="social-box__link"
                 >
-                  <svg width="32" height="32" class="social-box__icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
+                  <svg class="social-box__icon" width="32px" height="32px">
+                    <use
+                      href="./images/icon-social-media.svg#icon-facebook"
+                    ></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="contact">
-            <span class="contact__text"> Feel free to contact </span>
-            <a href="tel:+610383766284" class="contact__phone">
+          <div class="contact-box">
+            <span> Feel free to contact </span>
+            <a href="tel:+610383766284" class="contact-box__phone">
               +61 (0) 383 766 284
             </a>
           </div>
@@ -280,7 +284,7 @@
       </div>
       <div class="copyright-box">
         <p class="copyright-box__text">
-          &copy 2021 - IceCream. All Rights Reserved.
+          © 2022 - IceCream. All Rights Reserved.
         </p>
       </div>
     </footer>
