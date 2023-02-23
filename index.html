@@ -24,7 +24,7 @@
       <div class="inner-modal">
         <button class="close-modal" data-modal-close>
           <svg class="close-modal--svg">
-          <use href="./images/icons.svg#close-btn.svg"></use>
+            <use href="./images/icons.svg#close-btn.svg"></use>
           </svg>
         </button>
       </div>
@@ -81,10 +81,14 @@
           <div class="hero-section--counter display-none-header">
             <ul class="counter__list">
               <li class="counter__list--item">
-                <p class="counter__list--item-number">16<span class="counter__list--item-type">cafes</span></p>
+                <p class="counter__list--item-number">
+                  16<span class="counter__list--item-type">cafes</span>
+                </p>
               </li>
               <li class="counter__list--item">
-                <p class="counter__list--item-number">23<span class="counter__list--item-type">food trucks</span></p>
+                <p class="counter__list--item-number">
+                  23<span class="counter__list--item-type">food trucks</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -101,7 +105,7 @@
             <h3 class="product__produse">ice cream</h3>
             <div class="point">
               <div class="point__item">
-                <svg
+                <!-- <svg
                   width="400"
                   height="300"
                   style="outline: 2px dashed #2a2a2a"
@@ -115,7 +119,7 @@
                     stroke="#2a2a2a"
                     stroke-width="4"
                   />
-                </svg>
+                </svg> -->
               </div>
               <div class="point__item">.</div>
               <div class="point__item">.</div>
@@ -179,6 +183,7 @@
             ./images/about/cow501.png   501w,
             ./images/about/cow1002.png 1002w
           "
+          sizes="10vw"
           src="./images/about/cow501.png"
           alt="bioeco"
         />
@@ -204,7 +209,6 @@
         </div>
       </div>
     </section>
-
 
     <section class="advantages">
       <div class="advatages__inner">
@@ -232,129 +236,136 @@
       </div>
     </section>
 
-      <!-- start gallery section -->
-      <section class="gallery">
-        <div class="gallery-container">
-          <div>
-            <img
-              srcset="
-                ./images/gallery/gallery-1-50w.png   50w,
-                ./images/gallery/gallery-1-140w.png 140w,
-                ./images/gallery/gallery-1-280w.png 280w
-              "
-              src="./images/gallery/gallery-1-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-          </div>
-          <div>
-            <img
-              srcset="
-                ./images/gallery/gallery-2-50w.png   50w,
-                ./images/gallery/gallery-2-140w.png 140w,
-                ./images/gallery/gallery-2-280w.png 280w
-              "
-              src="./images/gallery/gallery-2-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-            <img
-              srcset="
-                ./images/gallery/gallery-3-50w.png   50w,
-                ./images/gallery/gallery-3-140w.png 140w,
-                ./images/gallery/gallery-3-280w.png 280w
-              "
-              src="./images/gallery/gallery-3-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-          </div>
-          <div class="double-div">
-            <img
-              srcset="
-                ./images/gallery/gallery-4-90w.png   90w,
-                ./images/gallery/gallery-4-290w.png 290w,
-                ./images/gallery/gallery-4-580w.png 580w
-              "
-              src="./images/gallery/gallery-4-90w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-            <img
-              srcset="
-                ./images/gallery/gallery-5-50w.png   50w,
-                ./images/gallery/gallery-5-140w.png 140w,
-                ./images/gallery/gallery-5-280w.png 280w
-              "
-              src="./images/gallery/gallery-5-50w.png"
-              alt="an gallery image"
-              class="gallery-image-double_size"
-            />
-          </div>
-          <div>
-            <img
-              srcset="
-                ./images/gallery/gallery-6-50w.png   50w,
-                ./images/gallery/gallery-6-140w.png 140w,
-                ./images/gallery/gallery-6-280w.png 280w
-              "
-              src="./images/gallery/gallery-6-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-            <img
-              srcset="
-                ./images/gallery/gallery-7-50w.png   50w,
-                ./images/gallery/gallery-7-140w.png 140w,
-                ./images/gallery/gallery-7-280w.png 280w
-              "
-              src="./images/gallery/gallery-7-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-          </div>
-          <div>
-            <img
-              srcset="
-                ./images/gallery/gallery-8-50w.png   50w,
-                ./images/gallery/gallery-8-140w.png 140w,
-                ./images/gallery/gallery-8-280w.png 280w
-              "
-              src="./images/gallery/gallery-8-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-            <img
-              srcset="
-                ./images/gallery/gallery-9-50w.png   50w,
-                ./images/gallery/gallery-9-140w.png 140w,
-                ./images/gallery/gallery-9-280w.png 280w
-              "
-              src="./images/gallery/gallery-9-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-          </div>
-          <div>
-            <img
-              srcset="
-                ./images/gallery/gallery-10-50w.png   50w,
-                ./images/gallery/gallery-10-140w.png 140w,
-                ./images/gallery/gallery-10-280w.png 280w
-              "
-              src="./images/gallery/gallery-10-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-          </div>
+    <!-- start gallery section -->
+    <section class="gallery">
+      <div class="gallery-container">
+        <div>
+          <img
+            srcset="
+              ./images/gallery/gallery-1-50w.png   50w,
+              ./images/gallery/gallery-1-140w.png 140w,
+              ./images/gallery/gallery-1-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-1-50w.png"
+            alt="an gallery image"
+            class="gallery-image"
+          />
         </div>
-      </section>
-      <!-- end gallery section -->
+        <div>
+          <img
+            srcset="
+              ./images/gallery/gallery-2-50w.png   50w,
+              ./images/gallery/gallery-2-140w.png 140w,
+              ./images/gallery/gallery-2-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-2-50w.png"
+            alt="an gallery image"
+            class="gallery-image"
+          />
+          <img
+            srcset="
+              ./images/gallery/gallery-3-50w.png   50w,
+              ./images/gallery/gallery-3-140w.png 140w,
+              ./images/gallery/gallery-3-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-3-50w.png"
+            alt="an gallery image"
+            class="gallery-image"
+          />
+        </div>
+        <div class="double-div">
+          <img
+            srcset="
+              ./images/gallery/gallery-4-90w.png   90w,
+              ./images/gallery/gallery-4-290w.png 290w,
+              ./images/gallery/gallery-4-580w.png 580w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-4-90w.png"
+            alt="an gallery image"
+            class="gallery-image"
+          />
+          <img
+            srcset="
+              ./images/gallery/gallery-5-50w.png   50w,
+              ./images/gallery/gallery-5-140w.png 140w,
+              ./images/gallery/gallery-5-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-5-50w.png"
+            alt="an gallery image"
+            class="gallery-image-double_size"
+          />
+        </div>
+        <div>
+          <img
+            srcset="
+              ./images/gallery/gallery-6-50w.png   50w,
+              ./images/gallery/gallery-6-140w.png 140w,
+              ./images/gallery/gallery-6-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-6-50w.png"
+            alt="an gallery image"
+            class="gallery-image"
+          />
+          <img
+            srcset="
+              ./images/gallery/gallery-7-50w.png   50w,
+              ./images/gallery/gallery-7-140w.png 140w,
+              ./images/gallery/gallery-7-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-7-50w.png"
+            alt="an gallery image"
+            class="gallery-image"
+          />
+        </div>
+        <div>
+          <img
+            srcset="
+              ./images/gallery/gallery-8-50w.png   50w,
+              ./images/gallery/gallery-8-140w.png 140w,
+              ./images/gallery/gallery-8-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-8-50w.png"
+            alt="an gallery image"
+            class="gallery-image"
+          />
+          <img
+            srcset="
+              ./images/gallery/gallery-9-50w.png   50w,
+              ./images/gallery/gallery-9-140w.png 140w,
+              ./images/gallery/gallery-9-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-9-50w.png"
+            alt="an gallery image"
+            class="gallery-image"
+          />
+        </div>
+        <div>
+          <img
+            srcset="
+              ./images/gallery/gallery-10-50w.png   50w,
+              ./images/gallery/gallery-10-140w.png 140w,
+              ./images/gallery/gallery-10-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-10-50w.png"
+            alt="an gallery image"
+            class="gallery-image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- end gallery section -->
 
-
-    <section class="gallery">gallery</section>
     <!-- start testimonals section -->
-    <hr />
     <section class="customer-reviews section">
       <div class="customer-reviews__image">
         <img
@@ -362,6 +373,7 @@
             ./images/customer-reviews/testimonials1-90w-min.png   90w,
             ./images/customer-reviews/testimonials1-180w-min.png 180w
           "
+          sizes="10vw"
           src="./images/customer-reviews/testimonials1-90w-min.png"
           alt="first testmionial person image"
         />
@@ -397,7 +409,6 @@
         <button class="review-btn"></button>
       </div>
     </section>
-    <hr />
     <!-- end testimonals section -->
 
     <section class="section-contacts">
@@ -530,10 +541,8 @@
                   target="_blank"
                   class="social-box__link"
                 >
-
                   <svg class="social-box__icon" width="32px" height="32px">
                     <use href="./images/icons.svg#icon-gitHub"></use>
-
                   </svg>
                 </a>
               </li>
@@ -543,10 +552,8 @@
                   target="_blank"
                   class="social-box__link"
                 >
-
                   <svg class="social-box__icon" width="32px" height="32px">
                     <use href="./images/icons.svg#icon-telegram"></use>
-
                   </svg>
                 </a>
               </li>
@@ -556,10 +563,8 @@
                   target="_blank"
                   class="social-box__link"
                 >
-
                   <svg class="social-box__icon" width="32px" height="32px">
                     <use href="./images/icons.svg#icon-facebook"></use>
-
                   </svg>
                 </a>
               </li>
