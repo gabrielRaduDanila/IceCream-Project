@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  background-color: #fff5f6;
+  background-color: var(--light-pink-bg);
   min-width: 320px;
 
   &__container {
@@ -13,7 +13,7 @@
   &__title-first {
     font-size: 18px;
     line-height: 21px;
-    color: #ffa5ba;
+    color: var(--pink-text);
 
     cursor: default;
     text-align: left;
@@ -23,8 +23,7 @@
     margin-top: 40px;
   }
   &__title-second {
-    color: #d41443;
-
+    color: var(--red-title-text);
     display: flex;
     flex-direction: column;
     font-family: Titan One;
@@ -63,14 +62,14 @@
   }
   &__icon {
     display: block;
-    fill: #ffa5ba;
+    fill: var(--pink-text);
   }
 
   &__icon:hover {
-    fill: #d41443;
+    fill: var(--red-title-text);
   }
   &__link:focus {
-    fill: #d41443;
+    fill: var(--red-title-text);
   }
 }
 
@@ -81,7 +80,7 @@
   cursor: default;
   &__phone {
     display: inline-block;
-    color: #d41443;
+    color: var(--red-title-text);
   }
 }
 
@@ -90,11 +89,11 @@
   align-items: center;
   justify-content: center;
   cursor: default;
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid var(--quotation-svg-color);
   padding-top: 22px;
   padding-bottom: 25px;
   &__text {
-    color: #907e82;
+    color: var(--light-brown-text);
     font-weight: 700;
     text-align: center;
     max-width: 150px;
