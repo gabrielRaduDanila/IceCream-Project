@@ -1,6 +1,10 @@
 .hero-header {
+  max-width: 100%;
+  padding: 60px 20px;
   background-color: var(--pink-bg);
   border: solid 1px black;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-header-container {
@@ -21,7 +25,7 @@
   align-items: center;
 }
 
-.page-header_logo-container{
+.page-header_logo-container {
   display: block;
   margin: 8px 20px;
   width: 200px;
@@ -29,7 +33,7 @@
   flex: 0 0 auto;
 }
 
-.icon-header-logo{
+.icon-header-logo {
   width: 100%;
   height: 100%;
 }
@@ -49,7 +53,7 @@
   cursor: pointer;
 }
 
-.menu-toggle{
+.menu-toggle {
   height: 25px;
   width: 15px;
   background-color: transparent;
@@ -58,14 +62,14 @@
 }
 
 .menu-toggle:hover,
-.menu-toggle:focus{
+.menu-toggle:focus {
   cursor: pointer;
 }
 
-.menu-toggle--svg{
-width: 100%;
-height: 100%;
-background-color: transparent;
+.menu-toggle--svg {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
 }
 
 .buy-button {
@@ -77,22 +81,28 @@ background-color: transparent;
   color: #d41443;
   background-color: var(--white-color);
   border: 1px transparent;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   display: none;
 }
 
 .buy-button:hover,
-.buy-button:focus{
-cursor: pointer;
+.buy-button:focus {
+  cursor: pointer;
 }
 
-.button-bio-eco--svg{
-width: 18px;
-height: 18px;
+.buy-button--svg {
+  height: 10px;
+  width: 8px;
+  // justify-content:end;
 }
 
-.how-is-made-button{
+.button-bio-eco--svg {
+  width: 18px;
+  height: 18px;
+}
+
+.how-is-made-button {
   width: 82px;
   height: 24px;
   border-radius: 20px;
@@ -104,11 +114,11 @@ height: 18px;
 }
 
 .how-is-made-button:hover,
-.how-is-made-button:focus{
+.how-is-made-button:focus {
   cursor: pointer;
 }
 
-.products-button{
+.products-button {
   width: 62px;
   height: 24px;
   border-radius: 20px;
@@ -117,11 +127,10 @@ height: 18px;
   color: (--white-color);
   background-color: var(--red-title-text);
   border: 1px transparent;
-
 }
 
 .products-button:hover,
-.products-button:focus{
+.products-button:focus {
   cursor: pointer;
 }
 
@@ -131,7 +140,7 @@ height: 18px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .navigation-menu__list {
     display: flex;
   }
