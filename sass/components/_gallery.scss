@@ -1,0 +1,45 @@
+.gallery {
+    background-image: linear-gradient(to bottom, var(--light-pink-bg) 0%, var(--light-pink-bg) 25%, var(--product-section-bg) 25%, var(--product-section-bg) 100%);
+}
+
+.gallery-container {
+    max-width: 100%;
+    height: auto;
+    @include displayFlex(row);
+    gap: 3px;
+
+
+    div {
+        width: calc(100% / 7);
+
+        &:first-child {
+            margin-bottom: 30px;
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 30px;
+        }
+
+        &:nth-child(4) {
+            margin-top: 20px;
+        }
+
+        &:last-child {
+            margin-top: 30px;
+        }
+    }
+
+    .double-div {
+        width: calc(100% / 3.5);
+    }
+
+
+}
+
+.gallery-image-double_size {
+    width: 50%;
+}
+
+.gallery-image {
+    width: 100%;
+}
