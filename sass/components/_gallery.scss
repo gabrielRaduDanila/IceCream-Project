@@ -1,5 +1,6 @@
 .gallery {
-    background-image: linear-gradient(to bottom, var(--light-pink-bg) 0%, var(--light-pink-bg) 25%, var(--product-section-bg) 25%, var(--product-section-bg) 100%);
+    padding-top: 60px;
+    background-image: linear-gradient(to bottom, var(--light-pink-bg) 0%, var(--light-pink-bg) 40%, var(--product-section-bg) 40%, var(--product-section-bg) 100%);
 }
 
 .gallery-container {
@@ -10,6 +11,9 @@
 
 
     div {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
         width: calc(100% / 7);
 
         &:first-child {
@@ -42,4 +46,8 @@
 
 .gallery-image {
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    
 }
