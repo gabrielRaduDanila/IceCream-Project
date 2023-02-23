@@ -93,6 +93,10 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  &:hover {
+    background-color: #0ec11a;
+    color: #ffffff;
+  }
 }
 .svg-arow {
   display: flex;
@@ -101,6 +105,9 @@
   height: 15px;
   width: 30px;
   fill: var(--red-title-text);
+  &:hover {
+    transform: rotateZ(-90deg);
+  }
 }
 
 .product__item:first-child:before {
@@ -139,4 +146,10 @@
   height: 252px;
   background-image: url(/images/products/product3-320.png);
   background-size: 249px 252px;
+}
+.product__item:nth-child(2) {
+  background-color: rgba(240, 209, 165, 1);
+}
+.product__item:nth-child(3) {
+  background-color: rgba(194, 226, 151, 1);
 }
