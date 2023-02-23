@@ -7,13 +7,15 @@
     <title>IceCream</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css" />
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -50,17 +52,20 @@
           </button>
           <button class="buy-button" data-modal-open>
             Buy now
-            <svg class="button-bio-eco--svg">
+            <svg class="buy-button--svg">
               <use href="./images/icons.svg#icon-greater-than-head"></use>
             </svg>
           </button>
         </div>
         <div class="hero-header-hero-section">
           <div>
-            <h1 class="hero-section--title">ice cream made with passion</h1>
+            <h1 class="hero-section--title">
+              ice cream made with
+              <span class="hero-section--title_span">passion</span>
+            </h1>
             <button class="products-button">Products</button>
             <button class="how-is-made-button">How it's made?</button>
-            <p>
+            <p class="bio-eco-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
@@ -75,10 +80,10 @@
           <div class="hero-section--counter">
             <ul class="counter__list">
               <li class="counter__list--item">
-                <p>16<span class="counter__list--type">cafes</span></p>
+                <p class="counter__list--item-number">16<span class="counter__list--item-type">cafes</span></p>
               </li>
               <li class="counter__list--item">
-                <p>23<span class="counter__list--type">food trucks</span></p>
+                <p class="counter__list--item-number">23<span class="counter__list--item-type">food trucks</span></p>
               </li>
             </ul>
           </div>
@@ -91,10 +96,26 @@
         <p class="products__subtitle">100% natural</p>
         <h2 class="products__title">products</h2>
         <ul class="product">
-          <li class="product__item curents">
+          <li class="product__item">
             <h3 class="product__produse">ice cream</h3>
             <div class="point">
-              <div class="point__item">.</div>
+              <div class="point__item">
+                <svg
+                  width="400"
+                  height="300"
+                  style="outline: 2px dashed #2a2a2a"
+                >
+                  <ellipse
+                    rx="6"
+                    ry="6"
+                    cx="6"
+                    cy="6"
+                    fill=" rgba(255, 255, 255, 1)"
+                    stroke="#2a2a2a"
+                    stroke-width="4"
+                  />
+                </svg>
+              </div>
               <div class="point__item">.</div>
               <div class="point__item">.</div>
             </div>
@@ -158,7 +179,8 @@
             ./images/about/cow1002.png 1002w
           "
           src="./images/about/cow501.png"
-          alt="bioeco" />
+          alt="bioeco"
+        />
         <div class="about__content">
           <p class="about__text-abstract">
             Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
@@ -181,6 +203,7 @@
         </div>
       </div>
     </section>
+
 
     <section class="advantages">
       <div class="advatages__inner">
@@ -208,126 +231,129 @@
       </div>
     </section>
 
-    <!-- start gallery section -->
-    <section class="gallery section">
-      <div class="gallery-container">
-        <div>
-        <img
-          srcset="
-            ./images/gallery/gallery-1-50w.png   50w,
-            ./images/gallery/gallery-1-140w.png 140w,
-            ./images/gallery/gallery-1-280w.png 280w
-          "
-          src="./images/gallery/gallery-1-50w.png"
-          alt="an gallery image"
-          class="gallery-image"
-        />
+      <!-- start gallery section -->
+      <section class="gallery">
+        <div class="gallery-container">
+          <div>
+            <img
+              srcset="
+                ./images/gallery/gallery-1-50w.png   50w,
+                ./images/gallery/gallery-1-140w.png 140w,
+                ./images/gallery/gallery-1-280w.png 280w
+              "
+              src="./images/gallery/gallery-1-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+          </div>
+          <div>
+            <img
+              srcset="
+                ./images/gallery/gallery-2-50w.png   50w,
+                ./images/gallery/gallery-2-140w.png 140w,
+                ./images/gallery/gallery-2-280w.png 280w
+              "
+              src="./images/gallery/gallery-2-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+            <img
+              srcset="
+                ./images/gallery/gallery-3-50w.png   50w,
+                ./images/gallery/gallery-3-140w.png 140w,
+                ./images/gallery/gallery-3-280w.png 280w
+              "
+              src="./images/gallery/gallery-3-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+          </div>
+          <div class="double-div">
+            <img
+              srcset="
+                ./images/gallery/gallery-4-90w.png   90w,
+                ./images/gallery/gallery-4-290w.png 290w,
+                ./images/gallery/gallery-4-580w.png 580w
+              "
+              src="./images/gallery/gallery-4-90w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+            <img
+              srcset="
+                ./images/gallery/gallery-5-50w.png   50w,
+                ./images/gallery/gallery-5-140w.png 140w,
+                ./images/gallery/gallery-5-280w.png 280w
+              "
+              src="./images/gallery/gallery-5-50w.png"
+              alt="an gallery image"
+              class="gallery-image-double_size"
+            />
+          </div>
+          <div>
+            <img
+              srcset="
+                ./images/gallery/gallery-6-50w.png   50w,
+                ./images/gallery/gallery-6-140w.png 140w,
+                ./images/gallery/gallery-6-280w.png 280w
+              "
+              src="./images/gallery/gallery-6-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+            <img
+              srcset="
+                ./images/gallery/gallery-7-50w.png   50w,
+                ./images/gallery/gallery-7-140w.png 140w,
+                ./images/gallery/gallery-7-280w.png 280w
+              "
+              src="./images/gallery/gallery-7-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+          </div>
+          <div>
+            <img
+              srcset="
+                ./images/gallery/gallery-8-50w.png   50w,
+                ./images/gallery/gallery-8-140w.png 140w,
+                ./images/gallery/gallery-8-280w.png 280w
+              "
+              src="./images/gallery/gallery-8-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+            <img
+              srcset="
+                ./images/gallery/gallery-9-50w.png   50w,
+                ./images/gallery/gallery-9-140w.png 140w,
+                ./images/gallery/gallery-9-280w.png 280w
+              "
+              src="./images/gallery/gallery-9-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+          </div>
+          <div>
+            <img
+              srcset="
+                ./images/gallery/gallery-10-50w.png   50w,
+                ./images/gallery/gallery-10-140w.png 140w,
+                ./images/gallery/gallery-10-280w.png 280w
+              "
+              src="./images/gallery/gallery-10-50w.png"
+              alt="an gallery image"
+              class="gallery-image"
+            />
+          </div>
         </div>
-        <div>
-        <img
-          srcset="
-            ./images/gallery/gallery-2-50w.png   50w,
-            ./images/gallery/gallery-2-140w.png 140w,
-            ./images/gallery/gallery-2-280w.png 280w
-          "
-          src="./images/gallery/gallery-2-50w.png"
-          alt="an gallery image"
-          class="gallery-image"
-        />
-        <img
-          srcset="
-            ./images/gallery/gallery-3-50w.png   50w,
-            ./images/gallery/gallery-3-140w.png 140w,
-            ./images/gallery/gallery-3-280w.png 280w
-          "
-          src="./images/gallery/gallery-3-50w.png"
-          alt="an gallery image"
-          class="gallery-image"
-        />
-        </div>
-        <div class="double-div">
-        <img
-          srcset="
-            ./images/gallery/gallery-4-90w.png   90w,
-            ./images/gallery/gallery-4-290w.png 290w,
-            ./images/gallery/gallery-4-580w.png 580w
-          "
-          src="./images/gallery/gallery-4-90w.png"
-          alt="an gallery image"
-          class="gallery-image"
-        />
-        <img
-          srcset="
-            ./images/gallery/gallery-5-50w.png   50w,
-            ./images/gallery/gallery-5-140w.png 140w,
-            ./images/gallery/gallery-5-280w.png 280w
-          "
-          src="./images/gallery/gallery-5-50w.png"
-          alt="an gallery image"
-          class="gallery-image-double_size"
-        />
-        </div>
-        <div>
-        <img
-          srcset="
-            ./images/gallery/gallery-6-50w.png   50w,
-            ./images/gallery/gallery-6-140w.png 140w,
-            ./images/gallery/gallery-6-280w.png 280w
-          "
-          src="./images/gallery/gallery-6-50w.png"
-          alt="an gallery image"
-          class="gallery-image"
-        />
-        <img
-          srcset="
-            ./images/gallery/gallery-7-50w.png   50w,
-            ./images/gallery/gallery-7-140w.png 140w,
-            ./images/gallery/gallery-7-280w.png 280w
-          "
-          src="./images/gallery/gallery-7-50w.png"
-          alt="an gallery image"
-          class="gallery-image"
-        />
-        </div>
-        <div>
-        <img
-          srcset="
-            ./images/gallery/gallery-8-50w.png   50w,
-            ./images/gallery/gallery-8-140w.png 140w,
-            ./images/gallery/gallery-8-280w.png 280w
-          "
-          src="./images/gallery/gallery-8-50w.png"
-          alt="an gallery image"
-          class="gallery-image"
-        />
-        <img
-          srcset="
-            ./images/gallery/gallery-9-50w.png   50w,
-            ./images/gallery/gallery-9-140w.png 140w,
-            ./images/gallery/gallery-9-280w.png 280w
-          "
-          src="./images/gallery/gallery-9-50w.png"
-          alt="an gallery image"
-          class="gallery-image"
-        />
-        </div>
-        <div>
-        <img
-          srcset="
-            ./images/gallery/gallery-10-50w.png   50w,
-            ./images/gallery/gallery-10-140w.png 140w,
-            ./images/gallery/gallery-10-280w.png 280w
-          "
-          src="./images/gallery/gallery-10-50w.png"
-          alt="an gallery image"
-          class="gallery-image"
-        />
-        </div>
-      </div>
-    </section>
-    <!-- end gallery section -->
+      </section>
+      <!-- end gallery section -->
 
+
+    <section class="gallery">gallery</section>
     <!-- start testimonals section -->
+    <hr />
     <section class="customer-reviews section">
       <div class="customer-reviews__image">
         <img
@@ -336,7 +362,8 @@
             ./images/customer-reviews/testimonials1-180w-min.png 180w
           "
           src="./images/customer-reviews/testimonials1-90w-min.png"
-          alt="first testmionial person image" />
+          alt="first testmionial person image"
+        />
       </div>
 
       <div class="customer-reviews__text-container">
@@ -403,7 +430,7 @@
           </li>
           <li class="section-contacts__item">
             <div>
-              <p class="section-contacts__store two">FOODTRUCK</p>
+              <p class="section-contacts__store two">FOOD TRUCK</p>
               <h3 class="section-contacts__subtitle">Los Angeles</h3>
               <p class="section-contacts__text">
                 Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -454,18 +481,18 @@
         </ul>
         <ul class="section-contact__btn-list">
           <li>
-            <button class="section-contact__btn one" data-modal-open-s="">
+            <button class="section-contact__btn first" data-modal-open-s="">
               Our Locations
-              <svg class="btn-icon one">
-                <use href="#"></use>
+              <svg viewBox="-210 0 600 32" class="btn-icon">
+                <use href="./images/icons.svg#icon-contact-1"></use>
               </svg>
             </button>
           </li>
           <li>
-            <button class="section-contact__btn two" data-modal-open-s-fr="">
+            <button class="section-contact__btn second" data-modal-open-s-fr="">
               Franchise
-              <svg class="btn-icon two">
-                <use href="#"></use>
+              <svg viewBox="-120 0 520 32" class="btn-icon">
+                <use href="./images/icons.svg#icon-contact-2"></use>
               </svg>
             </button>
           </li>
@@ -481,24 +508,25 @@
             <span class="footer__title-made">made</span>
           </div>
           <div class="footer__title-second">
-            <div class="footer__title-with">
-              <span class="footer__title-letter">with</span>
-            </div>
-            <div class="footer__title-passion">
+            <div class="footer__title-with-passion">
+              <span class="footer__title-letter footer__spase">with</span>
               <span class="footer__title-letter">passion</span>
             </div>
           </div>
         </div>
-        <div class="contacts-icon">
+        <div>
           <div class="social-box">
             <ul class="social-box__links">
               <li class="social-box__list">
                 <a
                   href="https://github.com/"
                   target="_blank"
-                  class="social-box__link">
-                  <svg class="social-box__icon" width="32px" height="32px">
-                    <use href="/sprite.c55b0485.svg#icon-github"></use>
+                  class="social-box__link"
+                >
+
+                  <svg width="32" height="32" class="social-box__icon">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+
                   </svg>
                 </a>
               </li>
@@ -506,9 +534,12 @@
                 <a
                   href="https://telegram.org/"
                   target="_blank"
-                  class="social-box__link">
-                  <svg class="social-box__icon" width="32px" height="32px">
-                    <use href="/sprite.c55b0485.svg#icon-telegram"></use>
+                  class="social-box__link"
+                >
+
+                  <svg width="32" height="32" class="social-box__icon">
+                    <use href="./images/icons.svg#icon-gitHub"></use>
+
                   </svg>
                 </a>
               </li>
@@ -516,17 +547,20 @@
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
-                  class="social-box__link">
-                  <svg class="social-box__icon" width="32px" height="32px">
-                    <use href="/sprite.c55b0485.svg#icon-facebook"></use>
+                  class="social-box__link"
+                >
+
+                  <svg width="32" height="32" class="social-box__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="contact">
-            <span class="contact__text"> Feel free to contact </span>
-            <a href="tel:+610383766284" class="contact__phone">
+          <div class="contact-box">
+            <span> Feel free to contact </span>
+            <a href="tel:+610383766284" class="contact-box__phone">
               +61 (0) 383 766 284
             </a>
           </div>
@@ -534,7 +568,7 @@
       </div>
       <div class="copyright-box">
         <p class="copyright-box__text">
-          &copy 2021 - IceCream. All Rights Reserved.
+          © 2021 - IceCream. All Rights Reserved.
         </p>
       </div>
     </footer>
