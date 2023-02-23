@@ -64,5 +64,11 @@
 <symbol id="close-btn" viewBox="0 0 32 32">
 <path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
 </symbol>
+<symbol id="icon-contact-1" viewBox="0 0 19 32">
+<path fill="none" stroke="#fff" stroke-width="6.4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #fff)" d="M3.2 3.2l11.553 12.8-11.553 12.8"></path>
+</symbol>
+<symbol id="icon-contact-2" viewBox="0 0 22 32">
+<path fill="none" stroke="#d41443" stroke-width="6.4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color2, #d41443)" d="M4.545 3.2l13.7 12.8-13.7 12.8"></path>
+</symbol>
 </defs>
 </svg>

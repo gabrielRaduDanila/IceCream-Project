@@ -1,30 +1,48 @@
 .section-contacts__title {
   display: none;
 }
-.section-contacts__list {
-  @include displayFlex(column);
-  gap: 20px;
+.section-contacts {
+  background-color: #fff5f6;
 }
-.section-contacts__item {
-  background: #ffffff;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
-  width: 280px;
-  height: 412px;
+.section-contacts__list {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff5f6;
+}
+.section-contacts__item {
+  background: var(--white-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 32px 40px;
   gap: 20px;
+  &:hover,
+  :focus {
+    cursor: pointer;
+    box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+    -webkit-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+    -moz-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+    transition: all 0.5s linear;
+  }
 }
 .section-contacts__store {
-  font-size: 12px;
-  color: #ffffff;
+  color: var(--white-color);
   text-align: center;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  font-style: normal;
+  font-size: 12px;
 }
 .one {
   width: 80px;
@@ -55,8 +73,8 @@
 .section-contacts__schedule {
   width: 100%;
   padding: 24px 0;
-  border-bottom: 2px solid#E1E1E1;
-  border-top: 2px solid#E1E1E1;
+  border-bottom: 1px solid#E1E1E1;
+  border-top: 1px solid#E1E1E1;
 }
 .section-contacts__time {
   font-size: 12px;
@@ -64,14 +82,144 @@
   color: var(--pink-text);
 }
 .section-contacts__contact {
+  font-size: 12px;
   color: var(--light-brown-text);
+  &:hover,
+  :focus {
+    color: var(--red-svg-home);
+  }
+}
+.section-contact__btn-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 32px;
 }
 .section-contact__btn {
-  width: 198px;
-  height: 44px;
-  left: 411px;
-  top: 4475px;
-
-  background: #d41342;
   border-radius: 22px;
+  border: 1px transparent;
+  font-size: 16px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:hover,
+  :focus {
+    cursor: pointer;
+    box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+    -webkit-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+    -moz-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+    transition: all 0.5s linear;
+  }
+}
+.first {
+  width: 161px;
+  height: 44px;
+  background: var(--red-svg-home);
+  color: var(--white-color);
+  position: relative;
+  padding-left: 10px;
+}
+.second {
+  width: 161px;
+  height: 44px;
+  background: var(--white-color);
+  color: var(--red-svg-home);
+  position: relative;
+  padding-left: 30px;
+  &:hover,
+  :focus {
+    background: #ecebeb;
+  }
+}
+.btn-icon {
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .section-contacts__item {
+    width: 100%;
+    height: 528px;
+  }
+  .section-contacts__list {
+    padding: 60px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-contact__btn-list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 0;
+  }
+
+  .first {
+    width: 191px;
+    padding-left: 30px;
+  }
+  .second {
+    width: 174px;
+    padding-left: 40px;
+  }
+  .section-contacts__store {
+    font-size: 16px;
+  }
+  .one {
+    width: 73px;
+    height: 28px;
+  }
+  .two {
+    width: 138px;
+    height: 28px;
+  }
+  .section-contacts__subtitle {
+    font-size: 14px;
+  }
+  .section-contacts__text {
+    font-size: 14px;
+  }
+  .section-contacts__time {
+    font-size: 14px;
+  }
+  .section-contacts__contact {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-contacts__item {
+    max-width: 368px;
+    height: 538px;
+    padding: 40px;
+  }
+  .section-contacts__list {
+    gap: 32px;
+  }
+  .section-contacts__subtitle {
+    font-size: 16px;
+  }
+  .section-contacts__text {
+    font-size: 16px;
+  }
+  .section-contacts__time {
+    font-size: 16px;
+  }
+  .section-contacts__contact {
+    font-size: 16px;
+  }
+  .section-contact__btn-list {
+    gap: 12px;
+  }
+  .first {
+    width: 198px;
+    padding-left: 40px;
+  }
+  .second {
+    width: 168px;
+    padding-left: 40px;
+  }
 }
