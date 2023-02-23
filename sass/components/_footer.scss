@@ -14,17 +14,17 @@
     font-size: 18px;
     line-height: 21px;
     color: #ffa5ba;
-    margin-bottom: 16px;
+
     cursor: default;
     text-align: left;
-    font-family: Titan One, sans-serif;
+    font-family: Titan One;
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 40px;
   }
   &__title-second {
     color: #d41443;
-    margin-bottom: 43px;
+
     display: flex;
     flex-direction: column;
     font-family: Titan One;
@@ -38,13 +38,12 @@
   &__title-letter {
     margin-right: -2px;
   }
-  &__title-ice-cream,
-  &__title-letter,
-  &__title-made {
-    display: inline-block;
-  }
+
   &__spase {
     justify-content: flex-end;
+  }
+  &__title-with-passion {
+    margin-top: 16px;
   }
 }
 .container {
