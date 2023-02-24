@@ -112,7 +112,7 @@
   z-index: 60;
   width: 249px;
   height: 252px;
-  background-image: url(/images/products/img1.png);
+  background-image: url(../images/products/prod1-320-min.png);
   background-size: 249px 252px;
   background-color: transparent;
 }
@@ -125,7 +125,7 @@
   z-index: 60;
   width: 249px;
   height: 252px;
-  background-image: url(/images/products/product2.320.png);
+  background-image: url(../images/products/prod2-320-min.png);
   background-size: 249px 252px;
 }
 .product__item:nth-child(3):before {
@@ -137,7 +137,7 @@
   z-index: 60;
   width: 249px;
   height: 252px;
-  background-image: url(/images/products/product3-320.png);
+  background-image: url(../images/products/prod3-320-min.png);
   background-size: 249px 252px;
 }
 @media (min-width: 768px) {
@@ -145,6 +145,7 @@
     padding: 60px 32px;
   }
   .product {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
