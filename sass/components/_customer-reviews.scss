@@ -16,37 +16,31 @@
     margin-bottom: 16px;
     padding: 43px 50px 17px 50px;
 
-    .underline-text {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 31px;
-        color: var(--black-color);
-        text-align: center;
-        background-image: repeating-linear-gradient(to top,
-                var(--quotation-svg-color),
-                var(--quotation-svg-color) 1px,
-                var(--testimonial-card-bg) 0px,
-                var(--testimonial-card-bg) 32px);
-        text-indent: 55px;
-    }
+
 }
 
-.container-text {
+.underline-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 31px;
+    color: var(--black-color);
+    text-align: center;
+    background-image: repeating-linear-gradient(to top,
+            var(--quotation-svg-color),
+            var(--quotation-svg-color) 1px,
+            transparent 1px,
+            transparent 32px);
+    text-indent: 10px;
     position: relative;
-    display: inline-block;
-}
+    z-index: 4;
 
-.svg-container {
-    position: absolute;
-    top: -15px;
-    left: 10px;
-}
-
-.quotation-mark {
-
-    fill: var(--quotation-svg-color);
-    // display: none;
-
+    &::before {
+        content: url("../images/customer-reviews/quotes.svg");
+        position: absolute;
+        z-index: -1;
+        top: -15px;
+        left: -10px;
+    }
 }
 
 .red-dots-container {
@@ -99,5 +93,50 @@
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .customer-reviews {
+        padding-bottom: 40px;
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+
+    .customer-reviews__text-container {
+        margin-top: 20px;
+        margin-bottom: 4px;
+    }
+
+    .underline-text {
+        font-size: 14px;
+        text-indent: 37px;
+
+        &::before {
+            left: -30px;
+        }
+    }
+
+    .reviewer-name {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .customer-reviews {
+        padding: 60px 116px;
+    }
+
+    .customer-reviews__text-container {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .reviewer-name {
+        font-size: 20px;
+    }
+
+    .customer-reviews-btns {
+        margin-top: 32px;
     }
 }

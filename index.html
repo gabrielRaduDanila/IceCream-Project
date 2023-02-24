@@ -21,8 +21,9 @@
     <div class="modal is-hidden" data-modal>
       <div class="inner-modal">
         <button class="close-modal" data-modal-close>
-          <img src="./images/close-btn.svg" alt="close button" />
-          <use href="./images/icons.svg#close-btn.svg"></use>
+          <svg class="close-modal--svg">
+            <use href="./images/icons.svg#close-btn.svg"></use>
+          </svg>
         </button>
       </div>
     </div>
@@ -63,19 +64,19 @@
             </h1>
             <button class="products-button">Products</button>
             <button class="how-is-made-button">How it's made?</button>
-            <p class="bio-eco-text">
+            <p class="bio-eco-text display-none-header">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
-            <button class="button-bio-eco">
-              <a href="">
+            <div class="button-bio-eco display-none-header">
+              <a href="#">
                 <svg class="button-bio-eco--svg">
                   <use href="./images/icons.svg#icon-arrow-right"></use>
                 </svg>
               </a>
-            </button>
+            </div>
           </div>
-          <div class="hero-section--counter">
+          <div class="hero-section--counter display-none-header">
             <ul class="counter__list">
               <li class="counter__list--item">
                 <p class="counter__list--item-number">
@@ -101,7 +102,21 @@
           <li class="product__item">
             <h3 class="product__produse">ice cream</h3>
             <div class="point">
-              <div class="point__item"></div>
+              <div class="point__item">
+                <svg
+                  width="400"
+                  height="300"
+                  style="outline: 2px dashed #2a2a2a">
+                  <ellipse
+                    rx="6"
+                    ry="6"
+                    cx="6"
+                    cy="6"
+                    fill=" rgba(255, 255, 255, 1)"
+                    stroke="#2a2a2a"
+                    stroke-width="4" />
+                </svg>
+              </div>
               <div class="point__item">.</div>
               <div class="point__item">.</div>
             </div>
@@ -164,6 +179,7 @@
             ./images/about/cow501.png   501w,
             ./images/about/cow1002.png 1002w
           "
+          sizes="10vw"
           src="./images/about/cow501.png"
           alt="bioeco" />
         <div class="about__content">
@@ -326,7 +342,6 @@
 
     <section class="gallery">gallery</section>
     <!-- start testimonals section -->
-    <hr />
     <section class="customer-reviews section">
       <div class="customer-reviews__image">
         <img
@@ -334,17 +349,13 @@
             ./images/customer-reviews/testimonials1-90w-min.png   90w,
             ./images/customer-reviews/testimonials1-180w-min.png 180w
           "
+          sizes="10vw"
           src="./images/customer-reviews/testimonials1-90w-min.png"
           alt="first testmionial person image" />
       </div>
 
       <div class="customer-reviews__text-container">
         <div class="container-text">
-          <div class="svg-container">
-            <svg class="quotation-mark" width="54px" height="40px">
-              <use href="./images/icons.svg#icon-quotation-svg"></use>
-            </svg>
-          </div>
           <p class="underline-text">
             Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
             Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
@@ -368,7 +379,6 @@
         <button class="review-btn"></button>
       </div>
     </section>
-    <hr />
     <!-- end testimonals section -->
 
     <section class="section-contacts">
@@ -475,15 +485,21 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__text">
-          <div class="footer__title-first">
-            <span class="footer__title-ice-cream">homemade ice cream</span>
-            <span class="footer__title-made">made</span>
+          <div class="">
+            <h2 class="footer__title-ice-cream footer__title-first">
+              homemade ice cream
+            </h2>
+            <span class="footer__title-made footer__title-first">made</span>
           </div>
-          <div class="footer__title-second">
-            <div class="footer__title-with-passion">
-              <span class="footer__title-letter footer__spase">with</span>
-              <span class="footer__title-letter">passion</span>
-            </div>
+
+          <div class="footer__title-with-passion">
+            <span
+              class="footer__title-letter footer__spase footer__title-second"
+              >with</span
+            >
+            <span class="footer__title-letter footer__title-second"
+              >passion</span
+            >
           </div>
         </div>
         <div>
@@ -531,7 +547,7 @@
       </div>
       <div class="copyright-box">
         <p class="copyright-box__text">
-          © 2021 - IceCream. All Rights Reserved.
+          © 2022 - IceCream. All Rights Reserved.
         </p>
       </div>
     </footer>
