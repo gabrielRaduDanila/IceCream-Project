@@ -62,12 +62,14 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    border: 6px solid var(--pink-text);
     background-color: var(--pink-text);
   }
 
   &__icon:hover {
     fill: white;
     background-color: var(--red-title-text);
+    border: 6px solid var(--red-title-text);
   }
   &__link:hover {
     fill: var(--red-title-text);
