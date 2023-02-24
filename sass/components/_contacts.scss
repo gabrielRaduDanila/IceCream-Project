@@ -26,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 32px 40px;
+  padding: 40px 32px;
   gap: 20px;
   &:hover,
   :focus {
@@ -147,7 +147,7 @@
 }
 @media screen and (min-width: 768px) {
   .section-contacts__item {
-    width: 100%;
+   @include setWidthWithGap(3,32);
     height: 528px;
   }
   .section-contacts__list {
