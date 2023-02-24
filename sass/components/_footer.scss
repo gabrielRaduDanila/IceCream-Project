@@ -14,7 +14,6 @@
     font-size: 18px;
     line-height: 21px;
     color: var(--pink-text);
-
     cursor: default;
     text-align: left;
     font-family: Titan One;
@@ -32,12 +31,8 @@
     line-height: 39px;
     letter-spacing: 0.04em;
     text-align: left;
+    text-transform: uppercase;
   }
-
-  &__title-letter {
-    margin-right: -2px;
-  }
-
   &__spase {
     justify-content: flex-end;
   }
@@ -52,7 +47,7 @@
   max-width: 480px;
 }
 .social-box {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   &__links {
     display: flex;
@@ -63,17 +58,21 @@
   }
   &__icon {
     display: block;
-    fill: var(--pink-text);
+    fill: #ffffff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--pink-text);
   }
 
   &__icon:hover {
-    fill: var(--red-title-text);
+    fill: white;
+    background-color: var(--red-title-text);
   }
-  &__link:focus {
+  &__link:hover {
     fill: var(--red-title-text);
   }
 }
-
 .contact-box {
   font-weight: 700;
   text-align: right;
@@ -100,5 +99,83 @@
     max-width: 150px;
     font-size: 14px;
     line-height: 1.52;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    min-width: 768px;
+    &__container {
+      padding-bottom: 40px;
+      max-width: 768px;
+      display: flex;
+    }
+    &__text {
+      width: 340px;
+    }
+    &__title-first {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    &__title-second {
+      font-size: 48px;
+      line-height: 1.146;
+      letter-spacing: 0.06em;
+      margin-bottom: 0;
+    }
+  }
+  .social-box {
+    &__container {
+      margin-left: auto;
+      margin-top: 70px;
+    }
+  }
+  .contact-box {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__container {
+      margin-bottom: 60px;
+      max-width: 1200px;
+      padding-top: 121px;
+    }
+    &__text {
+      width: 480px;
+    }
+    &__title-desktop {
+      display: flex;
+      gap: 10px;
+    }
+    &__title-first {
+      margin-top: 0;
+
+      font-size: 30px;
+      line-height: 1.133;
+    }
+    &__title-second {
+      font-size: 58px;
+      line-height: 1.138;
+      letter-spacing: 0.06em;
+      flex-direction: row;
+    }
+    &__spase {
+      margin-right: 17px;
+    }
+  }
+  .social-box {
+    // margin-bottom: 50px;
+    // margin-right: 5px;
+    &__container {
+      margin-top: 9px;
+    }
+  }
+  .contact-box {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+  .copyright-box {
+    padding-top: 9px;
+    padding-bottom: 10px;
   }
 }
