@@ -13,10 +13,10 @@
   }
 })();
 
-function hideModal() {
-  document.getElementById('contact-modal').classList.toggle('hide-modal');
+function toggleModal(id) {
+  document.getElementById(id).classList.toggle('hide-modal');
 }
 
-function showModal() {
-  document.getElementById('contact-modal').classList.add('hide-modal');
-}
+// function showModal() {
+//   document.getElementById('contact-modal').classList.add('hide-modal');
+// }

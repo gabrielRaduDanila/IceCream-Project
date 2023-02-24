@@ -35,6 +35,7 @@
   justify-content: center;
   color: var(--pink-bg);
   cursor: pointer;
+
   &:hover {
     transform: scale(1.25);
     transition: all 0.3s linear;
@@ -42,8 +43,25 @@
   }
 }
 
+.map-modal {
+  padding: 30px 50px;
+  position: relative;
+ margin: 0 auto;
+ width: fit-content;
+  .close-map-modal {
+    position: absolute;
+    right: -20px;
+  }
+  
+}
+
+.contacts-modal {
+  padding: 30px 50px;
+}
+
 .close-icon {
   fill: var(--red-title-text);
+
   &:hover {
     fill: var(--white-color);
   }
@@ -58,6 +76,7 @@
   padding: 30px 40px;
   color: var(--red-title-text);
 }
+
 .request-form {
   font-size: 12px;
   line-height: 14px;
@@ -82,6 +101,7 @@ textarea:hover,
 .request-form label input:hover {
   border: 1px solid var(--pink-text);
 }
+
 .request-form label input {
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -96,6 +116,7 @@ input {
   height: 40px;
   margin-top: 4px;
 }
+
 textarea {
   flex-wrap: wrap;
   justify-content: center;
@@ -111,6 +132,7 @@ textarea {
   cursor: pointer;
   color: currentColor;
 }
+
 .contacts-request-btn {
   border-radius: 22px;
   border: 2px solid var(--pink-text);
@@ -130,26 +152,32 @@ textarea {
     color: var(--white-color);
   }
 }
+
 @media screen and (min-width: 480px) {
   .inner-modal {
     width: 450px;
     height: 609px;
   }
+
   input {
     width: 370px;
   }
+
   textarea {
     width: 370px;
     height: 120px;
   }
+
   @media screen and (min-width: 1200px) {
     .inner-modal {
       width: 528px;
       height: 581px;
     }
+
     input {
       width: 448px;
     }
+
     textarea {
       width: 448px;
     }
