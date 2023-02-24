@@ -12,4 +12,11 @@
       refs.modal.classList.toggle("is-hidden");
     }
   })();
-  
+
+function hideModal() {
+  document.getElementById('contact-modal').classList.remove('hide-modal');
+}
+
+function showModal() {
+  document.getElementById('contact-modal').classList.add('hide-modal');
+}

@@ -27,6 +27,7 @@
         </button>
       </div>
     </div>
+
     <header class="hero-header">
       <div class="hero-header-container">
         <div class="hero-header-nav">
@@ -371,9 +372,9 @@
       </div>
     </section>
     <!-- end testimonals section -->
-
+    <!-- Contacts section-->
     <section class="section-contacts">
-      <div class="container">
+      <div class="contacts-container">
         <h2 class="is-hidden section-contacts__title">Contact</h2>
         <ul class="section-contacts__list">
           <li class="section-contacts__item">
@@ -454,7 +455,7 @@
         </ul>
         <ul class="section-contact__btn-list">
           <li>
-            <button class="section-contact__btn first" data-modal-open-s="">
+            <button class="section-contact__btn first" onclick="hideModal ()">
               Our Locations
               <svg viewBox="-210 0 600 32" class="btn-icon">
                 <use href="./images/icons.svg#icon-contact-1"></use>
@@ -462,7 +463,11 @@
             </button>
           </li>
           <li>
-            <button class="section-contact__btn second" data-modal-open-s-fr="">
+            <button
+              data-modal-open
+              class="section-contact__btn second"
+              type="button"
+            >
               Franchise
               <svg viewBox="-120 0 520 32" class="btn-icon">
                 <use href="./images/icons.svg#icon-contact-2"></use>
@@ -472,6 +477,48 @@
         </ul>
       </div>
     </section>
+    <!-- Contacts modal-->
+    <div id="contact-modal" class="contacts-modal hide-modal">
+      <div class="contacts-modal__inner">
+        <button onclick="showModal()" class="close-contacts-modal">
+          <svg viewBox="0 0 200 100" class="close-icon">
+            <use href="./images/icons.svg#close-btn"></use>
+          </svg>
+        </button>
+        <h4 class="modal-title">Leave your details and we'll call you back</h4>
+        <form class="request-form">
+          <div class="request">
+            <label>
+              Name <br />
+              <input type="text" name="name" autofocus />
+            </label>
+          </div>
+          <div class="request">
+            <label>
+              Telephone <br />
+              <input type="tel" name="phone" />
+            </label>
+          </div>
+          <div class="request">
+            <label>
+              E-mail <br />
+              <input type="email" name="email" />
+            </label>
+          </div>
+          <div class="request">
+            <label>
+              A few words... <br />
+              <textarea
+                name="comments"
+                rows="5"
+                placeholder="Write here..."
+              ></textarea>
+            </label>
+          </div>
+          <button type="submit" class="contacts-request-btn">Send</button>
+        </form>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="container footer__container">
@@ -500,7 +547,9 @@
                 <a
                   href="https://github.com/"
                   target="_blank"
+
                   class="social-box__link">
+
                   <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-telegram"></use>
                   </svg>
@@ -510,6 +559,7 @@
                 <a
                   href="https://telegram.org/"
                   target="_blank"
+
                   class="social-box__link">
                   <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-gitHub"></use>
@@ -520,7 +570,9 @@
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
+
                   class="social-box__link">
+
                   <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
