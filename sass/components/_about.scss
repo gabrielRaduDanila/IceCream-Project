@@ -1,17 +1,27 @@
 .about {
-  display: flex;
+  margin: 0 auto;
   background-color: var(--light-pink-bg);
+  padding: 60px 20px 0 20px;
+  border: 2px solid green;
   background-image: url("../../images/about/milk320.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 70% 80%;
-
-  border: 2px solid red;
+  background-size: 95%;
+  background-position: 70% 90%;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about {
+      background-image: url("../../images/about/milk320@2x.png");
+    }
+  }
   &__inner {
-    border: 2px solid green;
-    flex-basis: 480px;
-    margin: 0 auto;
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 2px solid red;
+    margin-top: 32px;
+    margin-bottom: 40px;
   }
   &__label {
     color: var(--pink-text);
@@ -21,8 +31,9 @@
     line-height: 1.16;
     text-align: center;
     font-family: "Titan One";
+    margin-bottom: 15px;
   }
-  
+
   &__title {
     color: var(--red-title-text);
     font-weight: 400;
@@ -32,15 +43,131 @@
     text-transform: uppercase;
     text-align: center;
     font-family: "Titan One";
+    margin: 0 auto;
+    padding: 0 36px 0 44px;
+  }
+  &__image-container {
+    border: 2px solid yellow;
+    max-width: 501px;
   }
   &__image {
     display: block;
     width: 100%;
+    height: auto;
+  }
+  &__content {
+    border: 2px solid orange;
+  }
+
+  &__text-abstract {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.76;
+    color: var(--black-color);
+    margin-bottom: 26px;
+  }
+  &__text,
+  &__text-extra {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.76;
+    color: var(--light-brown-text);
+  }
+  &__text-extra {
+    margin-bottom: 20px;
+    margin-top: 17px;
   }
   &__button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
     width: 176px;
     height: 44px;
     border-radius: 22px;
     border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 13.62px;
+    background-color: var(--white-color);
+    color: var(--red-title-text);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-right: 34px;
+    padding-left: 32px;
+    background-image: none;
+    &__title {
+      font-size: 48px;
+    }
+    &__label {
+      font-size: 26px;
+    }
+    &__inner {
+      flex-direction: row;
+      background-image: none;
+      gap: 32px;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+    &__image-container {
+      flex-basis: 50%;
+    }
+    &__content {
+      flex-basis: 50%;
+    }
+    &__text-abstract,
+    &__text,
+    &__text-extra {
+      font-size: 14px;
+    }
+    &__text-extra {
+      margin-bottom: 40px;
+    }
+    &__button {
+      font-size: 16px;
+      line-height: 1.31;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    padding-left: 16px;
+    background-image: url("../../images/about/milk1280.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .about {
+        background-image: url("../../images/about/milk1280@2x.png");
+      }
+    }
+    &__inner {
+      gap: 99px;
+    }
+    &__content {
+      padding-top: 90px;
+    }
+
+    &__title {
+      font-size: 58px;
+      line-height: 1.13;
+    }
+    &__label {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+    &__text,
+    &__text-extra {
+      line-height: 1.94;
+    }
+    &__text-abstract {
+      font-size: 16px;
+    }
   }
 }
