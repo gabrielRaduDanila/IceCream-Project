@@ -488,7 +488,7 @@
         </ul>
         <ul class="section-contact__btn-list">
           <li>
-            <button class="section-contact__btn first" data-modal-open-s="">
+            <button class="section-contact__btn first" onclick="hideModal ()">
               Our Locations
               <svg viewBox="-210 0 600 32" class="btn-icon">
                 <use href="./images/icons.svg#icon-contact-1"></use>
@@ -511,9 +511,9 @@
       </div>
     </section>
     <!-- Contacts modal-->
-    <div data-modal class="contacts-modal">
+    <div id="contact-modal" class="contacts-modal hide-modal">
       <div class="contacts-modal__inner">
-        <button data-modal-close class="close-contacts-modal">
+        <button onclick="showModal()" class="close-contacts-modal">
           <svg viewBox="0 0 200 100" class="close-icon">
             <use href="./images/icons.svg#close-btn"></use>
           </svg>

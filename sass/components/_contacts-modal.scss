@@ -1,9 +1,11 @@
-/*.is-hidden {
+.hide-modal {
+  display: none;
   visibility: hidden;
   pointer-events: none;
   transform: scale(0.1);
   opacity: 0;
-}*/
+}
+
 .modal {
   position: fixed;
   width: 100%;
