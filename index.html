@@ -29,6 +29,7 @@
         </button>
       </div>
     </div>
+
     <header class="hero-header">
       <div class="hero-header-container">
         <div class="hero-header-nav">
@@ -235,6 +236,7 @@
         </ul>
       </div>
     </section>
+
     <!-- start gallery section -->
     <section class="gallery">
       <div class="gallery-container">
@@ -403,9 +405,9 @@
       </div>
     </section>
     <!-- end testimonals section -->
-
+    <!-- Contacts section-->
     <section class="section-contacts">
-      <div class="container">
+      <div class="contacts-container">
         <h2 class="is-hidden section-contacts__title">Contact</h2>
         <ul class="section-contacts__list">
           <li class="section-contacts__item">
@@ -494,7 +496,11 @@
             </button>
           </li>
           <li>
-            <button class="section-contact__btn second" data-modal-open-s-fr="">
+            <button
+              data-modal-open
+              class="section-contact__btn second"
+              type="button"
+            >
               Franchise
               <svg viewBox="-120 0 520 32" class="btn-icon">
                 <use href="./images/icons.svg#icon-contact-2"></use>
@@ -504,6 +510,48 @@
         </ul>
       </div>
     </section>
+    <!-- Contacts modal-->
+    <div data-modal class="contacts-modal">
+      <div class="contacts-modal__inner">
+        <button data-modal-close class="close-contacts-modal">
+          <svg viewBox="0 0 200 100" class="close-icon">
+            <use href="./images/icons.svg#close-btn"></use>
+          </svg>
+        </button>
+        <h4 class="modal-title">Leave your details and we'll call you back</h4>
+        <form class="request-form">
+          <div class="request">
+            <label>
+              Name <br />
+              <input type="text" name="name" autofocus />
+            </label>
+          </div>
+          <div class="request">
+            <label>
+              Telephone <br />
+              <input type="tel" name="phone" />
+            </label>
+          </div>
+          <div class="request">
+            <label>
+              E-mail <br />
+              <input type="email" name="email" />
+            </label>
+          </div>
+          <div class="request">
+            <label>
+              A few words... <br />
+              <textarea
+                name="comments"
+                rows="5"
+                placeholder="Write here..."
+              ></textarea>
+            </label>
+          </div>
+          <button type="submit" class="contacts-request-btn">Send</button>
+        </form>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="container footer__container">
@@ -534,8 +582,8 @@
                   target="_blank"
                   class="social-box__link"
                 >
-                  <svg class="social-box__icon">
-                    <use href="./images/icons.svg#icon-gitHub"></use>
+                  <svg width="32" height="32" class="social-box__icon">
+                    <use href="./images/icons.svg#icon-telegram"></use>
                   </svg>
                 </a>
               </li>
@@ -545,7 +593,7 @@
                   target="_blank"
                   class="social-box__link"
                 >
-                  <svg class="social-box__icon">
+                  <svg class="social-box__icon" width="32px" height="32px">
                     <use href="./images/icons.svg#icon-telegram"></use>
                   </svg>
                 </a>
@@ -556,7 +604,7 @@
                   target="_blank"
                   class="social-box__link"
                 >
-                  <svg class="social-box__icon">
+                  <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
