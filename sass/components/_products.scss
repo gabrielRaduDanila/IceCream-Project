@@ -1,9 +1,17 @@
 .products-section {
   max-width: 100%;
   padding: 60px 20px;
-  background-color: var(--product-section-bg);
+  background: rgb(229, 229, 229);
+  background: linear-gradient(
+    90deg,
+    rgba(229, 229, 229, 1) 0%,
+    rgba(182, 240, 165, 1) 41%,
+    rgba(255, 251, 165, 0.5440301120448179) 100%
+  );
+
   display: flex;
   justify-content: center;
+
   &__container {
     max-width: 100%;
     display: flex;
@@ -44,10 +52,24 @@
     flex-direction: column;
     padding: 40px;
     margin: 0 auto;
-
     border-radius: 24px;
     background-color: var(--pink-text);
     text-align: center;
+    position: relative;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: inset -3px 6px 22px 15px rgba(108, 127, 166, 1);
+      background: rgb(255, 165, 186);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 165, 186, 1) 0%,
+        rgba(236, 61, 226, 1) 41%,
+        rgba(165, 180, 255, 1) 100%
+      );
+    }
+    &:hover .product__information {
+      font-size: 16px;
+    }
   }
   .product__produse {
     font-family: "Titan One";
@@ -67,8 +89,9 @@
     justify-content: center;
 
     &__item {
-      width: 6px;
-      height: 6px;
+      width: 25px;
+      height: 25px;
+
       border-radius: 50%;
       color: aliceblue;
     }
@@ -92,6 +115,19 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  fill: currentColor;
+  &:hover {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(81, 194, 212, 1) 52%
+    );
+  }
+  &:hover .svg-arow {
+    transform: rotate(-90deg);
+    transition: 0.4s;
+  }
 }
 .svg-arow {
   display: flex;
@@ -100,6 +136,10 @@
   height: 15px;
   width: 30px;
   fill: var(--red-title-text);
+  &:hover {
+    transform: rotate(-90deg);
+    transition: 0.7s;
+  }
 }
 
 .product__item:first-child:before {
@@ -141,9 +181,15 @@
 }
 .product__item:nth-child(2) {
   background-color: rgba(240, 209, 165, 1);
+  &:hover {
+    background-color: rgb(240, 182, 102);
+  }
 }
 .product__item:nth-child(3) {
   background-color: rgba(194, 226, 151, 1);
+  &:hover {
+    background-color: rgb(120, 181, 40);
+  }
 }
 @media (min-width: 768px) {
   .products-section {
@@ -235,7 +281,7 @@
     z-index: 60;
     width: 249px;
     height: 252px;
-    background-image: url(/images/products/prod2-768-min.png);
+    background-image: url(../images/products/prod2-768-min.png);
     background-size: 249px 252px;
   }
   .product__item:nth-child(3):before {
@@ -247,7 +293,7 @@
     z-index: 60;
     width: 249px;
     height: 252px;
-    background-image: url(/images/products/prod3-1280-min.png);
+    background-image: url(../images/products/prod3-1280-min.png);
     background-size: 249px 252px;
   }
 }
