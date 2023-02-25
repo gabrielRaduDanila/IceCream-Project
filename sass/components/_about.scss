@@ -30,6 +30,10 @@
     text-align: center;
     font-family: "Titan One";
     margin-bottom: 15px;
+    transition: letter-spacing 2s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      letter-spacing: 25px;
+    }
   }
 
   &__title {
@@ -43,6 +47,10 @@
     font-family: "Titan One";
     margin: 0 auto;
     padding: 0 36px 0 44px;
+    transition: letter-spacing 2s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      letter-spacing: 30px;
+    }
   }
   &__image-container {
     max-width: 501px;
@@ -51,6 +59,7 @@
     display: block;
     width: 100%;
     height: auto;
+    animation: animateCow45 linear 5000ms infinite;
   }
 
   &__text-abstract {
@@ -85,6 +94,11 @@
     gap: 13.62px;
     background-color: var(--white-color);
     color: var(--red-title-text);
+    transition: background-color font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: var(--product-section-bg);
+      font-size: 16px;
+    }
   }
 }
 
@@ -123,6 +137,9 @@
     &__button {
       font-size: 16px;
       line-height: 1.31;
+      &:hover {
+        font-size: 18px;
+      }
     }
   }
 }
@@ -163,5 +180,18 @@
     &__text-abstract {
       font-size: 16px;
     }
+  }
+}
+@keyframes animateCow45 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }
