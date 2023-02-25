@@ -1,56 +1,54 @@
 :root {
-    // colors for backgrounds
-    --pink-bg: #FFB8CA;
-    --light-pink-bg: #FFF5F6;
-    --product-section-bg: #E5E5E5;
-    --how-it-is-made-bg:#FFF5F6;
-    --testimonial-card-bg:#FAFAFA;
-    --brown-bg: #F0D1A5;
-    --light-green:#C2E297;
+  // colors for backgrounds
+  --pink-bg: #ffb8ca;
+  --light-pink-bg: #fff5f6;
+  --product-section-bg: #e5e5e5;
+  --how-it-is-made-bg: #fff5f6;
+  --testimonial-card-bg: #fafafa;
+  --brown-bg: #f0d1a5;
+  --light-green: #c2e297;
+  $gap: 10px;
+  // text colors
+  --red-title-text: rgba(212, 20, 67, 1);
+  --pink-text: #ffa5ba;
+  --light-brown-text: #907e82;
 
-    // text colors
-    --red-title-text: rgba(212, 20, 67, 1);
-    --pink-text: #FFA5BA;
-    --light-brown-text:#907E82;
+  // objects color
+  --quotation-svg-color: #e1e1e1;
+  --red-dot-color: #c7133e;
+  --red-svg-home: #d31342;
+  --testimonials-btn-color: #d9d9d9;
 
-    // objects color
-    --quotation-svg-color: #E1E1E1;
-    --red-dot-color:#C7133E;
-    --red-svg-home:#D31342;
-    --testimonials-btn-color: #D9D9D9;
-    
-
-    // general colors
-    --white-color: rgba(255, 255, 255, 1);
-    --black-color:#000000;
-
+  // general colors
+  --white-color: rgba(255, 255, 255, 1);
+  --black-color: #000000;
 }
 
 @mixin setWidth($nrItems) {
-    $nrGap: $nrItems - 1;
-    $totalGap: $nrGap * 30;
-    flex-basis: calc((100% - #{$totalGap}px) / #{$nrItems});
+  $nrGap: $nrItems - 1;
+  $totalGap: $nrGap * 30;
+  flex-basis: calc((100% - #{$totalGap}px) / #{$nrItems});
 }
 
 @mixin bordered($color) {
-    border: 1px solid $color;
+  border: 1px solid $color;
 }
 
 @mixin displayFlex($flexDirection) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: $flexDirection;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $flexDirection;
 }
 
-@mixin setWidthWithGap($nrItems,$gap) {
-    $nrGap: $nrItems - 1;
-    $totalGap: $nrGap * $gap;
-    width: calc((100vw - #{$totalGap}px) / #{$nrItems});
+@mixin setWidthWithGap($nrItems, $gap) {
+  $nrGap: $nrItems - 1;
+  $totalGap: $nrGap * $gap;
+  width: calc((100vw - #{$totalGap}px) / #{$nrItems});
 }
 
-@mixin doubleSetWidthWithGap($nrItems, $gap) {
-    $nrGap: $nrItems - 1;
-    $totalGap: $nrGap * $gap;
-    width: calc((100vw - #{$totalGap}px) / #{$nrItems}*2);
-}
+// @mixin doubleSetWidthWithGap($nrItems, $gap) {
+//   $nrGap: $nrItems - 1;
+//   $totalGap: $nrGap * $gap;
+//   width: calc((100vw - #{$totalGap}px) / #{$nrItems}* 2);
+// }

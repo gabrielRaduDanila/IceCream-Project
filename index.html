@@ -7,28 +7,25 @@
     <title>IceCream</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-
+      href="node_modules/modern-normalize/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-
   <body>
     <div class="modal is-hidden" data-modal>
       <div class="inner-modal">
         <button class="close-modal" data-modal-close>
-          <img src="./images/close-btn.svg" alt="close button" />
-          <use href="./images/icons.svg#close-btn.svg"></use>
+          <svg class="close-modal--svg">
+            <use href="./images/icons.svg#close-btn.svg"></use>
+          </svg>
         </button>
       </div>
     </div>
+    ​
     <header class="hero-header">
       <div class="hero-header-container">
         <div class="hero-header-nav">
@@ -66,25 +63,29 @@
             </h1>
             <button class="products-button">Products</button>
             <button class="how-is-made-button">How it's made?</button>
-            <p>
+            <p class="bio-eco-text display-none-header">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
-            <button class="button-bio-eco">
-              <a href="">
+            <div class="button-bio-eco display-none-header">
+              <a href="#">
                 <svg class="button-bio-eco--svg">
                   <use href="./images/icons.svg#icon-arrow-right"></use>
                 </svg>
               </a>
-            </button>
+            </div>
           </div>
-          <div class="hero-section--counter">
+          <div class="hero-section--counter display-none-header">
             <ul class="counter__list">
               <li class="counter__list--item">
-                <p>16<span class="counter__list--type">cafes</span></p>
+                <p class="counter__list--item-number">
+                  16<span class="counter__list--item-type">cafes</span>
+                </p>
               </li>
               <li class="counter__list--item">
-                <p>23<span class="counter__list--type">food trucks</span></p>
+                <p class="counter__list--item-number">
+                  23<span class="counter__list--item-type">food trucks</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -154,20 +155,18 @@
       </section>
 
       <section class="about">
-        <p class="about__label">tradition and love</p>
-        <h2 class="about__title">how it's made?</h2>
         <div class="about__inner">
-          <div class="about__image-container">
-            <img
-              class="about__image"
-              srcset="
-                ./images/about/cow501.png  1x,
-                ./images/about/cow1002.png 2x
-              "
-              src="./images/about/cow501.png"
-              alt="bioeco"
-            />
-          </div>
+          <p class="about__label">tradition and love</p>
+          <h2 class="about__title">how it's made?</h2>
+          <img
+            class="about__image"
+            srcset="
+              ./images/about/cow501.png   501w,
+              ./images/about/cow1002.png 1002w
+            "
+            src="./images/about/cow501.png"
+            alt="bioeco"
+          />
           <div class="about__content">
             <p class="about__text-abstract">
               Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
@@ -180,13 +179,11 @@
               euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
               Cras massa nibh, tincidunt.
             </p>
-            <p class="about__text-extra">
-              Aliquam erat volutpat. Aenean accumsan.
-            </p>
+            <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
             <button class="about__button" type="button">
               Read more
               <svg class="about__icon" width="4.43" height="8">
-                <use href="./images/icons.svg#icon-greater-than-head"></use>
+                <use href="./images/icons.svg#icon-greater-than-sign"></use>
               </svg>
             </button>
           </div>
@@ -194,7 +191,7 @@
       </section>
 
       <section class="advantages">
-        <div class="advantages__inner">
+        <div class="advatages__inner">
           <h2 class="hidden-items">Advantages</h2>
           <ul class="advantages-list">
             <li class="advantages-list__item advantages-list__item--first">
@@ -219,301 +216,349 @@
         </div>
       </section>
 
-      <!-- start gallery section -->
-      <section class="gallery">
-        <div class="gallery-container">
-          <div>
-            <img
-              srcset="
-                ./images/gallery/gallery-1-50w.png   50w,
-                ./images/gallery/gallery-1-140w.png 140w,
-                ./images/gallery/gallery-1-280w.png 280w
-              "
-              src="./images/gallery/gallery-1-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-          </div>
-          <div>
-            <img
-              srcset="
-                ./images/gallery/gallery-2-50w.png   50w,
-                ./images/gallery/gallery-2-140w.png 140w,
-                ./images/gallery/gallery-2-280w.png 280w
-              "
-              src="./images/gallery/gallery-2-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-            <img
-              srcset="
-                ./images/gallery/gallery-3-50w.png   50w,
-                ./images/gallery/gallery-3-140w.png 140w,
-                ./images/gallery/gallery-3-280w.png 280w
-              "
-              src="./images/gallery/gallery-3-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-          </div>
-          <div class="double-div">
-            <img
-              srcset="
-                ./images/gallery/gallery-4-90w.png   90w,
-                ./images/gallery/gallery-4-290w.png 290w,
-                ./images/gallery/gallery-4-580w.png 580w
-              "
-              src="./images/gallery/gallery-4-90w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-            <img
-              srcset="
-                ./images/gallery/gallery-5-50w.png   50w,
-                ./images/gallery/gallery-5-140w.png 140w,
-                ./images/gallery/gallery-5-280w.png 280w
-              "
-              src="./images/gallery/gallery-5-50w.png"
-              alt="an gallery image"
-              class="gallery-image-double_size"
-            />
-          </div>
-          <div>
-            <img
-              srcset="
-                ./images/gallery/gallery-6-50w.png   50w,
-                ./images/gallery/gallery-6-140w.png 140w,
-                ./images/gallery/gallery-6-280w.png 280w
-              "
-              src="./images/gallery/gallery-6-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-            <img
-              srcset="
-                ./images/gallery/gallery-7-50w.png   50w,
-                ./images/gallery/gallery-7-140w.png 140w,
-                ./images/gallery/gallery-7-280w.png 280w
-              "
-              src="./images/gallery/gallery-7-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-          </div>
-          <div>
-            <img
-              srcset="
-                ./images/gallery/gallery-8-50w.png   50w,
-                ./images/gallery/gallery-8-140w.png 140w,
-                ./images/gallery/gallery-8-280w.png 280w
-              "
-              src="./images/gallery/gallery-8-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-            <img
-              srcset="
-                ./images/gallery/gallery-9-50w.png   50w,
-                ./images/gallery/gallery-9-140w.png 140w,
-                ./images/gallery/gallery-9-280w.png 280w
-              "
-              src="./images/gallery/gallery-9-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-          </div>
-          <div>
-            <img
-              srcset="
-                ./images/gallery/gallery-10-50w.png   50w,
-                ./images/gallery/gallery-10-140w.png 140w,
-                ./images/gallery/gallery-10-280w.png 280w
-              "
-              src="./images/gallery/gallery-10-50w.png"
-              alt="an gallery image"
-              class="gallery-image"
-            />
-          </div>
-        </div>
-      </section>
-      <!-- end gallery section -->
-
-      <!-- start testimonals section -->
-      <section class="customer-reviews section">
-        <div class="customer-reviews__image">
+    <!-- start gallery section -->
+    <section class="gallery">
+      <div class="gallery-container">
+        <div>
           <img
             srcset="
-              ./images/customer-reviews/testimonials1-90w-min.png   90w,
-              ./images/customer-reviews/testimonials1-180w-min.png 180w
+              ./images/gallery/gallery-1-50w.png   50w,
+              ./images/gallery/gallery-1-140w.png 140w,
+              ./images/gallery/gallery-1-280w.png 280w
             "
-            src="./images/customer-reviews/testimonials1-90w-min.png"
-            alt="first testmionial person image"
-          />
+            sizes="10vw"
+            src="./images/gallery/gallery-1-50w.png"
+            alt="an gallery image"
+            class="gallery-image" />
         </div>
+        <div>
+          <img
+            srcset="
+              ./images/gallery/gallery-2-50w.png   50w,
+              ./images/gallery/gallery-2-140w.png 140w,
+              ./images/gallery/gallery-2-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-2-50w.png"
+            alt="an gallery image"
+            class="gallery-image" />
+          <img
+            srcset="
+              ./images/gallery/gallery-3-50w.png   50w,
+              ./images/gallery/gallery-3-140w.png 140w,
+              ./images/gallery/gallery-3-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-3-50w.png"
+            alt="an gallery image"
+            class="gallery-image" />
+        </div>
+        <div class="double-div">
+          <img
+            srcset="
+              ./images/gallery/gallery-4-90w.png   90w,
+              ./images/gallery/gallery-4-290w.png 290w,
+              ./images/gallery/gallery-4-580w.png 580w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-4-90w.png"
+            alt="an gallery image"
+            class="gallery-image" />
+          <img
+            srcset="
+              ./images/gallery/gallery-5-50w.png   50w,
+              ./images/gallery/gallery-5-140w.png 140w,
+              ./images/gallery/gallery-5-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-5-50w.png"
+            alt="an gallery image"
+            class="gallery-image-double_size" />
+        </div>
+        <div>
+          <img
+            srcset="
+              ./images/gallery/gallery-6-50w.png   50w,
+              ./images/gallery/gallery-6-140w.png 140w,
+              ./images/gallery/gallery-6-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-6-50w.png"
+            alt="an gallery image"
+            class="gallery-image" />
+          <img
+            srcset="
+              ./images/gallery/gallery-7-50w.png   50w,
+              ./images/gallery/gallery-7-140w.png 140w,
+              ./images/gallery/gallery-7-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-7-50w.png"
+            alt="an gallery image"
+            class="gallery-image" />
+        </div>
+        <div>
+          <img
+            srcset="
+              ./images/gallery/gallery-8-50w.png   50w,
+              ./images/gallery/gallery-8-140w.png 140w,
+              ./images/gallery/gallery-8-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-8-50w.png"
+            alt="an gallery image"
+            class="gallery-image" />
+          <img
+            srcset="
+              ./images/gallery/gallery-9-50w.png   50w,
+              ./images/gallery/gallery-9-140w.png 140w,
+              ./images/gallery/gallery-9-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-9-50w.png"
+            alt="an gallery image"
+            class="gallery-image" />
+        </div>
+        <div>
+          <img
+            srcset="
+              ./images/gallery/gallery-10-50w.png   50w,
+              ./images/gallery/gallery-10-140w.png 140w,
+              ./images/gallery/gallery-10-280w.png 280w
+            "
+            sizes="10vw"
+            src="./images/gallery/gallery-10-50w.png"
+            alt="an gallery image"
+            class="gallery-image" />
+        </div>
+      </div>
+    </section>
+    <!-- end gallery section -->
+    <!-- start testimonals section -->
+    <section class="customer-reviews section">
+      <div class="customer-reviews__image">
+        <img
+          srcset="
+            ./images/customer-reviews/testimonials1-90w-min.png   90w,
+            ./images/customer-reviews/testimonials1-180w-min.png 180w
+          "
+          sizes="10vw"
+          src="./images/customer-reviews/testimonials1-90w-min.png"
+          alt="first testmionial person image" />
+      </div>
 
-        <div class="customer-reviews__text-container">
-          <div class="container-text">
-            <div class="svg-container">
-              <svg class="quotation-mark" width="54px" height="40px">
-                <use href="./images/icons.svg#icon-quotation-svg"></use>
-              </svg>
+      <div class="customer-reviews__text-container">
+        <div class="container-text">
+          <p class="underline-text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+        </div>
+      </div>
+
+      <div class="red-dots-container">
+        <div class="red-dot"></div>
+        <div class="red-dot"></div>
+        <div class="red-dot"></div>
+      </div>
+      <p class="reviewer-name">Emily, Los Angeles</p>
+      <div class="customer-reviews-btns">
+        <button class="review-btn btn-selected"></button>
+        <svg class="review-btn__selected" width="12px" height="12px">
+          <use href="./images/icons.svg#icon-house-svg"></use>
+        </svg>
+        <button class="review-btn"></button>
+        <button class="review-btn"></button>
+      </div>
+    </section>
+    <!-- end testimonals section -->
+    <!-- Contacts section-->
+    <section class="section-contacts">
+      <div class="contacts-container">
+        <h2 class="is-hidden section-contacts__title">Contact</h2>
+        <ul class="section-contacts__list">
+          <li class="section-contacts__item">
+            <div>
+              <p class="section-contacts__store one">CAFE</p>
+              <h3 class="section-contacts__subtitle">Chicago</h3>
+              <p class="section-contacts__text">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
             </div>
-            <p class="underline-text">
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-              ipsum primis in nibh vel risus.
-            </p>
-          </div>
-        </div>
-
-        <div class="red-dots-container">
-          <div class="red-dot"></div>
-          <div class="red-dot"></div>
-          <div class="red-dot"></div>
-        </div>
-        <p class="reviewer-name">Emily, Los Angeles</p>
-        <div class="customer-reviews-btns">
-          <button class="review-btn btn-selected"></button>
-          <svg class="review-btn__selected" width="12px" height="12px">
-            <use href="./images/icons.svg#icon-house-svg"></use>
+            <div class="section-contacts__schedule">
+              <h3 class="section-contacts__subtitle">Monday - Friday</h3>
+              <p class="section-contacts__time">06:00 AM - 10:00 PM</p>
+              <h3 class="section-contacts__subtitle">Saturday - Sunday</h3>
+              <p class="section-contacts__time">08:00 AM - 16:00 PM</p>
+            </div>
+            <div>
+              <a href="tel:+61038766284" class="section-contacts__contact"
+                >+61(0) 383 766 284</a
+              >
+              <a
+                href="mailto:noreply@envato.com"
+                class="section-contacts__contact"
+                >noreply@envato.com</a
+              >
+            </div>
+          </li>
+          <li class="section-contacts__item">
+            <div>
+              <p class="section-contacts__store two">FOOD TRUCK</p>
+              <h3 class="section-contacts__subtitle">Los Angeles</h3>
+              <p class="section-contacts__text">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+            </div>
+            <div class="section-contacts__schedule">
+              <h3 class="section-contacts__subtitle">Monday - Friday</h3>
+              <p class="section-contacts__time">06:00 AM - 10:00 PM</p>
+              <h3 class="section-contacts__subtitle">Saturday - Sunday</h3>
+              <p class="section-contacts__time">08:00 AM - 16:00 PM</p>
+            </div>
+            <div>
+              <a href="tel:+61038766284" class="section-contacts__contact"
+                >+61(0) 383 766 284</a
+              >
+              <a
+                href="mailto:noreply@envato.com"
+                class="section-contacts__contact"
+                >noreply@envato.com</a
+              >
+            </div>
+          </li>
+          <li class="section-contacts__item">
+            <div>
+              <p class="section-contacts__store one">CAFE</p>
+              <h3 class="section-contacts__subtitle">New York</h3>
+              <p class="section-contacts__text">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+            </div>
+            <div class="section-contacts__schedule">
+              <h3 class="section-contacts__subtitle">Monday - Friday</h3>
+              <p class="section-contacts__time">06:00 AM - 10:00 PM</p>
+              <h3 class="section-contacts__subtitle">Saturday - Sunday</h3>
+              <p class="section-contacts__time">08:00 AM - 16:00 PM</p>
+            </div>
+            <div>
+              <a href="tel:+61038766284" class="section-contacts__contact"
+                >+61(0) 383 766 284</a
+              >
+              <a
+                href="mailto:noreply@envato.com"
+                class="section-contacts__contact"
+                >noreply@envato.com</a
+              >
+            </div>
+          </li>
+        </ul>
+        <ul class="section-contact__btn-list">
+          <li>
+            <button class="section-contact__btn first" onclick="toggleModal('map-modal')">
+              Our Locations
+              <svg viewBox="-210 0 600 32" class="btn-icon">
+                <use href="./images/icons.svg#icon-contact-1"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="toggleModal('contact-modal')"
+              class="section-contact__btn second"
+              type="button">
+              Franchise
+              <svg viewBox="-120 0 520 32" class="btn-icon">
+                <use href="./images/icons.svg#icon-contact-2"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Contacts modal-->
+    <div id="contact-modal" class="contacts-modal hide-modal">
+      <div class="contacts-modal__inner">
+        <button onclick="toggleModal('contact-modal')" class="close-contacts-modal">
+          <svg viewBox="0 0 200 100" class="close-icon">
+            <use href="./images/icons.svg#close-btn"></use>
           </svg>
-          <button class="review-btn"></button>
-          <button class="review-btn"></button>
-        </div>
-      </section>
-      <hr />
-      <!-- end testimonals section -->
+        </button>
+        <h4 class="modal-title">Leave your details and we'll call you back</h4>
+        <form class="request-form">
+          <div class="request">
+            <label>
+              Name <br />
+              <input type="text" name="name" autofocus />
+            </label>
+          </div>
+          <div class="request">
+            <label>
+              Telephone <br />
+              <input type="tel" name="phone" />
+            </label>
+          </div>
+          <div class="request">
+            <label>
+              E-mail <br />
+              <input type="email" name="email" />
+            </label>
+          </div>
+          <div class="request">
+            <label>
+              A few words... <br />
+              <textarea
+                name="comments"
+                rows="5"
+                placeholder="Write here..."></textarea>
+            </label>
+          </div>
+          <button type="submit" class="contacts-request-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <!--start map modal -->
+<div class="hide-modal contacts-modal" id="map-modal">
+    <button onclick="toggleModal('map-modal')" class="close-map-modal">
+          <svg viewBox="0 0 200 100" class="close-icon">
+            <use href="./images/icons.svg#close-btn"></use>
+          </svg>
+        </button>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8943525800255!2d-79.10221758529742!3d40.74235014369647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cb5f2b2b71a7df%3A0x4b9af54b23f565ad!2sHome%20Made%20Ice%20Cream%20Co!5e0!3m2!1sro!2sro!4v1677281683371!5m2!1sro!2sro" style="border:0; " allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    <!-- end map modal -->
 
-      <section class="section-contacts">
-        <div class="container">
-          <h2 class="is-hidden section-contacts__title">Contact</h2>
-          <ul class="section-contacts__list">
-            <li class="section-contacts__item">
-              <div>
-                <p class="section-contacts__store one">CAFE</p>
-                <h3 class="section-contacts__subtitle">Chicago</h3>
-                <p class="section-contacts__text">
-                  Fusce ut velit laoreet, tempus arcu molestie vulputate
-                </p>
-              </div>
-              <div class="section-contacts__schedule">
-                <h3 class="section-contacts__subtitle">Monday - Friday</h3>
-                <p class="section-contacts__time">06:00 AM - 10:00 PM</p>
-                <h3 class="section-contacts__subtitle">Saturday - Sunday</h3>
-                <p class="section-contacts__time">08:00 AM - 16:00 PM</p>
-              </div>
-              <div>
-                <a href="tel:+61038766284" class="section-contacts__contact"
-                  >+61(0) 383 766 284</a
-                >
-                <a
-                  href="mailto:noreply@envato.com"
-                  class="section-contacts__contact"
-                  >noreply@envato.com</a
-                >
-              </div>
-            </li>
-            <li class="section-contacts__item">
-              <div>
-                <p class="section-contacts__store two">FOODTRUCK</p>
-                <h3 class="section-contacts__subtitle">Los Angeles</h3>
-                <p class="section-contacts__text">
-                  Fusce ut velit laoreet, tempus arcu molestie vulputate
-                </p>
-              </div>
-              <div class="section-contacts__schedule">
-                <h3 class="section-contacts__subtitle">Monday - Friday</h3>
-                <p class="section-contacts__time">06:00 AM - 10:00 PM</p>
-                <h3 class="section-contacts__subtitle">Saturday - Sunday</h3>
-                <p class="section-contacts__time">08:00 AM - 16:00 PM</p>
-              </div>
-              <div>
-                <a href="tel:+61038766284" class="section-contacts__contact"
-                  >+61(0) 383 766 284</a
-                >
-                <a
-                  href="mailto:noreply@envato.com"
-                  class="section-contacts__contact"
-                  >noreply@envato.com</a
-                >
-              </div>
-            </li>
-            <li class="section-contacts__item">
-              <div>
-                <p class="section-contacts__store one">CAFE</p>
-                <h3 class="section-contacts__subtitle">New York</h3>
-                <p class="section-contacts__text">
-                  Fusce ut velit laoreet, tempus arcu molestie vulputate
-                </p>
-              </div>
-              <div class="section-contacts__schedule">
-                <h3 class="section-contacts__subtitle">Monday - Friday</h3>
-                <p class="section-contacts__time">06:00 AM - 10:00 PM</p>
-                <h3 class="section-contacts__subtitle">Saturday - Sunday</h3>
-                <p class="section-contacts__time">08:00 AM - 16:00 PM</p>
-              </div>
-              <div>
-                <a href="tel:+61038766284" class="section-contacts__contact"
-                  >+61(0) 383 766 284</a
-                >
-                <a
-                  href="mailto:noreply@envato.com"
-                  class="section-contacts__contact"
-                  >noreply@envato.com</a
-                >
-              </div>
-            </li>
-          </ul>
-          <ul class="section-contact__btn-list">
-            <li>
-              <button class="section-contact__btn one" data-modal-open-s="">
-                Our Locations
-                <svg class="btn-icon one">
-                  <use href="#"></use>
-                </svg>
-              </button>
-            </li>
-            <li>
-              <button class="section-contact__btn two" data-modal-open-s-fr="">
-                Franchise
-                <svg class="btn-icon two">
-                  <use href="#"></use>
-                </svg>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__text">
-          <div class="footer__title-first">
-            <span class="footer__title-ice-cream">homemade ice cream</span>
-            <span class="footer__title-made">made</span>
+          <div class="footer__title-desktop">
+            <h2 class="footer__title-ice-cream footer__title-first">
+              homemade ice cream
+            </h2>
+            <span class="footer__title-made footer__title-first">made</span>
           </div>
-          <div class="footer__title-second">
-            <div class="footer__title-with-passion">
-              <span class="footer__title-letter footer__spase">with</span>
-              <span class="footer__title-letter">passion</span>
-            </div>
+
+          <div class="footer__title-with-passion footer__title-desktop">
+            <span
+              class="footer__title-letter footer__spase footer__title-second"
+              >with</span
+            >
+            <span class="footer__title-letter footer__title-second"
+              >passion</span
+            >
           </div>
         </div>
-        <div>
+        <div class="social-box__container">
           <div class="social-box">
             <ul class="social-box__links">
               <li class="social-box__list">
                 <a
                   href="https://github.com/"
                   target="_blank"
-                  class="social-box__link"
-                >
-                  <svg class="social-box__icon" width="32px" height="32px">
-                    <use href="/sprite.c55b0485.svg#icon-github"></use>
-                    <!-- <path
-                    d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C12.1381 15.0539 13.5182 14.0332 14.4958 12.6716C15.4735 11.3101 15.9996 9.6762 16 8C16 3.58 12.42 0 8 0Z"
-                    fill="#FEA5BB"
-                  /> -->
+                  class="social-box__link">
+                  <svg width="32" height="32" class="social-box__icon">
+                    <use href="./images/icons.svg#icon-gitHub"></use>
                   </svg>
                 </a>
               </li>
@@ -521,14 +566,9 @@
                 <a
                   href="https://telegram.org/"
                   target="_blank"
-                  class="social-box__link"
-                >
+                  class="social-box__link">
                   <svg class="social-box__icon" width="32px" height="32px">
-                    <use href="/sprite.c55b0485.svg#icon-telegram"></use>
-                    <!-- <path
-                    d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8.28672 5.90599C7.50861 6.22963 5.95346 6.8995 3.6213 7.91558C3.2426 8.06618 3.04421 8.21351 3.02615 8.35757C2.99563 8.60103 3.30052 8.6969 3.71569 8.82745C3.77216 8.8452 3.83068 8.8636 3.89067 8.8831C4.29913 9.01588 4.84859 9.17121 5.13423 9.17738C5.39334 9.18298 5.68253 9.07616 6.0018 8.85692C8.18081 7.38603 9.30563 6.64258 9.37625 6.62655C9.42607 6.61524 9.49511 6.60102 9.54188 6.6426C9.58866 6.68418 9.58406 6.76291 9.57911 6.78404C9.5489 6.9128 8.35212 8.02543 7.73279 8.60121C7.53971 8.78071 7.40276 8.90804 7.37476 8.93712C7.31204 9.00226 7.24812 9.06388 7.18669 9.1231C6.80722 9.48891 6.52265 9.76324 7.20245 10.2112C7.52913 10.4265 7.79055 10.6045 8.05134 10.7821C8.33616 10.9761 8.62023 11.1695 8.98778 11.4105C9.08142 11.4718 9.17086 11.5356 9.25796 11.5977C9.58942 11.834 9.88721 12.0463 10.2551 12.0124C10.4689 11.9928 10.6897 11.7918 10.8018 11.1923C11.0668 9.77545 11.5878 6.70567 11.7082 5.44069C11.7187 5.32986 11.7055 5.18802 11.6948 5.12576C11.6842 5.06349 11.6619 4.97478 11.581 4.90911C11.4851 4.83133 11.3371 4.81493 11.2709 4.8161C10.9701 4.8214 10.5084 4.98192 8.28672 5.90599Z"
-                    fill="#FEA5BB"
-                  /> -->
+                    <use href="./images/icons.svg#icon-telegram"></use>
                   </svg>
                 </a>
               </li>
@@ -536,19 +576,15 @@
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
-                  class="social-box__link"
-                >
-                  <svg class="social-box__icon" width="32px" height="32px">
-                    <use href="/sprite.c55b0485.svg#icon-facebook"></use>
-                    <!-- <path
-                    d="M16 8.0486C16 3.60314 12.418 -0.000610352 7.99949 -0.000610352C3.58095 -0.000610352 -0.000976562 3.60314 -0.000976562 8.0486C-0.000976562 12.0662 2.92468 15.3962 6.74942 16V10.3753H4.71805V8.0486H6.74942V6.27526C6.74942 4.25792 7.94383 3.14361 9.77132 3.14361C10.6466 3.14361 11.5622 3.30082 11.5622 3.30082V5.28168H10.5534C9.55951 5.28168 9.24957 5.90215 9.24957 6.53869V8.0486H11.4684L11.1137 10.3753H9.24957V16C13.0743 15.3962 16 12.0662 16 8.0486Z"
-                    fill="#FEA5BB"
-                  /> -->
+                  class="social-box__link">
+                  <svg width="32" height="32" class="social-box__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
+
           <div class="contact-box">
             <span> Feel free to contact </span>
             <a href="tel:+610383766284" class="contact-box__phone">
@@ -559,7 +595,7 @@
       </div>
       <div class="copyright-box">
         <p class="copyright-box__text">
-          © 2021 - IceCream. All Rights Reserved.
+          © 2022 - IceCream. All Rights Reserved.
         </p>
       </div>
     </footer>
