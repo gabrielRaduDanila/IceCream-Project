@@ -7,12 +7,16 @@
     <title>IceCream</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css" />
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -25,7 +29,8 @@
         </button>
       </div>
     </div>
-    <header>
+
+    <header class="hero-header">
       <div class="hero-header-container">
         <div class="hero-header-nav">
           <div class="page-header_logo-container">
@@ -100,7 +105,23 @@
           <li class="product__item">
             <h3 class="product__produse">ice cream</h3>
             <div class="point">
-              <div class="point__item">.</div>
+              <div class="point__item">
+                <!-- <svg
+                  width="400"
+                  height="300"
+                  style="outline: 2px dashed #2a2a2a"
+                >
+                  <ellipse
+                    rx="6"
+                    ry="6"
+                    cx="6"
+                    cy="6"
+                    fill=" rgba(255, 255, 255, 1)"
+                    stroke="#2a2a2a"
+                    stroke-width="4"
+                  />
+                </svg> -->
+              </div>
               <div class="point__item">.</div>
               <div class="point__item">.</div>
             </div>
@@ -124,7 +145,7 @@
             <p class="product__information">
               Vienna Ice Coffee ... for cold days! You found out? The creamiest
               and most delicious coffee with milk from Austria - Vienna Ice
-              Coffee.
+              Coffee - you can also find it in Romania.
             </p>
             <button class="button-arow">
               <svg class="svg-arow">
@@ -144,14 +165,39 @@
               syrup
             </p>
             <button class="button-arow">
-              <svg class="svg-arow">
+              <svg viewBox="0 0 32 32" class="svg-arow">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
             </button>
           </li>
         </ul>
       </div>
+      <div>
+        <ul class="product-description">
+          <li class="product-description__item">
+            How do you like your euphoria? <br />There are so many ways to enjoy
+            our <span class="evident">ice cream.</span> We cover our bases with
+            good old fashioned chocolate and award-winning vanilla, but then go
+            much further with something for everyone. Come on, give it a whirl…
+          </li>
+          <li class="product-description__item">
+            You found out?<br />
+            The creamiest and most delicious
+            <span class="evident">ice coffee</span>with milk or ice cream, now
+            you can find it with us! We offer a wide range of flavors for all
+            tastes, and for those who care about their silhouette, we have the
+            light version, without added sugar.
+          </li>
+          <li class="product-description__item">
+            How do you like the<span class="evident">milkshake?</span><br />
+            We mix fresh organic milk with ice cream and flavors such as
+            butterscotch, caramel sauce, chocolate syrup, fruit syrup or whole
+            fruit, along with a delicious cookie.
+          </li>
+        </ul>
+      </div>
     </section>
+
     <section class="about">
       <div class="about__inner">
         <p class="about__label">tradition and love</p>
@@ -164,7 +210,8 @@
           "
           sizes="10vw"
           src="./images/about/cow501.png"
-          alt="bioeco" />
+          alt="bioeco"
+        />
         <div class="about__content">
           <p class="about__text-abstract">
             Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
@@ -227,7 +274,8 @@
             sizes="10vw"
             src="./images/gallery/gallery-1-50w.png"
             alt="an gallery image"
-            class="gallery-image" />
+            class="gallery-image"
+          />
         </div>
         <div>
           <img
@@ -239,7 +287,8 @@
             sizes="10vw"
             src="./images/gallery/gallery-2-50w.png"
             alt="an gallery image"
-            class="gallery-image" />
+            class="gallery-image"
+          />
           <img
             srcset="
               ./images/gallery/gallery-3-50w.png   50w,
@@ -249,7 +298,8 @@
             sizes="10vw"
             src="./images/gallery/gallery-3-50w.png"
             alt="an gallery image"
-            class="gallery-image" />
+            class="gallery-image"
+          />
         </div>
         <div class="double-div">
           <img
@@ -261,7 +311,8 @@
             sizes="10vw"
             src="./images/gallery/gallery-4-90w.png"
             alt="an gallery image"
-            class="gallery-image" />
+            class="gallery-image"
+          />
           <img
             srcset="
               ./images/gallery/gallery-5-50w.png   50w,
@@ -271,7 +322,8 @@
             sizes="10vw"
             src="./images/gallery/gallery-5-50w.png"
             alt="an gallery image"
-            class="gallery-image-double_size" />
+            class="gallery-image-double_size"
+          />
         </div>
         <div>
           <img
@@ -283,7 +335,8 @@
             sizes="10vw"
             src="./images/gallery/gallery-6-50w.png"
             alt="an gallery image"
-            class="gallery-image" />
+            class="gallery-image"
+          />
           <img
             srcset="
               ./images/gallery/gallery-7-50w.png   50w,
@@ -293,7 +346,8 @@
             sizes="10vw"
             src="./images/gallery/gallery-7-50w.png"
             alt="an gallery image"
-            class="gallery-image" />
+            class="gallery-image"
+          />
         </div>
         <div>
           <img
@@ -305,7 +359,8 @@
             sizes="10vw"
             src="./images/gallery/gallery-8-50w.png"
             alt="an gallery image"
-            class="gallery-image" />
+            class="gallery-image"
+          />
           <img
             srcset="
               ./images/gallery/gallery-9-50w.png   50w,
@@ -315,7 +370,8 @@
             sizes="10vw"
             src="./images/gallery/gallery-9-50w.png"
             alt="an gallery image"
-            class="gallery-image" />
+            class="gallery-image"
+          />
         </div>
         <div>
           <img
@@ -327,7 +383,8 @@
             sizes="10vw"
             src="./images/gallery/gallery-10-50w.png"
             alt="an gallery image"
-            class="gallery-image" />
+            class="gallery-image"
+          />
         </div>
       </div>
     </section>
@@ -342,7 +399,8 @@
           "
           sizes="10vw"
           src="./images/customer-reviews/testimonials1-90w-min.png"
-          alt="first testmionial person image" />
+          alt="first testmionial person image"
+        />
       </div>
 
       <div class="customer-reviews__text-container">
@@ -454,7 +512,7 @@
         </ul>
         <ul class="section-contact__btn-list">
           <li>
-            <button class="section-contact__btn first" onclick="toggleModal('map-modal')">
+            <button class="section-contact__btn first">
               Our Locations
               <svg viewBox="-210 0 600 32" class="btn-icon">
                 <use href="./images/icons.svg#icon-contact-1"></use>
@@ -463,9 +521,10 @@
           </li>
           <li>
             <button
-              onclick="toggleModal('contact-modal')"
+              onclick="hideModal ()"
               class="section-contact__btn second"
-              type="button">
+              type="button"
+            >
               Franchise
               <svg viewBox="-120 0 520 32" class="btn-icon">
                 <use href="./images/icons.svg#icon-contact-2"></use>
@@ -478,7 +537,7 @@
     <!-- Contacts modal-->
     <div id="contact-modal" class="contacts-modal hide-modal">
       <div class="contacts-modal__inner">
-        <button onclick="toggleModal('contact-modal')" class="close-contacts-modal">
+        <button onclick="showModal()" class="close-contacts-modal">
           <svg viewBox="0 0 200 100" class="close-icon">
             <use href="./images/icons.svg#close-btn"></use>
           </svg>
@@ -509,23 +568,14 @@
               <textarea
                 name="comments"
                 rows="5"
-                placeholder="Write here..."></textarea>
+                placeholder="Write here..."
+              ></textarea>
             </label>
           </div>
           <button type="submit" class="contacts-request-btn">Send</button>
         </form>
       </div>
     </div>
-    <!--start map modal -->
-<div class="hide-modal contacts-modal" id="map-modal">
-    <button onclick="toggleModal('map-modal')" class="close-map-modal">
-          <svg viewBox="0 0 200 100" class="close-icon">
-            <use href="./images/icons.svg#close-btn"></use>
-          </svg>
-        </button>
-  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8943525800255!2d-79.10221758529742!3d40.74235014369647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cb5f2b2b71a7df%3A0x4b9af54b23f565ad!2sHome%20Made%20Ice%20Cream%20Co!5e0!3m2!1sro!2sro!4v1677281683371!5m2!1sro!2sro" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-    <!-- end map modal -->
 
     <footer class="footer">
       <div class="container footer__container">
@@ -554,7 +604,8 @@
                 <a
                   href="https://github.com/"
                   target="_blank"
-                  class="social-box__link">
+                  class="social-box__link"
+                >
                   <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-gitHub"></use>
                   </svg>
@@ -564,7 +615,8 @@
                 <a
                   href="https://telegram.org/"
                   target="_blank"
-                  class="social-box__link">
+                  class="social-box__link"
+                >
                   <svg class="social-box__icon" width="32px" height="32px">
                     <use href="./images/icons.svg#icon-telegram"></use>
                   </svg>
@@ -574,7 +626,8 @@
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
-                  class="social-box__link">
+                  class="social-box__link"
+                >
                   <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
