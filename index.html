@@ -92,127 +92,133 @@
         </div>
       </div>
     </header>
+    <main>
+      <section id="products" class="products-section">
+        <div class="products__container">
+          <p class="products__subtitle">100% natural</p>
+          <h2 class="products__title">products</h2>
+          <ul class="product">
+            <li class="product__item curents">
+              <h3 class="product__produse">ice cream</h3>
+              <div class="point">
+                <div class="point__item">.</div>
+                <div class="point__item">.</div>
+                <div class="point__item">.</div>
+              </div>
+              <p class="product__information">
+                Some are always looking for a new flavor while others stick to
+                vanilla and chocolate.
+              </p>
+              <button class="button-arow">
+                <svg class="svg-arow">
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="product__item">
+              <h3 class="product__produse">ice coffee</h3>
+              <div class="point">
+                <div class="point__item">.</div>
+                <div class="point__item">.</div>
+                <div class="point__item">.</div>
+              </div>
+              <p class="product__information">
+                Vienna Ice Coffee ... for cold days! You found out? The
+                creamiest and most delicious coffee with milk from Austria -
+                Vienna Ice Coffee - you can also find it in Romania.
+              </p>
+              <button class="button-arow">
+                <svg class="svg-arow">
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="product__item">
+              <h3 class="product__produse">milkshakes</h3>
+              <div class="point">
+                <div class="point__item">.</div>
+                <div class="point__item">.</div>
+                <div class="point__item">.</div>
+              </div>
+              <p class="product__information">
+                A sweet drink obtained by mixing milk, caramel sauce, chocolate
+                syrup
+              </p>
+              <button class="button-arow">
+                <svg class="svg-arow">
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section id="products" class="products-section">
-      <div class="products__container">
-        <p class="products__subtitle">100% natural</p>
-        <h2 class="products__title">products</h2>
-        <ul class="product">
-          <li class="product__item">
-            <h3 class="product__produse">ice cream</h3>
-            <div class="point">
-              <div class="point__item">.</div>
-              <div class="point__item">.</div>
-              <div class="point__item">.</div>
-            </div>
-            <p class="product__information">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <button class="button-arow">
-              <svg class="svg-arow">
-                <use href="./images/icons.svg#icon-arrow-right"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="product__item">
-            <h3 class="product__produse">ice coffee</h3>
-            <div class="point">
-              <div class="point__item">.</div>
-              <div class="point__item">.</div>
-              <div class="point__item">.</div>
-            </div>
-            <p class="product__information">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <button class="button-arow">
-              <svg class="svg-arow">
-                <use href="./images/icons.svg#icon-arrow-right"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="product__item">
-            <h3 class="product__produse">milkshakes</h3>
-            <div class="point">
-              <div class="point__item">.</div>
-              <div class="point__item">.</div>
-              <div class="point__item">.</div>
-            </div>
-            <p class="product__information">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <button class="button-arow">
-              <svg class="svg-arow">
-                <use href="./images/icons.svg#icon-arrow-right"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="about">
-      <div class="about__inner">
+      <section class="about">
         <p class="about__label">tradition and love</p>
         <h2 class="about__title">how it's made?</h2>
-        <img
-          class="about__image"
-          srcset="
-            ./images/about/cow501.png   501w,
-            ./images/about/cow1002.png 1002w
-          "
-          sizes="10vw"
-          src="./images/about/cow501.png"
-          alt="bioeco" />
-        <div class="about__content">
-          <p class="about__text-abstract">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-            erat at justo fringilla.
-          </p>
-          <p class="about__text">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio
-            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
-            massa nibh, tincidunt.
-          </p>
-          <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
-          <button class="about__button" type="button">
-            Read more
-            <svg class="about__icon" width="4.43" height="8">
-              <use href="./images/icons.svg#icon-greater-than-sign"></use>
-            </svg>
-          </button>
+        <div class="about__inner">
+          <div class="about__image-container">
+            <img
+              class="about__image"
+              srcset="
+                ./images/about/cow501.png  1x,
+                ./images/about/cow1002.png 2x
+              "
+              src="./images/about/cow501.png"
+              alt="bioeco"
+            />
+          </div>
+          <div class="about__content">
+            <p class="about__text-abstract">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+              erat at justo fringilla.
+            </p>
+            <p class="about__text">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio
+              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+              Cras massa nibh, tincidunt.
+            </p>
+            <p class="about__text-extra">
+              Aliquam erat volutpat. Aenean accumsan.
+            </p>
+            <button class="about__button" type="button">
+              Read more
+              <svg class="about__icon" width="4.43" height="8">
+                <use href="./images/icons.svg#icon-greater-than-head"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="advantages">
-      <div class="advatages__inner">
-        <h2 class="hidden-items">Advantages</h2>
-        <ul class="advantages-list">
-          <li class="advantages-list__item advantages-list__item--first">
-            <h3 class="advantages-list__title">721</h3>
-            <p class="advantages-list__text">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--second">
-            <h3 class="advantages-list__title">16kg</h3>
-            <p class="advantages-list__text">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--third">
-            <h3 class="advantages-list__title">84</h3>
-            <p class="advantages-list__text">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <section class="advantages">
+        <div class="advantages__inner">
+          <h2 class="hidden-items">Advantages</h2>
+          <ul class="advantages-list">
+            <li class="advantages-list__item advantages-list__item--first">
+              <h3 class="advantages-list__title">721</h3>
+              <p class="advantages-list__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="advantages-list__item advantages-list__item--second">
+              <h3 class="advantages-list__title">16kg</h3>
+              <p class="advantages-list__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="advantages-list__item advantages-list__item--third">
+              <h3 class="advantages-list__title">84</h3>
+              <p class="advantages-list__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
     <!-- start gallery section -->
     <section class="gallery">
