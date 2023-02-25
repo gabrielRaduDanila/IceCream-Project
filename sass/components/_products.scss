@@ -102,6 +102,19 @@
     background-color: var(--red-title-text);
     border-radius: 50%;
   }
+  fill: currentColor;
+  &:hover {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(81, 194, 212, 1) 52%
+    );
+  }
+  &:hover .svg-arow {
+    transform: rotate(-90deg);
+    transition: 0.4s;
+  }
 }
 .svg-arow {
   display: flex;
@@ -113,6 +126,10 @@
   &:hover {
     fill: var(--white-color);
     transform: rotateZ(0deg);
+  }
+  &:hover {
+    transform: rotate(-90deg);
+    transition: 0.7s;
   }
 }
 
@@ -126,7 +143,7 @@
   z-index: 60;
   width: 249px;
   height: 252px;
-  background-image: url(/images/products/prod1-320-min.png);
+  background-image: url(zz/images/products/img1.png);
   background-size: 249px 252px;
   background-color: transparent;
 }
@@ -140,7 +157,7 @@
   z-index: 60;
   width: 249px;
   height: 252px;
-  background-image: url(/images/products/prod2-320-min.png);
+  background-image: url(/images/products/prod2.320.png);
   background-size: 249px 252px;
 }
 .product__item:nth-child(3):before,
@@ -166,6 +183,23 @@
   height: 500px;
   width: 300px;
   &__item {
+.product__item:nth-child(2) {
+  background-color: rgba(240, 209, 165, 1);
+  &:hover {
+    background-color: rgb(240, 182, 102);
+  }
+}
+.product__item:nth-child(3) {
+  background-color: rgba(194, 226, 151, 1);
+  &:hover {
+    background-color: rgb(120, 181, 40);
+  }
+}
+@media (min-width: 768px) {
+  .products-section {
+    padding: 60px 32px;
+  }
+  .product {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,6 +229,104 @@
       rgba(240, 209, 165, 1) 50%,
       rgba(194, 226, 151, 1)
     );
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+    &__item {
+      @include setWidth(3);
+      height: 100%;
+    }
+  }
+  .product__item:first-child:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
+    z-index: 60;
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/products/prod1-768-min.png);
+    background-size: 249px 252px;
+    background-color: transparent;
+  }
+  .product__item:nth-child(2):before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
+    z-index: 60;
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/products/prod2-768-min.png);
+    background-size: 249px 252px;
+  }
+  .product__item:nth-child(3):before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -146px;
+    transform: translateX(-50%);
+    z-index: 60;
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/products/prod3-768-min.png);
+    background-size: 249px 252px;
+  }
+}
+@media (min-width: 1280px) {
+  .products-section {
+    padding: 60px 16px;
+  }
+  .product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+    &__item {
+      @include setWidth(3);
+      height: 100%;
+    }
+  }
+  .product__item:first-child:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
+    z-index: 60;
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/products/prid1-1280-min.png);
+    background-size: 249px 252px;
+    background-color: transparent;
+  }
+  .product__item:nth-child(2):before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
+    z-index: 60;
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/products/prod2-768-min.png);
+    background-size: 249px 252px;
+  }
+  .product__item:nth-child(3):before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -146px;
+    transform: translateX(-50%);
+    z-index: 60;
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/products/prod3-1280-min.png);
+    background-size: 249px 252px;
   }
 }
 .evident {
