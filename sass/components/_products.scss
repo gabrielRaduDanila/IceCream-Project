@@ -5,8 +5,8 @@
   background: linear-gradient(
     90deg,
     rgba(229, 229, 229, 1) 0%,
-    rgba(182, 240, 165, 1) 41%,
-    rgba(255, 251, 165, 0.5440301120448179) 100%
+    rgb(208, 234, 200) 41%,
+    rgba(240, 238, 211, 0.544) 100%
   );
 
   display: flex;
@@ -27,6 +27,10 @@
   text-align: center;
   font-family: "Titan One";
   padding-bottom: 15px;
+  transition: letter-spacing 2s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    letter-spacing: 30px;
+  }
 }
 .products__title {
   padding-bottom: 140px;
@@ -37,6 +41,10 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--red-title-text);
+  transition: letter-spacing 2s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    letter-spacing: 30px;
+  }
 }
 .product {
   display: flex;
@@ -58,14 +66,12 @@
     position: relative;
     transition: 0.5s;
     &:hover {
-      box-shadow: inset -3px 6px 22px 15px rgba(108, 127, 166, 1);
-      background: rgb(255, 165, 186);
-      background: linear-gradient(
-        90deg,
-        rgba(255, 165, 186, 1) 0%,
-        rgba(236, 61, 226, 1) 41%,
-        rgba(165, 180, 255, 1) 100%
-      );
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      background: rgb(236, 147, 168);
+    }
+    &:hover .product__information {
+      font-size: medium;
     }
   }
   .product__produse {
@@ -86,11 +92,10 @@
     justify-content: center;
 
     &__item {
-      width: 25px;
-      height: 25px;
-
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
-      color: aliceblue;
+      background-color: var(--white-color);
     }
   }
 }
@@ -115,11 +120,7 @@
   fill: currentColor;
   &:hover {
     background: rgb(63, 94, 251);
-    background: radial-gradient(
-      circle,
-      rgba(63, 94, 251, 1) 0%,
-      rgba(81, 194, 212, 1) 52%
-    );
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, #86dcea 52%);
   }
   &:hover .svg-arow {
     transform: rotate(-90deg);
@@ -179,13 +180,13 @@
 .product__item:nth-child(2) {
   background-color: rgba(240, 209, 165, 1);
   &:hover {
-    background-color: rgb(240, 182, 102);
+    background-color: rgb(235, 199, 149);
   }
 }
 .product__item:nth-child(3) {
   background-color: rgba(194, 226, 151, 1);
   &:hover {
-    background-color: rgb(120, 181, 40);
+    background-color: rgb(187, 237, 121);
   }
 }
 @media (min-width: 768px) {
