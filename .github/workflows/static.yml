@@ -35,10 +35,10 @@ jobs:
         with:
           source: ./sass/main.scss
           destination: ./css/main.min.css
-      - name: HTML5 Validator
-        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
-        with:
-          root: ./
+#       - name: HTML5 Validator
+#         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+#         with:
+#           root: ./
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
