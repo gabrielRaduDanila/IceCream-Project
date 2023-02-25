@@ -1,12 +1,10 @@
 .advantages {
   margin: 0 auto;
-  border: 2px solid red;
   display: flex;
   padding: 0 20px;
   background-color: var(--light-pink-bg);
   &__inner {
     flex-basis: 480px;
-    border: 2px solid green;
   }
 }
 
@@ -28,14 +26,12 @@
   }
 }
 .advantages-list {
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 32px;
 
   &__item {
-    border: 2px solid orange;
     position: relative;
     padding-top: 50px;
   }

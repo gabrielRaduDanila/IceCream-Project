@@ -2,7 +2,6 @@
   margin: 0 auto;
   background-color: var(--light-pink-bg);
   padding: 60px 20px 0 20px;
-  border: 2px solid green;
   background-image: url("../../images/about/milk320.png");
   background-repeat: no-repeat;
   background-size: 95%;
@@ -19,9 +18,8 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    border: 2px solid red;
     margin-top: 32px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   &__label {
     color: var(--pink-text);
@@ -47,16 +45,12 @@
     padding: 0 36px 0 44px;
   }
   &__image-container {
-    border: 2px solid yellow;
     max-width: 501px;
   }
   &__image {
     display: block;
     width: 100%;
     height: auto;
-  }
-  &__content {
-    border: 2px solid orange;
   }
 
   &__text-abstract {
@@ -110,7 +104,7 @@
       background-image: none;
       gap: 32px;
       margin-top: 40px;
-      margin-bottom: 60px;
+      padding-bottom: 60px;
     }
     &__image-container {
       flex-basis: 50%;
