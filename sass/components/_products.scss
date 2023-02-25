@@ -67,9 +67,6 @@
         rgba(165, 180, 255, 1) 100%
       );
     }
-    &:hover .product__information {
-      font-size: 16px;
-    }
   }
   .product__produse {
     font-family: "Titan One";
@@ -133,7 +130,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15px;
+  height: 18px;
   width: 30px;
   fill: var(--red-title-text);
   &:hover {
