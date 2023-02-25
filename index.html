@@ -155,18 +155,20 @@
       </section>
 
       <section class="about">
+        <p class="about__label">tradition and love</p>
+        <h2 class="about__title">how it's made?</h2>
         <div class="about__inner">
-          <p class="about__label">tradition and love</p>
-          <h2 class="about__title">how it's made?</h2>
-          <img
-            class="about__image"
-            srcset="
-              ./images/about/cow501.png   501w,
-              ./images/about/cow1002.png 1002w
-            "
-            src="./images/about/cow501.png"
-            alt="bioeco"
-          />
+          <div class="about__image-container">
+            <img
+              class="about__image"
+              srcset="
+                ./images/about/cow501.png  1x,
+                ./images/about/cow1002.png 2x
+              "
+              src="./images/about/cow501.png"
+              alt="bioeco"
+            />
+          </div>
           <div class="about__content">
             <p class="about__text-abstract">
               Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
@@ -179,11 +181,13 @@
               euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
               Cras massa nibh, tincidunt.
             </p>
-            <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
+            <p class="about__text-extra">
+              Aliquam erat volutpat. Aenean accumsan.
+            </p>
             <button class="about__button" type="button">
               Read more
               <svg class="about__icon" width="4.43" height="8">
-                <use href="./images/icons.svg#icon-greater-than-sign"></use>
+                <use href="./images/icons.svg#icon-greater-than-head"></use>
               </svg>
             </button>
           </div>
@@ -191,7 +195,7 @@
       </section>
 
       <section class="advantages">
-        <div class="advatages__inner">
+        <div class="advantages__inner">
           <h2 class="hidden-items">Advantages</h2>
           <ul class="advantages-list">
             <li class="advantages-list__item advantages-list__item--first">
