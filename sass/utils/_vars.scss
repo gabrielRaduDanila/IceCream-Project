@@ -47,8 +47,8 @@
   width: calc((100vw - #{$totalGap}px) / #{$nrItems});
 }
 
-@mixin doubleSetWidthWithGap($nrItems, $gap) {
-  $nrGap: $nrItems - 1;
-  $totalGap: $nrGap * $gap;
-  width: calc((100vw - #{$totalGap}px) / #{$nrItems}* 2);
-}
+// @mixin doubleSetWidthWithGap($nrItems, $gap) {
+//   $nrGap: $nrItems - 1;
+//   $totalGap: $nrGap * $gap;
+//   width: calc((100vw - #{$totalGap}px) / #{$nrItems}* 2);
+// }
