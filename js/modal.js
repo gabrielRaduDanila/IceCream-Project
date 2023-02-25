@@ -13,8 +13,8 @@
   }
 })();
 
-function toggleModal(id) {
-  document.getElementById(id).classList.toggle('hide-modal');
+function toggleModals(id) {
+  document.getElementById(id).classList.toggle('hidden-modal');
 }
 
 // function showModal() {
