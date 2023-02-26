@@ -25,7 +25,7 @@
         </button>
       </div>
     </div>
-    ​
+    
     <header class="hero-header">
       <div class="hero-header-container">
         <div class="hero-header-nav">
@@ -43,8 +43,7 @@
             <li class="navigation-menu__list--item">Our products</li>
             <li class="navigation-menu__list--item">Contact</li>
           </ul>
-          <button class="menu-toggle js-open-menu" aria-expanded="false"
-          aria-controls="mobile-menu">
+          <button class="menu-toggle js-open-menu">
             <svg class="menu-toggle--svg">
               <use href="./images/icons.svg#icon-Burger"></use>
             </svg>
@@ -57,23 +56,43 @@
           </button>
         </div>
         <div class="hero-header-hero-section">
-          <div>
-            <h1 class="hero-section--title">
-              ice cream made with
-              <span class="hero-section--title_span">passion</span>
-            </h1>
-            <button class="products-button">Products</button>
-            <button class="how-is-made-button">How it's made?</button>
-            <p class="bio-eco-text display-none-header">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <div class="button-bio-eco display-none-header">
-              <a href="#">
-                <svg class="button-bio-eco--svg">
-                  <use href="./images/icons.svg#icon-arrow-right"></use>
-                </svg>
-              </a>
+          <div class="hero-header-left">
+            <div class="header-title-container">
+              <h1 class="hero-section--title">
+                ice cream made with
+                <span class="hero-section--title_span">passion</span>
+              </h1>
+            </div>
+            <div class="button-holder">
+              <button class="products-button">Products</button>
+              <button class="how-is-made-button">How it's made?</button>
+            </div>
+            <div class="bio-eco-holder">
+              <img
+                  class="bio-eco-image display-none-header"
+                  srcset="
+                  images/header/bio-eco.png 480w,
+                  images/header/bio-eco@x2.png 960w
+                  "
+                  sizes="(min-width: 768px) 480px, (min-width: 1200px) 960px, 100vw"
+                  src="images/header/bio-eco.png"
+                  alt="bio milk image"
+                />
+                <div class="row-breaker">
+                  <div class="text-holder">
+                    <p class="bio-eco-text display-none-header">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et
+                    </p>
+                  </div>
+                  <div class="button-bio-eco display-none-header">
+                  <a href="#">
+                    <svg class="button-bio-eco--svg">
+                      <use href="./images/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                </div>  
             </div>
           </div>
           <div class="hero-section--counter display-none-header">
@@ -634,6 +653,12 @@
             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
             clip-rule="evenodd"
           ></path>
+        </svg>
+      </button>
+      <button class="buy-button" data-modal-open>
+        Buy now
+        <svg class="buy-button--svg">
+          <use href="./images/icons.svg#icon-greater-than-head"></use>
         </svg>
       </button>
     <ul class="mobile-menu">
