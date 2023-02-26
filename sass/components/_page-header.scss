@@ -1,19 +1,19 @@
 .hero-header {
-  max-width: 100%;
   padding: 8px 20px;
   background-color: var(--pink-bg);
   border: solid 1px black;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 
 .hero-header-container {
   display: flex;
   flex-direction: column;
-  max-width: 1500px;
+  flex-basis: 100%;
   height: 502px;
   border: solid 1px black;
+
 }
 
 .hero-header-hero-section {
@@ -42,14 +42,20 @@
 }
 
 .navigation-menu__list {
-  display: flex;
+  // display: flex;
   flex-direction: row;
   color: var(--white-color);
   font-size: 16px;
-  gap: 5px;
+  gap: 35px;
   display: none;
   padding: 0 10px;
 }
+
+.navigation-menu__list--item{
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .navigation-menu__list--item:hover,
 .navigation-menu__list--item:focus {
@@ -99,7 +105,6 @@ cursor: pointer;
 .buy-button--svg{
   height: 10px;
   width: 8px;
-  // justify-content:end;
 }
 
 .hero-section--title, .hero-section--title_span {
@@ -187,12 +192,22 @@ cursor: pointer;
 }  
   
 @media (min-width: 768px) {
+  .hero-header-container {
+    height: 416px;
+  }
   .buy-button {
     display: flex;
   }
+
 }
 
 @media (min-width: 1280px) {
+
+  .hero-header-container {
+    height: 664px;
+    max-width: 1280px;
+  }
+  
   .navigation-menu__list {
     display: flex;
   }
