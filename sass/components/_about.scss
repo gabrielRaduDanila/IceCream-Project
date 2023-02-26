@@ -6,13 +6,11 @@
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: 70% 90%;
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .about {
-      background-image: url("../images/about/milk320@2x.png");
-    }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url("../images/about/milk320@2x.png");
   }
   &__inner {
     display: flex;
@@ -59,7 +57,7 @@
     display: block;
     width: 100%;
     height: auto;
-    animation: animateCow45 linear 5000ms infinite;
+    animation: animateCow45 linear 8000ms infinite;
   }
 
   &__text-abstract {
@@ -94,7 +92,7 @@
     gap: 13.62px;
     background-color: var(--white-color);
     color: var(--red-title-text);
-    transition: background-color font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       background-color: var(--product-section-bg);
       font-size: 16px;
@@ -150,13 +148,11 @@
     background-image: url("../images/about/milk1280.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .about {
-        background-image: url("../images/about/milk1280@2x.png");
-      }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../images/about/milk1280@2x.png");
     }
     &__inner {
       gap: 99px;
