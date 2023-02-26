@@ -102,16 +102,16 @@
             <li class="product__item curents">
               <h3 class="product__produse">ice cream</h3>
               <div class="point">
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
               </div>
               <p class="product__information">
                 Some are always looking for a new flavor while others stick to
                 vanilla and chocolate.
               </p>
               <button class="button-arow">
-                <svg class="svg-arow">
+                <svg class="svg-arow" id="myBtn">
                   <use href="./images/icons.svg#icon-arrow-right"></use>
                 </svg>
               </button>
@@ -119,14 +119,14 @@
             <li class="product__item">
               <h3 class="product__produse">ice coffee</h3>
               <div class="point">
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
               </div>
               <p class="product__information">
                 Vienna Ice Coffee ... for cold days! You found out? The
-                creamiest and most delicious coffee with milk from Austria -
-                Vienna Ice Coffee - you can also find it in Romania.
+                creamiest and most delicious coffee with milk from Austria 
+                
               </p>
               <button class="button-arow">
                 <svg class="svg-arow">
@@ -137,12 +137,12 @@
             <li class="product__item">
               <h3 class="product__produse">milkshakes</h3>
               <div class="point">
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
               </div>
               <p class="product__information">
-                A sweet drink obtained by mixing milk, caramel sauce, chocolate
+                A sweet drink obtained by mixing milk,<br> caramel sauce,<br> chocolate
                 syrup
               </p>
               <button class="button-arow">
@@ -154,6 +154,15 @@
           </ul>
         </div>
       </section>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+      </div>
 
       <section class="about">
         <p class="about__label">tradition and love</p>
@@ -183,13 +192,18 @@
               Cras massa nibh, tincidunt.
             </p>
             <p class="about__text-extra">
-              Aliquam erat volutpat. Aenean accumsan.
+              Aliquam erat volutpat. Aenean accumsan.<span id="dots">...</span
+                ><span id="more"
+                  >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Delectus sint voluptate doloremque molestias qui beatae natus,
+                  laborum aut distinctio sapiente culpa nesciunt illum modi
+                  aliquam, error rem eius dolorum. Enim! Lorem ipsum dolor sit,
+                  amet consectetur adipisicing elit. Placeat repellendus qui
+                  error.
+                </span>
             </p>
-            <button class="about__button" type="button">
-              Read more
-              <svg class="about__icon" width="4.43" height="8">
-                <use href="./images/icons.svg#icon-greater-than-head"></use>
-              </svg>
+            <button class="about__button" type="button"onclick="myFunction()"
+            id="myBtn">Read more
             </button>
           </div>
         </div>
@@ -632,6 +646,8 @@
     </div>
     <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    
+    <script src="./js/readmore.js"></script>
+    <script src="./js/produtmodal1.js"></script>
+    <script src="./js/toggleModals.js"></script>
   </body>
 </html>
