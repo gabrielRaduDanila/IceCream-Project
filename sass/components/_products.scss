@@ -1,14 +1,10 @@
 .products-section {
   max-width: 100%;
   padding: 60px 20px;
-  background: rgb(229, 229, 229);
-  background: linear-gradient(90deg,
-      rgba(229, 229, 229, 1) 0%,
-      rgb(197, 235, 186) 41%,
-      rgba(231, 229, 200, 0.544) 100%);
-
+  background: var(--product-section-bg);
   display: flex;
   justify-content: center;
+  max-width: 2000px;
 
   &__container {
     max-width: 100%;
@@ -60,12 +56,9 @@
     position: relative;
     transition: 0.5s;
     &:hover {
-      box-shadow: inset -3px 6px 22px 15px rgb(174, 198, 244);
-      background: rgb(245, 176, 192);
-      background: linear-gradient(90deg,
-          rgb(241, 199, 209) 0%,
-          rgb(219, 176, 217) 41%,
-          rgb(173, 181, 221) 100%);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
 }
@@ -133,16 +126,12 @@
   fill: currentColor;
 
   &:hover {
-    background: rgb(183, 193, 244);
-    background: radial-gradient(circle,
-        rgba(63, 94, 251, 1) 0%,
-        rgba(81, 194, 212, 1) 52%);
-  }
-
-  &:hover .svg-arow {
+    .svg-arow {
     transform: rotate(-90deg);
     transition: 0.4s;
   }
+  cursor: pointer;
+}
 }
 
 .svg-arow {
@@ -156,6 +145,9 @@
   &:hover {
     transform: rotate(-90deg);
     transition: 0.7s;
+    .product-info {
+        visibility: visible;
+      }
   }
 }
 
@@ -222,11 +214,25 @@
   position: absolute;
   top: 0;
   left: 0;
-  // z-index: -99;
-  transform: scale(0);
+  transform: scale(0.1);
+  z-index: 99;
+  visibility: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+    border-radius: 24px;
+  transition: all 300ms ease-in;
+  padding: 10px;
+   img {
+    height: 40%;    
+   }
+
+}
+
+.show-produc-info {
+ visibility: visible;
+ transform: scale(1);
+  transition: all 300ms ease-in;
 }
 
 @media (min-width: 768px) {
@@ -295,6 +301,7 @@
 
   .product {
     margin-top: 20px;
+    gap: 32px;
   }
 
   .product__item:first-child:before {
