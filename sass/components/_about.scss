@@ -73,7 +73,8 @@
     margin-bottom: 26px;
   }
   &__text,
-  &__text-extra &__text-more {
+  &__text-extra,
+  &__text-more {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.76;
@@ -137,7 +138,8 @@
     }
     &__text-abstract,
     &__text,
-    &__text-extra &__text-more {
+    &__text-extra,
+    &__text-more {
       font-size: 14px;
     }
     &__text-extra {
@@ -181,7 +183,8 @@
       line-height: 1.13;
     }
     &__text,
-    &__text-extra &__text-more {
+    &__text-extra,
+    &__text-more {
       line-height: 1.94;
     }
     &__text-abstract {
