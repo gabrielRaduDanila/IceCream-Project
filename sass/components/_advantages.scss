@@ -36,7 +36,6 @@
     padding-top: 50px;
   }
   &__item--first::before {
-    background-image: url("../images/advantages/firstitem@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
@@ -45,17 +44,22 @@
     height: 50px;
     top: 0;
     animation: animate360 linear 3000ms infinite;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .advantages__item--first::before {
+    @media screen and (max-device-pixel-ratio: 2),
+      screen and (-webkit-max-device-pixel-ratio: 2),
+      screen and (max-resolution: 192dpi),
+      screen and (max-resolution: 2dppx) {
+      background-image: url("../images/advantages/firstitem@1x.png");
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: url("../images/advantages/firstitem@2x.png");
     }
   }
+
   &__item--second::before {
-    background-image: url("../images/advantages/seconditem.png");
+    background-image: url("../images/advantages/seconditem@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
@@ -64,9 +68,15 @@
     height: 50px;
     top: 0;
     animation: animate360 linear 3000ms infinite;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/advantages/seconditem@2x.png");
+    }
   }
   &__item--third::before {
-    background-image: url("../images/advantages/thirditem.png");
+    background-image: url("../images/advantages/thirditem@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
@@ -75,6 +85,12 @@
     height: 50px;
     top: 0;
     animation: animate360 linear 3000ms infinite;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/advantages/thirditem@2x.png");
+    }
   }
 
   &__title {
