@@ -101,31 +101,31 @@
             <li class="product__item curents">
               <h3 class="product__produse">ice cream</h3>
               <div class="point">
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
               </div>
               <p class="product__information">
                 Some are always looking for a new flavor while others stick to
                 vanilla and chocolate.
               </p>
-              <button class="button-arow open-modal"></button> 
-                <svg class="svg-arow">
+              <button class="button-arow">
+                <svg class="svg-arow" id="myBtn">
                   <use href="./images/icons.svg#icon-arrow-right"></use>
                 </svg>
-              </button> <p class="product__information"></p>
+              </button>
             </li>
             <li class="product__item">
               <h3 class="product__produse">ice coffee</h3>
               <div class="point">
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
               </div>
               <p class="product__information">
                 Vienna Ice Coffee ... for cold days! You found out? The
-                creamiest and most delicious coffee with milk from Austria -
-                Vienna Ice Coffee - you can also find it in Romania.
+                creamiest and most delicious coffee with milk from Austria 
+                
               </p>
               <button class="button-arow">
                 <svg class="svg-arow">
@@ -136,15 +136,15 @@
             <li class="product__item">
               <h3 class="product__produse">milkshakes</h3>
               <div class="point">
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
-                <div class="point__item">.</div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
+                <div class="point__item"></div>
               </div>
               <p class="product__information">
-                A sweet drink obtained by mixing milk, caramel sauce, chocolate
+                A sweet drink obtained by mixing milk,<br> caramel sauce,<br> chocolate
                 syrup
               </p>
-              <button class="button-arow ">
+              <button class="button-arow">
                 <svg class="svg-arow">
                   <use href="./images/icons.svg#icon-arrow-right"></use>
                 </svg>
@@ -152,8 +152,16 @@
             </li>
           </ul>
         </div>
-       
       </section>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+      </div>
 
       <section class="about">
         <p class="about__label">tradition and love</p>
@@ -605,5 +613,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/produtmodal1.js"></script>
   </body>
 </html>
