@@ -7,16 +7,12 @@
     <title>IceCream</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-
+      href="node_modules/modern-normalize/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -24,12 +20,12 @@
       <div class="inner-modal">
         <button class="close-modal" data-modal-close>
           <svg class="close-modal--svg">
-            <use href="./images/icons.svg#close-btn.svg"></use>
+            <use href="./images/icons.svg#close-btn"></use>
           </svg>
         </button>
       </div>
     </div>
-
+    
     <header class="hero-header">
       <div class="hero-header-container">
         <div class="hero-header-nav">
@@ -41,17 +37,14 @@
             </a>
           </div>
           <ul class="navigation-menu__list">
-            <li class="navigation-menu__list--item">Home</li>
+            <li class="navigation-menu__list--item" onclick="location.href='#index';">Home</li>
             <li class="navigation-menu__list--item">About us</li>
-            <li class="navigation-menu__list--item">How it's made?</li>
-            <li class="navigation-menu__list--item">Our products</li>
-            <li class="navigation-menu__list--item">Contact</li>
+            <li class="navigation-menu__list--item" onclick="location.href='#about';">How it's made?</li>
+            
+            <li class="navigation-menu__list--item" onclick="location.href='#products';">Our products</li>
+            <li class="navigation-menu__list--item" onclick="location.href='#contacts';">Contact</li>
           </ul>
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
+          <button class="menu-toggle js-open-menu">
             <svg class="menu-toggle--svg">
               <use href="./images/icons.svg#icon-Burger"></use>
             </svg>
@@ -64,23 +57,43 @@
           </button>
         </div>
         <div class="hero-header-hero-section">
-          <div>
-            <h1 class="hero-section--title">
-              ice cream made with
-              <span class="hero-section--title_span">passion</span>
-            </h1>
-            <button class="products-button">Products</button>
-            <button class="how-is-made-button">How it's made?</button>
-            <p class="bio-eco-text display-none-header">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <div class="button-bio-eco display-none-header">
-              <a href="#">
-                <svg class="button-bio-eco--svg">
-                  <use href="./images/icons.svg#icon-arrow-right"></use>
-                </svg>
-              </a>
+          <div class="hero-header-left">
+            <div class="header-title-container">
+              <h1 class="hero-section--title">
+                ice cream made with
+                <span class="hero-section--title_span">passion</span>
+              </h1>
+            </div>
+            <div class="button-holder">
+              <button class="products-button">Products</button>
+              <button class="how-is-made-button">How it's made?</button>
+            </div>
+            <div class="bio-eco-holder">
+              <img
+                  class="bio-eco-image display-none-header"
+                  srcset="
+                  images/header/bio-eco.png 480w,
+                  images/header/bio-eco@x2.png 960w
+                  "
+                  sizes="(min-width: 768px) 480px, (min-width: 1200px) 960px, 100vw"
+                  src="images/header/bio-eco.png"
+                  alt="bio milk image"
+                />
+                <div class="row-breaker">
+                  <div class="text-holder">
+                    <p class="bio-eco-text display-none-header">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et
+                    </p>
+                  </div>
+                  <div class="button-bio-eco display-none-header">
+                  <a href="#">
+                    <svg class="button-bio-eco--svg">
+                      <use href="./images/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                </div>  
             </div>
           </div>
           <div class="hero-section--counter display-none-header">
@@ -174,38 +187,6 @@
       <section class="about">
         <p class="about__label">tradition and love</p>
         <h2 class="about__title">how it's made?</h2>
-        <img
-          class="about__image"
-          srcset="
-            ./images/about/cow501.png   501w,
-            ./images/about/cow1002.png 1002w
-          "
-          sizes="10vw"
-          src="./images/about/cow501.png"
-          alt="bioeco"
-        />
-        <div class="about__content">
-          <p class="about__text-abstract">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-            erat at justo fringilla.
-          </p>
-          <p class="about__text">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio
-            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
-            massa nibh, tincidunt.
-          </p>
-          <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
-          <button class="about__button" type="button">
-            Read more
-            <svg class="about__icon" width="4.43" height="8">
-              <use href="./images/icons.svg#icon-greater-than-sign"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
         <div class="about__inner">
           <div class="about__image-container">
             <img
@@ -242,37 +223,37 @@
                 </span>
             </p>
             <button class="about__button" type="button"onclick="myFunction()"
-            id="myBtn">Read more
+            id="myButton">Read more &rarr;
             </button>
           </div>
         </div>
       </section>
 
-    <section class="advantages">
-      <div class="advantages__inner">
-        <h2 class="hidden-items">Advantages</h2>
-        <ul class="advantages-list">
-          <li class="advantages-list__item advantages-list__item--first">
-            <h3 class="advantages-list__title">721</h3>
-            <p class="advantages-list__text">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--second">
-            <h3 class="advantages-list__title">16kg</h3>
-            <p class="advantages-list__text">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--third">
-            <h3 class="advantages-list__title">84</h3>
-            <p class="advantages-list__text">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <section class="advantages">
+        <div class="advantages__inner">
+          <h2 class="hidden-items">Advantages</h2>
+          <ul class="advantages-list">
+            <li class="advantages-list__item advantages-list__item--first">
+              <h3 class="advantages-list__title">721</h3>
+              <p class="advantages-list__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="advantages-list__item advantages-list__item--second">
+              <h3 class="advantages-list__title">16kg</h3>
+              <p class="advantages-list__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="advantages-list__item advantages-list__item--third">
+              <h3 class="advantages-list__title">84</h3>
+              <p class="advantages-list__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
     <!-- start gallery section -->
     <section class="gallery">
@@ -287,8 +268,6 @@
             sizes="10vw"
             src="./images/gallery/gallery-1-50w.png"
             alt="an gallery image"
-            class="gallery-image"
-          />
             class="gallery-image left-img" />
         </div>
         <div>
@@ -301,8 +280,6 @@
             sizes="10vw"
             src="./images/gallery/gallery-2-50w.png"
             alt="an gallery image"
-            class="gallery-image"
-          />
             class="gallery-image left-img" />
           <img
             srcset="
@@ -313,8 +290,6 @@
             sizes="10vw"
             src="./images/gallery/gallery-3-50w.png"
             alt="an gallery image"
-            class="gallery-image"
-          />
             class="gallery-image left-img" />
         </div>
         <div class="double-div">
@@ -327,8 +302,6 @@
             sizes="10vw"
             src="./images/gallery/gallery-4-90w.png"
             alt="an gallery image"
-            class="gallery-image"
-          />
             class="gallery-image center-img" />
           <img
             srcset="
@@ -339,8 +312,6 @@
             sizes="10vw"
             src="./images/gallery/gallery-5-50w.png"
             alt="an gallery image"
-            class="gallery-image-double_size"
-          />
             class="gallery-image-double_size center-img" />
         </div>
         <div>
@@ -353,8 +324,6 @@
             sizes="10vw"
             src="./images/gallery/gallery-6-50w.png"
             alt="an gallery image"
-            class="gallery-image"
-          />
             class="gallery-image right-img" />
           <img
             srcset="
@@ -365,8 +334,6 @@
             sizes="10vw"
             src="./images/gallery/gallery-7-50w.png"
             alt="an gallery image"
-            class="gallery-image"
-          />
             class="gallery-image right-img" />
         </div>
         <div>
@@ -379,8 +346,6 @@
             sizes="10vw"
             src="./images/gallery/gallery-8-50w.png"
             alt="an gallery image"
-            class="gallery-image"
-          />
             class="gallery-image right-img" />
           <img
             srcset="
@@ -391,8 +356,6 @@
             sizes="10vw"
             src="./images/gallery/gallery-9-50w.png"
             alt="an gallery image"
-            class="gallery-image"
-          />
             class="gallery-image right-img" />
         </div>
         <div>
@@ -405,8 +368,6 @@
             sizes="10vw"
             src="./images/gallery/gallery-10-50w.png"
             alt="an gallery image"
-            class="gallery-image"
-          />
             class="gallery-image right-img" />
         </div>
       </div>
@@ -422,8 +383,7 @@
           "
           sizes="10vw"
           src="./images/customer-reviews/testimonials1-90w-min.png"
-          alt="first testmionial person image"
-        />
+          alt="first testmionial person image" />
       </div>
 
       <div class="customer-reviews__text-container">
@@ -453,7 +413,7 @@
     </section>
     <!-- end testimonals section -->
     <!-- Contacts section-->
-    <section class="section-contacts" id="contacts">
+    <section class="section-contacts">
       <div class="contacts-container">
         <h2 class="is-hidden section-contacts__title">Contact</h2>
         <ul class="section-contacts__list">
@@ -535,10 +495,7 @@
         </ul>
         <ul class="section-contact__btn-list">
           <li>
-            <button
-              class="section-contact__btn first"
-              onclick="toggleModal('map-modal')"
-            >
+            <button class="section-contact__btn first" onclick="toggleModals('map-modal')">
               Our Locations
               <svg viewBox="-210 0 600 32" class="btn-icon">
                 <use href="./images/icons.svg#icon-contact-1"></use>
@@ -549,8 +506,7 @@
             <button
               onclick="toggleModals('contact-modal')"
               class="section-contact__btn second"
-              type="button"
-            >
+              type="button">
               Franchise
               <svg viewBox="-120 0 520 32" class="btn-icon">
                 <use href="./images/icons.svg#icon-contact-2"></use>
@@ -563,6 +519,7 @@
     <!-- Contacts modal-->
     <div id="contact-modal" class="show-modal hidden-modal">
       <div class="contacts-modal__inner">
+        <button onclick="toggleModals('contact-modal')" class="close-contacts-modal">
         <button
           onclick="toggleModal('contact-modal')"
           class="close-contacts-modal"
@@ -597,30 +554,25 @@
               <textarea
                 name="comments"
                 rows="5"
-                placeholder="Write here..."
-              ></textarea>
+                placeholder="Write here..."></textarea>
             </label>
           </div>
           <button type="submit" class="contacts-request-btn">Send</button>
         </form>
       </div>
     </div>
-    <!--start map modal -->
-    <div class="hide-modal contacts-modal" id="map-modal">
-      <button onclick="toggleModal('map-modal')" class="close-map-modal">
-        <svg viewBox="0 0 200 100" class="close-icon">
-          <use href="./images/icons.svg#close-btn"></use>
-        </svg>
-      </button>
-      <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8943525800255!2d-79.10221758529742!3d40.74235014369647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cb5f2b2b71a7df%3A0x4b9af54b23f565ad!2sHome%20Made%20Ice%20Cream%20Co!5e0!3m2!1sro!2sro!4v1677281683371!5m2!1sro!2sro"
-        style="border: 0"
-        allowfullscreen=""
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-    <!-- end map modal -->
+    <!-- start map modal -->
+<div class="show-modal hidden-modal" id="map-modal">
+  <div class="map-modal__inner">
+    <button onclick="toggleModals('map-modal')" class="close-map-modal">
+          <svg viewBox="0 0 200 100" class="close-icon">
+            <use href="./images/icons.svg#close-btn"></use>
+          </svg>
+        </button>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8943525800255!2d-79.10221758529742!3d40.74235014369647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cb5f2b2b71a7df%3A0x4b9af54b23f565ad!2sHome%20Made%20Ice%20Cream%20Co!5e0!3m2!1sro!2sro!4v1677281683371!5m2!1sro!2sro" style="border:0; " allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div> 
+     <!-- end map modal -->
 
     <footer class="footer">
       <div class="container footer__container">
@@ -649,8 +601,7 @@
                 <a
                   href="https://github.com/"
                   target="_blank"
-                  class="social-box__link"
-                >
+                  class="social-box__link">
                   <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-gitHub"></use>
                   </svg>
@@ -660,8 +611,7 @@
                 <a
                   href="https://telegram.org/"
                   target="_blank"
-                  class="social-box__link"
-                >
+                  class="social-box__link">
                   <svg class="social-box__icon" width="32px" height="32px">
                     <use href="./images/icons.svg#icon-telegram"></use>
                   </svg>
@@ -671,8 +621,7 @@
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
-                  class="social-box__link"
-                >
+                  class="social-box__link">
                   <svg width="32" height="32" class="social-box__icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
@@ -711,18 +660,24 @@
           ></path>
         </svg>
       </button>
-      <ul class="mobile-menu">
-        <li class="mobile-menu__item">Home</li>
-        <li class="mobile-menu__item">About us</li>
-        <li class="mobile-menu__item">How it's made?</li>
-        <li class="mobile-menu__item">Our products</li>
-        <li class="mobile-menu__item">Contact</li>
-      </ul>
+      <button class="buy-button" data-modal-open>
+        Buy now
+        <svg class="buy-button--svg">
+          <use href="./images/icons.svg#icon-greater-than-head"></use>
+        </svg>
+      </button>
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item">Home</li>
+      <li class="mobile-menu__item">About us</li>
+      <li class="mobile-menu__item">How it's made?</li>
+      <li class="mobile-menu__item">Our products</li>
+      <li class="mobile-menu__item">Contact</li>
+    </ul>
     </div>
     <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/readmore.js"></script>
     <script src="./js/produtmodal1.js"></script>
+    <script src="./js/readmore.js"></script>
     <script src="./js/toggleModals.js"></script>
   </body>
 </html>
