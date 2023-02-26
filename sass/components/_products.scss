@@ -5,8 +5,8 @@
   background: linear-gradient(
     90deg,
     rgba(229, 229, 229, 1) 0%,
-    rgba(182, 240, 165, 1) 41%,
-    rgba(255, 251, 165, 0.5440301120448179) 100%
+    rgb(197, 235, 186) 41%,
+    rgba(231, 229, 200, 0.544) 100%
   );
 
   display: flex;
@@ -58,13 +58,13 @@
     position: relative;
     transition: 0.5s;
     &:hover {
-      box-shadow: inset -3px 6px 22px 15px rgba(108, 127, 166, 1);
-      background: rgb(255, 165, 186);
+      box-shadow: inset -3px 6px 22px 15px rgb(174, 198, 244);
+      background: rgb(245, 176, 192);
       background: linear-gradient(
         90deg,
-        rgba(255, 165, 186, 1) 0%,
-        rgba(236, 61, 226, 1) 41%,
-        rgba(165, 180, 255, 1) 100%
+        rgb(241, 199, 209) 0%,
+        rgb(219, 176, 217) 41%,
+        rgb(173, 181, 221) 100%
       );
     }
   }
@@ -114,7 +114,7 @@
   margin: 0 auto;
   fill: currentColor;
   &:hover {
-    background: rgb(63, 94, 251);
+    background: rgb(183, 193, 244);
     background: radial-gradient(
       circle,
       rgba(63, 94, 251, 1) 0%,
@@ -179,13 +179,13 @@
 .product__item:nth-child(2) {
   background-color: rgba(240, 209, 165, 1);
   &:hover {
-    background-color: rgb(240, 182, 102);
+    background-color: rgb(237, 211, 174);
   }
 }
 .product__item:nth-child(3) {
   background-color: rgba(194, 226, 151, 1);
   &:hover {
-    background-color: rgb(120, 181, 40);
+    background-color: rgb(206, 235, 169);
   }
 }
 @media (min-width: 768px) {
