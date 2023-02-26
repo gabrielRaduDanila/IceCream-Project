@@ -1,19 +1,19 @@
 .hero-header {
-  max-width: 100%;
   padding: 8px 20px;
   background-color: var(--pink-bg);
   border: solid 1px black;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 
 .hero-header-container {
   display: flex;
   flex-direction: column;
-  max-width: 1500px;
+  flex-basis: 100%;
   height: 502px;
   border: solid 1px black;
+
 }
 
 .hero-header-hero-section {
@@ -99,7 +99,6 @@ cursor: pointer;
 .buy-button--svg{
   height: 10px;
   width: 8px;
-  // justify-content:end;
 }
 
 .hero-section--title, .hero-section--title_span {
@@ -187,12 +186,22 @@ cursor: pointer;
 }  
   
 @media (min-width: 768px) {
+  .hero-header-container {
+    height: 416px;
+  }
   .buy-button {
     display: flex;
   }
+
 }
 
 @media (min-width: 1280px) {
+
+  .hero-header-container {
+    height: 664px;
+    max-width: 1280px;
+  }
+  
   .navigation-menu__list {
     display: flex;
   }
