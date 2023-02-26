@@ -465,7 +465,7 @@
       </section>
       <!-- end gallery section -->
       <!-- start testimonals section -->
-      <section class="customer-reviews section">
+      <section class="customer-reviews section" id="testimonials">
         <h3 class="hidden-items">Customers reviews</h3>
         <div class="customer-reviews__image">
           <img
@@ -506,7 +506,7 @@
       </section>
       <!-- end testimonals section -->
       <!-- Contacts section-->
-      <section class="section-contacts">
+      <section class="section-contacts" id="contact-section">
         <div class="contacts-container">
           <h2 class="is-hidden section-contacts__title">Contact</h2>
           <ul class="section-contacts__list">
@@ -770,7 +770,7 @@
         </svg>
       </button>
       <div class="inner-mobile-menu">
-        <button class="buy-button-mobile" data-modal-open>
+        <button class="buy-button-mobile" onclick="buyNowBtn()">
           Buy now
           <svg class="buy-button--svg">
             <use href="./images/icons.svg#icon-greater-than-head"></use>
@@ -780,10 +780,18 @@
           <li class="mobile-menu__item">
             <a href="#"> Home</a>
           </li>
-          <li class="mobile-menu__item"><a>About us</a></li>
-          <li class="mobile-menu__item"><a>How it's made?</a></li>
-          <li class="mobile-menu__item"><a>Our products</a></li>
-          <li class="mobile-menu__item"><a>Contact</a></li>
+          <li class="mobile-menu__item">
+            <a href="#testimonials">About us</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#about">How it's made?</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#products">Our products</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#contact-section">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
