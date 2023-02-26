@@ -1,10 +1,4 @@
-.hide-modal {
-  display: none;
-  // visibility: hidden;
-  pointer-events: none;
-  transform: scale(0.1);
-  opacity: 0;
-}
+
 
 .close-contacts-modal {
   border-radius: 50%;
@@ -27,18 +21,16 @@
 
 .close-contacts-modal {
   position: absolute;
-  top: 40px;
-  right: 25px;
+  top: 10px;
+  right: 10px;
 }
 
 .close-map-modal {
   @extend .close-contacts-modal;
-  right: 0px;
-  top: 20px
 }
 
 .map {
-  width: 60vw;
+  width: 90%;
   height: 300px;
 }
 
@@ -71,7 +63,6 @@
   font-size: 12px;
   line-height: 14px;
   text-align: left;
-  letter-spacing: 1%;
   color: var(--red-title-text);
   display: flex;
   flex-direction: column;
@@ -143,33 +134,33 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .inner-modal {
-    width: 450px;
-    height: 609px;
-  }
+// @media screen and (min-width: 480px) {
+//   .inner-modal {
+//     width: 450px;
+//     height: 609px;
+//   }
 
-  input {
-    width: 370px;
-  }
+//   input {
+//     width: 370px;
+//   }
 
-  textarea {
-    width: 370px;
-    height: 120px;
-  }
+//   textarea {
+//     width: 370px;
+//     height: 120px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    .inner-modal {
-      width: 528px;
-      height: 581px;
-    }
+//   @media screen and (min-width: 1200px) {
+//     .inner-modal {
+//       width: 528px;
+//       height: 581px;
+//     }
 
-    input {
-      width: 448px;
-    }
+//     input {
+//       width: 448px;
+//     }
 
-    textarea {
-      width: 448px;
-    }
-  }
-}
+//     textarea {
+//       width: 448px;
+//     }
+//   }
+// }

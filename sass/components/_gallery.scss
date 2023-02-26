@@ -15,6 +15,13 @@
         flex-direction: column;
         gap: 3px;
         width: calc(100% / 7);
+        // img:hover {
+        //     transform: translateZ(3px);
+        //     overflow: hidden;
+        //     transform: scale(1) translateX(0);
+        //     transition: transform 350ms ease-in-out;
+        // }
+
 
         &:first-child {
             margin-bottom: 30px;
@@ -40,6 +47,21 @@
 
 .gallery-image-double_size {
     width: 50%;
+}
+
+.left-img:hover {
+    transform: scale(1.2) translateX(10px);
+    transition: transform 350ms ease-in-out;
+}
+
+.right-img:hover {
+    transform: scale(1.2) translateX(-10px);
+    transition: transform 350ms ease-in-out;
+}
+
+.center-img:hover {
+    transform: scale(1.2) ;
+    transition: transform 350ms ease-in-out;
 }
 
 .gallery-image {
