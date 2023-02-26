@@ -42,14 +42,20 @@
 }
 
 .navigation-menu__list {
-  display: flex;
+  // display: flex;
   flex-direction: row;
   color: var(--white-color);
   font-size: 16px;
-  gap: 5px;
+  gap: 35px;
   display: none;
   padding: 0 10px;
 }
+
+.navigation-menu__list--item{
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .navigation-menu__list--item:hover,
 .navigation-menu__list--item:focus {

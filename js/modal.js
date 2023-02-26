@@ -12,13 +12,3 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
-
-function toggleModal(id) {
-  document.getElementById(id).classList.toggle("hide-modal");
-}
-
-// function showModal() {
-//   document.getElementById('contact-modal').classList.add('hide-modal');
-// }// function showModal() {
-//   document.getElementById('contact-modal').classList.add('hide-modal');
-// }
