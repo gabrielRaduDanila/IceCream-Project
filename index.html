@@ -463,7 +463,7 @@
           </div>
         </div>
       </section>
-      <!-- end gallery section -->  
+      <!-- end gallery section -->
       <!-- start testimonals section -->
       <section class="customer-reviews section">
         <h3 class="hidden-items">Customers reviews</h3>
@@ -752,6 +752,7 @@
         </p>
       </div>
     </footer>
+    <!-- start mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
@@ -768,19 +769,23 @@
           ></path>
         </svg>
       </button>
-      <button class="buy-button" data-modal-open>
-        Buy now
-        <svg class="buy-button--svg">
-          <use href="./images/icons.svg#icon-greater-than-head"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu">
-        <li class="mobile-menu__item">Home</li>
-        <li class="mobile-menu__item">About us</li>
-        <li class="mobile-menu__item">How it's made?</li>
-        <li class="mobile-menu__item">Our products</li>
-        <li class="mobile-menu__item">Contact</li>
-      </ul>
+      <div class="inner-mobile-menu">
+        <button class="buy-button-mobile" data-modal-open>
+          Buy now
+          <svg class="buy-button--svg">
+            <use href="./images/icons.svg#icon-greater-than-head"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="#"> Home</a>
+          </li>
+          <li class="mobile-menu__item"><a>About us</a></li>
+          <li class="mobile-menu__item"><a>How it's made?</a></li>
+          <li class="mobile-menu__item"><a>Our products</a></li>
+          <li class="mobile-menu__item"><a>Contact</a></li>
+        </ul>
+      </div>
     </div>
     <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
