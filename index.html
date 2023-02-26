@@ -20,7 +20,7 @@
       <div class="inner-modal">
         <button class="close-modal" data-modal-close>
           <svg class="close-modal--svg">
-            <use href="./images/icons.svg#close-btn.svg"></use>
+            <use href="./images/icons.svg#close-btn"></use>
           </svg>
         </button>
       </div>
@@ -37,11 +37,12 @@
             </a>
           </div>
           <ul class="navigation-menu__list">
-            <li class="navigation-menu__list--item">Home</li>
+            <li class="navigation-menu__list--item" onclick="location.href='#index';">Home</li>
             <li class="navigation-menu__list--item">About us</li>
-            <li class="navigation-menu__list--item">How it's made?</li>
-            <li class="navigation-menu__list--item">Our products</li>
-            <li class="navigation-menu__list--item">Contact</li>
+            <li class="navigation-menu__list--item" onclick="location.href='#about';">How it's made?</li>
+            
+            <li class="navigation-menu__list--item" onclick="location.href='#products';">Our products</li>
+            <li class="navigation-menu__list--item" onclick="location.href='#contacts';">Contact</li>
           </ul>
           <button class="menu-toggle js-open-menu">
             <svg class="menu-toggle--svg">

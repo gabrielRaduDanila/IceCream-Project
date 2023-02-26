@@ -21,7 +21,7 @@
 }
 
 .close-modal {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
   background: transparent;
   border-radius: 50%;
   width: 30px;
@@ -41,8 +41,7 @@
 .close-modal--svg{
 width: 30px;
 height: 30px;
-fill: black;
-color: #000;
+fill: var(--white-color);
 }
 
 .is-hidden {
