@@ -18,18 +18,127 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- start order form -->
+    <!-- start order form --><!---->
     <div class="modal is-hidden" data-modal>
-      <div class="inner-modal order-form-container">
+      <div class="inner-order-form">
         <button class="close-modal" data-modal-close>
           <svg class="close-modal--svg">
             <use href="./images/icons.svg#close-btn"></use>
           </svg>
         </button>
-
+        <form action="">
+          <h2 class="form-title">place your order</h2>
+          <div class="items-order">
+            <h3 class="items-order__title">Select Products</h3>
+            <div class="form-products">
+              <div class="form-products__item">
+                <img
+                  srcset="
+                    ./images/products/prod1-320-min.png 350w,
+                    ./images/products/prod1-768-min.png 768w
+                  "
+                  sizes="10vw"
+                  src="./images/products/prod1-320-min.png"
+                  alt=""
+                />
+                <label class="product-order">
+                  <input type="number" placeholder="How many?" min="0" />
+                </label>
+              </div>
+              <div class="form-products__item">
+                <img
+                  srcset="
+                    ./images/products/prod2-320-min.png 350w,
+                    ./images/products/prod2-768-min.png 768w
+                  "
+                  sizes="10vw"
+                  src="./images/products/prod2-320-min.png"
+                  alt=""
+                />
+                <label class="product-order">
+                  <input class="product-order__item" type="number" placeholder="How many?" min="0" />
+                </label>
+              </div>
+              <div class="form-products__item">
+                <img
+                  srcset="
+                    ./images/products/prod3-320-min.png 350w,
+                    ./images/products/prod3-768-min.png 768w
+                  "
+                  sizes="10vw"
+                  src="./images/products/prod3-320-min.png"
+                  alt=""
+                />
+                <label class="product-order">
+                  <input type="number" placeholder="How many?" min="0" />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="delivery-info">
+            <h3 class="items-order__title">delivery address</h3>
+            <label class="modal-form__label">
+              Name
+              <div class="input-container">
+                <svg class="modal-form__icon">
+                  <use href="./images/icons.svg#icon-person-form"></use>
+                </svg>
+                <input
+                  type="text"
+                  name="name"
+                  class="modal-form__input"
+                  placeholder="Enter your name"
+                />
+              </div>
+            </label>
+            <label class="modal-form__label">
+              Telephone
+              <div class="input-container">
+                <svg class="modal-form__icon">
+                  <use href="./images/icons.svg#icon-phone-form"></use>
+                </svg>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  class="modal-form__input"
+                />
+              </div>
+            </label>
+            <label class="modal-form__label">
+              E-mail
+              <div class="input-container">
+                <svg class="modal-form__icon">
+                  <use href="./images/icons.svg#icon-mail-form"></use>
+                </svg>
+                <input
+                  type="email"
+                  placeholder="Enter your e-mail"
+                  name="email"
+                  class="modal-form__input"
+                />
+              </div>
+            </label>
+            <label class="modal-form__label">
+              Delivery Address
+              <div class="input-container">
+                <svg class="modal-form__icon">
+                  <use href="./images/icons.svg#icon-house-svg"></use>
+                </svg>
+                <input
+                  type="text"
+                  placeholder="Enter delivery address"
+                  name="delivery-address"
+                  class="modal-form__input"
+                />
+              </div>
+            </label>
+          </div>
+          <button type="submit" class="submit-form-button">Place Order</button>
+        </form>
       </div>
     </div>
-<!-- end order form -->
+    <!-- end order form -->
     <header class="hero-header">
       <div class="hero-header-container">
         <div class="hero-header-nav">
