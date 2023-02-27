@@ -150,10 +150,9 @@
             </a>
           </div>
           <ul class="navigation-menu__list">
-            <li class="navigation-menu__list--item"
-              onclick="'#index.html';"
-
-            >Home</li>
+            <li class="navigation-menu__list--item">
+              <a href="index.html">
+              Home</a></li>
             <li class="navigation-menu__list--item"            
             onclick="location.href='#contact-section';">
             About us
@@ -193,18 +192,22 @@
               </h1>
             </div>
             <div class="button-holder">
-              <button class="products-button">Products</button>
-              <button class="how-is-made-button">How it's made?</button>
+              <a href="#products">                
+                <button class="products-button">Products</button>
+              </a>
+              <a href="#how">
+                <button class="how-is-made-button">How it's made?</button>
+              </a>
             </div>
             <div class="bio-eco-holder">
               <img
                 class="bio-eco-image display-none-header"
                 srcset="
-                  /images/header/bio-eco.png    480w,
-                  /images/header/bio-eco@x2.png 960w
+                  ./images/header/bio-eco.png    480w,
+                  ./images/header/bio-eco@x2.png 960w
                 "
                 sizes="(min-width: 768px) 480px, (min-width: 1200px) 960px, 100vw"
-                src="/images/header/bio-eco.png"
+                src="./images/header/bio-eco.png"
                 alt="bio milk image"
               />
               <div class="row-breaker">
@@ -215,15 +218,13 @@
                   </p>
                 </div>
                 <div class="button-bio-eco display-none-header">
-                  <a href="#">
+                  <a href="#how">                  
                     <svg class="button-bio-eco--svg">
                       <use href="./images/icons.svg#icon-arrow-right"></use>
                     </svg>
                   </a>
                 </div>
-
               </div>
-
             </div>
           </div>
           <div class="hero-section--counter display-none-header">
