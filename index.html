@@ -593,11 +593,7 @@
         <h3 class="hidden-items">Customers reviews</h3>
         <div class="customer-reviews__image">
           <img
-            srcset="
-              ./images/customer-reviews/testimonials1-90w-min.png   90w,
-              ./images/customer-reviews/testimonials1-180w-min.png 180w
-            "
-            sizes="10vw"
+          id="person-image"
             src="./images/customer-reviews/testimonials1-90w-min.png"
             alt="first testmionial person image"
           />
@@ -605,7 +601,7 @@
 
         <div class="customer-reviews__text-container">
           <div class="container-text">
-            <p class="underline-text">
+            <p class="underline-text" id="person-review">
               Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
               Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
               ipsum primis in nibh vel risus.
@@ -618,7 +614,7 @@
           <div class="red-dot"></div>
           <div class="red-dot"></div>
         </div>
-        <p class="reviewer-name">Emily, Los Angeles</p>
+        <p class="reviewer-name" id="person-name">Emily, Los Angeles</p>
         <div class="customer-reviews-btns">
           <button class="review-btn btn-selected"></button>
           <svg class="review-btn__selected" width="12px" height="12px">
@@ -945,7 +941,7 @@
     </div>
     <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/produtmodal1.js"></script>
+    <!-- <script src="./js/produtmodal1.js"></script> -->
     <script src="./js/readmore.js"></script>
     <script src="./js/toggleModals.js"></script>
   </body>
