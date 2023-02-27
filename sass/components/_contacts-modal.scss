@@ -33,9 +33,11 @@
   height: 300px;
 }
 .map-modal__border {
-  border: 2px solid var(--red-title-text);
+  border: 2px solid var(--pink-text);
   margin-bottom: 10px;
   margin-top: 30px;
+  width: 100%;
+  height: 310px;
 }
 
 .contacts-modal {
@@ -139,6 +141,9 @@ textarea {
   background: var(--white-color);
   color: var(--red-svg-home);
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   :focus {
@@ -191,6 +196,9 @@ textarea {
   }
 }
 @media screen and (min-width: 768px) {
+  .section-contacts {
+    padding-bottom: 40px;
+  }
   .contacts-modal__inner {
     width: 528px;
     height: 681x;
