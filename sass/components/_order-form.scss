@@ -18,6 +18,7 @@
   flex-direction: column;
   position: relative;
   padding: 20px 20px;
+  border-radius: 10px;
 
   form {
     max-width: 100%;
@@ -180,3 +181,16 @@
       scale: 1.2;
     }
   }
+
+    @media screen and (min-width: 768px) {
+      .inner-order-form {
+        max-width: 600px;
+      }
+
+            .input-container {
+              height: 30px;            
+              margin-top: 8px;
+              margin-bottom: 10px;
+              min-width: 400px;
+            }
+    }
