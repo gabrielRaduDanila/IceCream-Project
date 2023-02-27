@@ -1,7 +1,7 @@
 .hero-header {
   padding: 8px 20px;
   background-color: var(--pink-bg);
-  border: solid 1px black;
+  // border: solid 1px black;
   display: flex;
   justify-content: space-around;
 }
@@ -11,7 +11,7 @@
   flex-direction: column;
   flex-basis: 100%;
   height: 502px;
-  border: solid 1px black;
+  // border: solid 1px black;
   background-image: url("../images/header/icecream.png"),
     url("../images/header/ellipse.png");
   background-size: 175px, 400px; 
@@ -24,7 +24,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px green;
+  // border: solid 1px green;
 }
 
 .page-header_logo-container {
@@ -107,7 +107,7 @@
 
 .hero-header-hero-section {
   display: flex;
-  border: solid 1px yellow;
+  // border: solid 1px yellow;
   height: 100%;
   justify-content: space-between;
 }
@@ -311,6 +311,20 @@
   height: 40px;
   // border-radius: 20px;
   font-size: 14px;
+  }
+
+  .bio-eco-image {
+    width: 213px;
+    height: 216px;    
+  }
+
+  .text-holder {
+    width: 200px;
+    height: 80px;
+  }
+  
+  .bio-eco-text {    
+    font-size: 14px;    
   }
 
   .counter__list--item-number {   
