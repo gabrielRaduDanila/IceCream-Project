@@ -1,6 +1,8 @@
 .gallery {
     padding-top: 60px;
     background-image: linear-gradient(to bottom, var(--light-pink-bg) 0%, var(--light-pink-bg) 45%, var(--product-section-bg) 45%, var(--product-section-bg) 100%);
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 .gallery-container {

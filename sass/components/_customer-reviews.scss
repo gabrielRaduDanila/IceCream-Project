@@ -1,5 +1,6 @@
 .customer-reviews {
     @include displayFlex(column);
+    max-width: 2000px;
 }
 
 .customer-reviews__image {
