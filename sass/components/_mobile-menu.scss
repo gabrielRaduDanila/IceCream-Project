@@ -4,6 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
   background-color: var(--mobile-menu-bg);
   z-index: 999;
   transform: translateX(100%);
