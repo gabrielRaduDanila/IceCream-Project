@@ -1,5 +1,3 @@
-
-
 .close-contacts-modal {
   border-radius: 50%;
   background-color: var(--white-color);
@@ -9,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
   color: var(--pink-bg);
   cursor: pointer;
 
@@ -30,15 +29,29 @@
 }
 
 .map {
-  width: 90%;
+  width: 100%;
   height: 300px;
+}
+.map-modal__border {
+  border: 2px solid var(--pink-text);
+  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 100%;
+  height: 310px;
 }
 
 .contacts-modal {
-  padding: 30px 50px;
+  padding: 30px 30px;
   position: relative;
   margin: 0 auto;
   width: fit-content;
+  &__inner {
+    width: 328px;
+    height: 581px;
+    box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+    -webkit-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+    -moz-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+  }
 }
 
 .close-icon {
@@ -51,12 +64,14 @@
 
 .modal-title {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.04em;
-  padding: 30px 40px;
+  margin-top: 30px;
+  padding: 10px;
   color: var(--red-title-text);
+  max-width: auto;
 }
 
 .request-form {
@@ -73,19 +88,19 @@
 
 .request-form :hover,
 .request-form:focus {
-  fill: var(--pink-text);
+  fill: var(--red-title-text);
 }
 
 textarea:focus,
 textarea:hover,
 .request-form label input:focus,
 .request-form label input:hover {
-  border: 1px solid var(--pink-text);
+  border: 1px solid var(--red-title-text);
 }
 
 .request-form label input {
   padding-left: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--pink-text);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -104,10 +119,11 @@ textarea {
   width: 248px;
   height: 120px;
   margin-top: 4px;
+  margin-bottom: 30px;
   resize: none;
   padding-left: 16px;
   padding-top: 12px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--pink-text);
 
   border-radius: 4px;
   cursor: pointer;
@@ -119,10 +135,15 @@ textarea {
   border: 2px solid var(--pink-text);
   font-size: 16px;
   text-align: center;
-  width: 100px;
+  width: auto;
+  padding: 2px 20px;
   height: 30px;
   background: var(--white-color);
   color: var(--red-svg-home);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   :focus {
@@ -133,34 +154,62 @@ textarea {
     color: var(--white-color);
   }
 }
+.map-modal__inner {
+  padding: 30px 30px;
+  margin: 0 auto;
+  max-width: 381px;
+  box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+  -webkit-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+  -moz-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+}
+.modal-p {
+  font-size: 16px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--red-title-text);
+  margin-bottom: 20px;
+}
 
-// @media screen and (min-width: 480px) {
-//   .inner-modal {
-//     width: 450px;
-//     height: 609px;
-//   }
+@media screen and (min-width: 480px) {
+  .contacts-modal__inner {
+    width: 450px;
+    height: 609px;
+  }
+  .map-modal__inner {
+    max-width: 450px;
+  }
+  input {
+    width: 370px;
+  }
+  textarea {
+    width: 370px;
+    height: 120px;
+  }
+  .modal-title {
+    font-size: 25px;
+    letter-spacing: 0.04em;
+    padding: 30px 40px;
+  }
 
-//   input {
-//     width: 370px;
-//   }
-
-//   textarea {
-//     width: 370px;
-//     height: 120px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     .inner-modal {
-//       width: 528px;
-//       height: 581px;
-//     }
-
-//     input {
-//       width: 448px;
-//     }
-
-//     textarea {
-//       width: 448px;
-//     }
-//   }
-// }
+  .modal-p {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-contacts {
+    padding-bottom: 40px;
+  }
+  .contacts-modal__inner {
+    width: 528px;
+    height: 681x;
+  }
+  .map-modal__inner {
+    max-width: 528px;
+  }
+  input {
+    width: 448px;
+  }
+  textarea {
+    width: 448px;
+  }
+}
