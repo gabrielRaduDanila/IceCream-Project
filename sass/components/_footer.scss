@@ -32,12 +32,27 @@
     letter-spacing: 0.04em;
     text-align: left;
     text-transform: uppercase;
+    transition: letter-spacing 2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__title-second :hover {
+    letter-spacing: 25px;
+    color: var(--pink-text);
+  }
+  &__title-ice-cream {
+    display: inline;
   }
   &__spase {
     justify-content: flex-end;
   }
+
   &__title-with-passion {
     margin-top: 16px;
+  }
+  &__title-made {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__title-made:hover {
+    color: var(--red-title-text);
   }
 }
 .container {
@@ -149,11 +164,17 @@
       display: flex;
       gap: 10px;
     }
+
     &__title-first {
       margin-top: 0;
 
-      font-size: 30px;
       line-height: 1.133;
+    }
+    &__title-passion {
+      transition: letter-spacing 2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__title-passion:hover {
+      letter-spacing: 25px;
     }
     &__title-second {
       font-size: 58px;
@@ -166,8 +187,6 @@
     }
   }
   .social-box {
-    // margin-bottom: 50px;
-    // margin-right: 5px;
     &__container {
       margin-top: 9px;
     }

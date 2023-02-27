@@ -1,16 +1,10 @@
 .products-section {
   max-width: 100%;
   padding: 60px 20px;
-  background: rgb(229, 229, 229);
-  background: linear-gradient(
-    90deg,
-    rgba(229, 229, 229, 1) 0%,
-    rgb(197, 235, 186) 41%,
-    rgba(231, 229, 200, 0.544) 100%
-  );
-
+  background: var(--product-section-bg);
   display: flex;
   justify-content: center;
+  max-width: 2000px;
 
   &__container {
     max-width: 100%;
@@ -18,6 +12,7 @@
     justify-content: center;
   }
 }
+
 .products__subtitle {
   font-weight: 400;
   font-size: 18px;
@@ -28,6 +23,7 @@
   font-family: "Titan One";
   padding-bottom: 15px;
 }
+
 .products__title {
   padding-bottom: 140px;
   font-family: "Titan One";
@@ -38,16 +34,18 @@
   text-transform: uppercase;
   color: var(--red-title-text);
 }
+
 .product {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 100%;
-  gap: 140px;
+  gap: 150px;
+
   &__item {
     position: relative;
     flex-basis: 100%;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     padding: 40px;
@@ -58,42 +56,51 @@
     position: relative;
     transition: 0.5s;
     &:hover {
-      box-shadow: inset -3px 6px 22px 15px rgb(174, 198, 244);
-      background: rgb(245, 176, 192);
-      background: linear-gradient(
-        90deg,
-        rgb(241, 199, 209) 0%,
-        rgb(219, 176, 217) 41%,
-        rgb(173, 181, 221) 100%
-      );
-    }
-  }
-  .product__produse {
-    font-family: "Titan One";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding-top: 163px;
-    padding-bottom: 32px;
-  }
-  .point {
-    display: inline-flex;
-    gap: 4px;
-    justify-content: center;
-
-    &__item {
-      width: 25px;
-      height: 25px;
-
-      border-radius: 50%;
-      color: aliceblue;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
 }
+
+.product__produse {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 163px;
+  padding-bottom: 32px;
+}
+
+.point {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    @extend .point;
+    position: absolute;
+    top: 0;
+    left: 12px;
+  }
+
+  &::before {
+    content: "";
+    @extend .point;
+    position: absolute;
+    top: 0;
+    right: 12px;
+  }
+}
+
 .product__information {
   font-weight: 700;
   font-size: 14px;
@@ -102,6 +109,9 @@
   padding-top: 32px;
   margin-bottom: 32px;
 }
+
+
+
 .button-arow {
   border-radius: 50%;
   width: 40px;
@@ -111,21 +121,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  align-self: center;
+  margin-top: auto;
   fill: currentColor;
+
   &:hover {
-    background: rgb(183, 193, 244);
-    background: radial-gradient(
-      circle,
-      rgba(63, 94, 251, 1) 0%,
-      rgba(81, 194, 212, 1) 52%
-    );
-  }
-  &:hover .svg-arow {
+    .svg-arow {
     transform: rotate(-90deg);
     transition: 0.4s;
   }
+  cursor: pointer;
 }
+}
+
 .svg-arow {
   display: flex;
   justify-content: center;
@@ -133,9 +141,13 @@
   height: 18px;
   width: 30px;
   fill: var(--red-title-text);
+
   &:hover {
     transform: rotate(-90deg);
     transition: 0.7s;
+    .product-info {
+        visibility: visible;
+      }
   }
 }
 
@@ -152,6 +164,7 @@
   background-size: 249px 252px;
   background-color: transparent;
 }
+
 .product__item:nth-child(2):before {
   content: "";
   position: absolute;
@@ -164,6 +177,7 @@
   background-image: url(../images/products/prod2-320-min.png);
   background-size: 249px 252px;
 }
+
 .product__item:nth-child(3):before {
   content: "";
   position: absolute;
@@ -176,33 +190,69 @@
   background-image: url(../images/products/prod3-320-min.png);
   background-size: 249px 252px;
 }
+
 .product__item:nth-child(2) {
   background-color: rgba(240, 209, 165, 1);
+
   &:hover {
     background-color: rgb(237, 211, 174);
   }
 }
+
 .product__item:nth-child(3) {
   background-color: rgba(194, 226, 151, 1);
+
   &:hover {
     background-color: rgb(206, 235, 169);
   }
 }
+
+.product-info {
+  width: 100%;
+  height: calc(100% - 90px);
+  background-color: var(--light-pink-bg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.1);
+  z-index: 99;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    border-radius: 24px;
+  transition: all 300ms ease-in;
+  padding: 10px;
+   img {
+    height: 40%;    
+   }
+
+}
+
+.show-produc-info {
+ visibility: visible;
+ transform: scale(1);
+  transition: all 300ms ease-in;
+}
+
 @media (min-width: 768px) {
   .products-section {
     padding: 60px 32px;
   }
+
   .product {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 15px;
     margin-top: 20px;
+
     &__item {
       @include setWidth(3);
-      height: 100%;
+      flex-grow: 1;
     }
   }
+
   .product__item:first-child:before {
     content: "";
     position: absolute;
@@ -216,6 +266,7 @@
     background-size: 249px 252px;
     background-color: transparent;
   }
+
   .product__item:nth-child(2):before {
     content: "";
     position: absolute;
@@ -228,6 +279,7 @@
     background-image: url(../images/products/prod2-768-min.png);
     background-size: 249px 252px;
   }
+
   .product__item:nth-child(3):before {
     content: "";
     position: absolute;
@@ -241,21 +293,17 @@
     background-size: 249px 252px;
   }
 }
+
 @media (min-width: 1280px) {
   .products-section {
     padding: 60px 16px;
   }
+
   .product {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 15px;
     margin-top: 20px;
-    &__item {
-      @include setWidth(3);
-      height: 100%;
-    }
+    gap: 32px;
   }
+
   .product__item:first-child:before {
     content: "";
     position: absolute;
@@ -269,6 +317,7 @@
     background-size: 249px 252px;
     background-color: transparent;
   }
+
   .product__item:nth-child(2):before {
     content: "";
     position: absolute;
@@ -281,6 +330,7 @@
     background-image: url(../images/products/prod2-768-min.png);
     background-size: 249px 252px;
   }
+
   .product__item:nth-child(3):before {
     content: "";
     position: absolute;

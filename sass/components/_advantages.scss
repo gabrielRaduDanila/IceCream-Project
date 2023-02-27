@@ -1,10 +1,12 @@
 .advantages {
+  max-width: 2000px;
   margin: 0 auto;
   display: flex;
   padding: 0 20px;
   background-color: var(--light-pink-bg);
   &__inner {
     flex-basis: 480px;
+    display: flex;
   }
 }
 
@@ -29,6 +31,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 100%;
   gap: 32px;
 
   &__item {
