@@ -23,6 +23,10 @@
   text-align: center;
   font-family: "Titan One";
   padding-bottom: 15px;
+  transition: letter-spacing 2s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    letter-spacing: 25px;
+  }
 }
 
 .products__title {
@@ -34,6 +38,10 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--red-title-text);
+  transition: letter-spacing 2s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    letter-spacing: 30px;
+  }
 }
 
 .product {
@@ -57,9 +65,8 @@
     position: relative;
     transition: 0.5s;
     &:hover {
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
 }
@@ -111,8 +118,6 @@
   margin-bottom: 32px;
 }
 
-
-
 .button-arow {
   border-radius: 50%;
   width: 40px;
@@ -128,11 +133,11 @@
 
   &:hover {
     .svg-arow {
-    transform: rotate(-90deg);
-    transition: 0.4s;
+      transform: rotate(-90deg);
+      transition: 0.4s;
+    }
+    cursor: pointer;
   }
-  cursor: pointer;
-}
 }
 
 .svg-arow {
@@ -147,8 +152,8 @@
     transform: rotate(-90deg);
     transition: 0.7s;
     .product-info {
-        visibility: visible;
-      }
+      visibility: visible;
+    }
   }
 }
 
@@ -221,18 +226,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-    border-radius: 24px;
+  border-radius: 24px;
   transition: all 300ms ease-in;
   padding: 10px;
-   img {
-    height: 40%;    
-   }
-
+  img {
+    height: 40%;
+  }
 }
 
 .show-produc-info {
- visibility: visible;
- transform: scale(1);
+  visibility: visible;
+  transform: scale(1);
   transition: all 300ms ease-in;
 }
 
