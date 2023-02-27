@@ -12,9 +12,9 @@
   flex-basis: 100%;
   height: 502px;
   border: solid 1px black;
-  background-image: url(/images/header/icecream.png),
-    url(/images/header/ellipse.png);
-  background-size: 175px, 400px;
+  background-image: url("../images/header/icecream.png"),
+    url("../images/header/ellipse.png");
+  background-size: 175px, 400px; 
   background-repeat: no-repeat;
   background-position: center bottom, right center;
 }
@@ -246,8 +246,9 @@
 
   .hero-header-container {
     height: 416px;
-    background-image: url(/images/header/icecream.png),
-      url(/images/header/tasty.png), url(/images/header/ellipse.png);
+    background-image: url("../images/header/icecream.png"),
+      url("../images/header/tasty.png"),
+      url("../images/header/ellipse.png");      
     background-size: 150px, 250px, 400px;
     background-repeat: no-repeat;
     background-position: bottom center, bottom right, center center;
@@ -271,7 +272,54 @@
 @media (min-width: 1280px) {
   .hero-header-container {
     height: 664px;
-    max-width: 1280px;
+    max-width: 2000px;
+    background-image: url("../images/header/icecream.png"),
+      url("../images/header/tasty.png"),
+      url("../images/header/ellipse.png");      
+    background-size: 255px, 400px, 580px;    
+        background-repeat: no-repeat;
+    background-position: bottom center, bottom right, center center;
+  }
+
+  .hero-header-left{
+    justify-content: space-around;
+  }
+
+  .header-title-container{
+    width: 280px;
+    height: 140px;
+  }
+
+  .hero-section--title{
+    font-size: 38px;
+  }
+
+  .hero-section--title_span{
+    font-size: 58px;    
+  }
+
+  .products-button{
+    width: 110px;
+  height: 40px;
+  // border-radius: 20px;
+  font-size: 14px;
+
+  }
+
+  .how-is-made-button{
+  width: 140px;
+  height: 40px;
+  // border-radius: 20px;
+  font-size: 14px;
+  }
+
+  .counter__list--item-number {   
+    font-size: 46px;
+    line-height: 0.9;    
+  }
+
+  .counter__list--item-type {    
+    font-size: 14px;
   }
 
   .navigation-menu__list {
