@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
   color: var(--pink-bg);
   cursor: pointer;
 
@@ -31,9 +32,10 @@
   width: 100%;
   height: 300px;
 }
-.modal__map {
+.map-modal__border {
   border: 2px solid var(--red-title-text);
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .contacts-modal {
@@ -42,6 +44,8 @@
   margin: 0 auto;
   width: fit-content;
   &__inner {
+    width: 328px;
+    height: 581px;
     box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
     -webkit-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
     -moz-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
@@ -58,11 +62,12 @@
 
 .modal-title {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.04em;
-  padding: 30px 40px;
+  margin-top: 30px;
+  padding: 10px;
   color: var(--red-title-text);
   max-width: auto;
 }
@@ -112,6 +117,7 @@ textarea {
   width: 248px;
   height: 120px;
   margin-top: 4px;
+  margin-bottom: 30px;
   resize: none;
   padding-left: 16px;
   padding-top: 12px;
@@ -143,12 +149,13 @@ textarea {
     color: var(--white-color);
   }
 }
-.map-modal {
-  &__inner {
-    box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
-    -webkit-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
-    -moz-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
-  }
+.map-modal__inner {
+  padding: 30px 30px;
+  margin: 0 auto;
+  max-width: 381px;
+  box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+  -webkit-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
+  -moz-box-shadow: 0px 1px 27px 2px rgba(212, 20, 67, 0.44);
 }
 .modal-p {
   font-size: 16px;
@@ -158,32 +165,43 @@ textarea {
   margin-bottom: 20px;
 }
 
-// @media screen and (min-width: 480px) {
-//   .inner-modal {
-//     width: 450px;
-//     height: 609px;
-//   }
+@media screen and (min-width: 480px) {
+  .contacts-modal__inner {
+    width: 450px;
+    height: 609px;
+  }
+  .map-modal__inner {
+    max-width: 450px;
+  }
+  input {
+    width: 370px;
+  }
+  textarea {
+    width: 370px;
+    height: 120px;
+  }
+  .modal-title {
+    font-size: 25px;
+    letter-spacing: 0.04em;
+    padding: 30px 40px;
+  }
 
-//   input {
-//     width: 370px;
-//   }
-
-//   textarea {
-//     width: 370px;
-//     height: 120px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     .inner-modal {
-//       width: 528px;
-//       height: 581px;
-//     }
-
-//     input {
-//       width: 448px;
-//     }
-
-//     textarea {
-//       width: 448px;
-//     }
-//   }
-// }
+  .modal-p {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-modal__inner {
+    width: 528px;
+    height: 681x;
+  }
+  .map-modal__inner {
+    max-width: 528px;
+  }
+  input {
+    width: 448px;
+  }
+  textarea {
+    width: 448px;
+  }
+}
