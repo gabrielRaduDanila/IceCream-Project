@@ -4,6 +4,7 @@
   // border: solid 1px black;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 0px;
 }
 
 .hero-header-container {
@@ -239,7 +240,9 @@
 @media (min-width: 768px) {
   .hero-header {
     padding: 32px;
+    padding-bottom: 0px;
   }
+
   .hero-header-hero-section {
     padding-top: 20px;
   }
@@ -257,6 +260,8 @@
   .hero-header-left {
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 16px;
+    
   }
 
   .row-breaker {
